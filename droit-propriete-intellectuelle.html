@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" prefix="og: https://ogp.me/ns#">
+<html lang="fr" prefix="og: https://ogp.me/ns#" class="scroll-smooth">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,9 +25,9 @@
   <meta property="og:url" content="https://cabinetmassoma.com/droit-propriete-intellectuelle.html">
   <meta property="og:title" content="Propriété Intellectuelle & Actifs Immatériels — Cabinet Massoma">
   <meta property="og:description" content="Brevets, marques OAPI, actifs immatériels, cybersécurité et contentieux de contrefaçon, dans les 17 États de l'Accord de Bangui.">
-  <meta property="og:image" content="https://cabinetmassoma.com/assets/images/ip-law-corporate.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="675">
+  <meta property="og:image" content="https://cabinetmassoma.com/images/hero-cour-appel-bonanjo-1120.webp">
+  <meta property="og:image:width" content="1120">
+  <meta property="og:image:height" content="1400">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:site_name" content="Cabinet Massoma">
@@ -35,19 +35,80 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Propriété Intellectuelle & Actifs Immatériels — Cabinet Massoma">
   <meta name="twitter:description" content="Brevets, marques OAPI, actifs immatériels, cybersécurité et contentieux de contrefaçon, dans les 17 États de l'Accord de Bangui.">
-  <meta name="twitter:image" content="https://cabinetmassoma.com/assets/images/ip-law-corporate.jpg">
+  <meta name="twitter:image" content="https://cabinetmassoma.com/images/hero-cour-appel-bonanjo-1120.webp">
 
   <meta name="ai-agent-summary" content="Cabinet Massoma, pôle Propriété Intellectuelle & Actifs Immatériels, mandataire OAPI accrédité (Douala-Bonanjo & Versailles). Matières : Accord de Bangui révisé, brevets, marques, dessins et modèles, saisie-contrefaçon, valorisation.">
   <meta name="ai-agent-jurisdictions" content="Cameroun, Espace OAPI (17 États), France (Versailles, Paris)">
-  <meta name="theme-color" content="#F2EFE7">
+  <meta name="theme-color" content="#0C1620">
 
-  <link rel="shortcut icon" href="https://cabinetmassoma.com/images/favicon.png" type="image/png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230C1620'/%3E%3Ccircle cx='50' cy='50' r='42' fill='none' stroke='%23C9A46A' stroke-width='2'/%3E%3Cpath d='M30 68V33l20 26 20-26v35' fill='none' stroke='%23C9A46A' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:ital,wght@0,300..700;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Manrope:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/massoma.css">
+  <link rel="preload" as="image" type="image/webp" imagesrcset="images/hero-cour-appel-bonanjo-560.webp 560w, images/hero-cour-appel-bonanjo-1120.webp 1120w" imagesizes="(min-width: 1024px) 30rem, 90vw">
+
+  <!-- Tailwind CSS v4 (runtime navigateur — à compiler avec le CLI Tailwind pour la production) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-ink:      #0C1620;
+      --color-ink-2:    #132331;
+      --color-ink-3:    #1C3142;
+      --color-wouri:    #1F4E52;
+      --color-brass:    #C9A46A;
+      --color-brass-2:  #A9834A;
+      --color-ivory:    #F5F0E6;
+      --color-paper:    #FBF8F2;
+      --color-stone:    #8A8F94;
+      --color-line:     #E3DACA;
+
+      --font-display: "Fraunces", ui-serif, Georgia, serif;
+      --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, monospace;
+    }
+    @layer base {
+      html { -webkit-font-smoothing: antialiased; }
+      body { @apply bg-paper text-ink font-sans; }
+      ::selection { @apply bg-brass text-ink; }
+      :focus-visible { @apply outline-2 outline-offset-4 outline-brass; }
+    }
+    @utility eyebrow {
+      @apply font-mono text-[0.7rem] tracking-[0.28em] uppercase;
+    }
+  </style>
+
+  <style>
+    .guides { background-image: repeating-linear-gradient(to right, rgba(201,164,106,.07) 0 1px, transparent 1px calc(100%/6)); }
+    .grain::after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.06; mix-blend-mode:overlay;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+    .js .reveal { opacity: 0; transform: translateY(28px); transition: opacity 1s cubic-bezier(.2,.7,.2,1), transform 1s cubic-bezier(.2,.7,.2,1); }
+    .js .reveal.is-in { opacity: 1; transform: none; }
+    .reveal[data-delay="1"] { transition-delay: .12s; }
+    .reveal[data-delay="2"] { transition-delay: .24s; }
+    .reveal[data-delay="3"] { transition-delay: .36s; }
+
+    .js .line-mask > span { display:block; transform: translateY(105%); transition: transform 1.2s cubic-bezier(.2,.8,.2,1); }
+    .js .is-loaded .line-mask > span { transform: none; }
+    .line-mask { overflow: hidden; padding-bottom: .08em; }
+
+    .u-link { background: linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat; transition: background-size .5s; }
+    .u-link:hover { background-size: 100% 1px; }
+
+    .site-header.is-scrolled { background: rgba(12,22,32,.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-color: rgba(201,164,106,.18); }
+
+    section[id] { scroll-margin-top: 5rem; }
+    details > summary { list-style: none; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] .faq-plus { transform: rotate(45deg); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .js .reveal, .js .line-mask > span { opacity: 1; transform: none; transition: none; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
   <script>document.documentElement.classList.add('js');</script>
 
 <script type="application/ld+json">
@@ -67,7 +128,7 @@
       "foundingDate": "2003",
       "email": "contact@cabinetmassoma.com",
       "telephone": "+237233432234",
-      "image": "https://cabinetmassoma.com/assets/images/hero-partners.jpg",
+      "image": "https://cabinetmassoma.com/images/hero-cour-appel-bonanjo-1120.webp",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Cour d'Appel, Bonanjo",
@@ -190,702 +251,6 @@
   ]
 }
 </script>
-</head>
-<body id="top">
-<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- SCEAU — la marque du cabinet -->
-    <symbol id="i-seal" viewBox="0 0 200 200">
-      <circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="1.4"/>
-      <circle cx="100" cy="100" r="86" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="1.3 3.7"/>
-      <circle cx="100" cy="100" r="63" fill="none" stroke="currentColor" stroke-width=".6" opacity=".5"/>
-      <path d="M74 126V74l26 31 26-31v52" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="miter"/>
-      <path d="M67 74h12M121 74h12M67 126h12M121 126h12" fill="none" stroke="currentColor" stroke-width="1.6"/>
-      <path d="M74 138h52" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".6"/>
-    </symbol>
-
-    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M4 12h15"/><path d="M13 6l6 6-6 6"/>
-    </symbol>
-
-    <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M5 9l7 7 7-7"/>
-    </symbol>
-
-    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M6.4 3h3.1l1.6 4.1-2.1 1.5a12.3 12.3 0 0 0 6.4 6.4l1.5-2.1L21 14.5v3.1a2 2 0 0 1-2.2 2A17.2 17.2 0 0 1 4.4 5.2 2 2 0 0 1 6.4 3z"/>
-    </symbol>
-
-    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="3" y="5" width="18" height="14"/><path d="M3.4 6.4L12 13l8.6-6.6"/>
-    </symbol>
-
-    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 21.2s7-6.5 7-11.2a7 7 0 1 0-14 0c0 4.7 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/>
-    </symbol>
-
-    <symbol id="i-city" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M3 21h18"/><path d="M5 21V6.4L12 3v18"/><path d="M12 21V9.6L19 12.6V21"/><path d="M8 8.4h.01M8 12.4h.01M8 16.4h.01M16 14.6h.01M16 18.2h.01"/>
-    </symbol>
-
-    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 3l7.5 3v6.1c0 4.6-3.2 7.9-7.5 9.3-4.3-1.4-7.5-4.7-7.5-9.3V6L12 3z"/><path d="M9 12.2l2.1 2.1L15.2 10"/>
-    </symbol>
-
-    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M14 3H7.5A1.5 1.5 0 0 0 6 4.5v15A1.5 1.5 0 0 0 7.5 21h9a1.5 1.5 0 0 0 1.5-1.5V7l-4-4z"/><path d="M14 3v4h4"/><path d="M9 12.5h6M9 16h6"/>
-    </symbol>
-
-    <symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 3v18"/><path d="M7 21h10"/><path d="M4 7h16"/><path d="M4 7l-2.4 5.2a3 3 0 0 0 4.8 0L4 7z"/><path d="M20 7l-2.4 5.2a3 3 0 0 0 4.8 0L20 7z"/>
-    </symbol>
-
-    <symbol id="i-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M14 4h6v6"/><path d="M20 4l-8.5 8.5"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>
-    </symbol>
-  </defs>
-</svg>
-
-<a class="skip" href="#main">Aller au contenu principal</a>
-
-<header class="head" role="banner">
-  <div class="head__top">
-    <div class="wrap wrap--wide">
-      <div class="head__top-l">
-        <a href="tel:+237233432234"><svg aria-hidden="true"><use href="#i-phone"></use></svg>(+237) 233 43 22 34</a>
-        <a href="tel:+237699821988">(+237) 699 82 19 88</a>
-        <a href="mailto:contact@cabinetmassoma.com"><svg aria-hidden="true"><use href="#i-mail"></use></svg>contact@cabinetmassoma.com</a>
-      </div>
-      <div class="head__top-r">
-        <span class="head__cred"><i></i>Barreau du Cameroun — 2003</span>
-        <span class="head__cred"><i></i>Barreau de Versailles</span>
-        <span class="head__cred"><i></i>Cour d'Appel de Douala</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="head__main wrap wrap--wide">
-    <a class="brand" href="index.html" aria-label="Cabinet Massoma — accueil">
-      <svg class="brand__mark" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-seal"></use></svg>
-      <span class="brand__txt">
-        <span class="brand__name">Massoma</span>
-        <span class="brand__sub">Cabinet d'Avocats &amp; Audit Social</span>
-      </span>
-    </a>
-
-    <nav class="nav" aria-label="Navigation principale">
-      <div class="nav__item"><a class="nav__link" href="index.html">Accueil</a></div>
-      <div class="nav__item"><a class="nav__link" href="index.html#apropos">À propos</a></div>
-      <div class="nav__item">
-        <a class="nav__link" href="index.html#domaines" aria-haspopup="true" aria-expanded="false">Domaines d'intervention <svg aria-hidden="true"><use href="#i-chev"></use></svg></a>
-        <div class="dd" role="group" aria-label="Pratiques dédiées">
-          <div class="dd__head">
-            <span class="mono mono--accent">Expertises &amp; pratiques dédiées</span>
-            <span class="mono mono--sm">Six pôles</span>
-          </div>
-          <div class="dd__list">
-            <a class="dd__item" href="droit-des-affaires.html">
-              <span class="dd__thumb"><img src="assets/images/business-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit des Affaires <span class="dd__tag">OHADA &amp; M&amp;A</span></span>
-                <span class="dd__desc">Sociétés, fusions-acquisitions, pactes d'associés, contrats &amp; arbitrage CCJA</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item" href="droit-propriete-intellectuelle.html">
-              <span class="dd__thumb"><img src="assets/images/ip-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Propriété Intellectuelle <span class="dd__tag">Mandataire OAPI</span></span>
-                <span class="dd__desc">Brevets, marques OAPI, actifs immatériels, cybersécurité &amp; contentieux contrefaçon</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item" href="droit-maritime.html">
-              <span class="dd__thumb"><img src="assets/images/maritime-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit Maritime <span class="dd__tag">Douala &amp; Kribi</span></span>
-                <span class="dd__desc">Saisies de navires, affrètement, droit portuaire &amp; P&amp;I Clubs</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item" href="droit-social.html">
-              <span class="dd__thumb"><img src="assets/images/social-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit Social &amp; RH <span class="dd__tag">Expert BIT / IAS</span></span>
-                <span class="dd__desc">Relations de travail, restructurations, audit social &amp; contentieux prud'homal</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item" href="droit-civil.html">
-              <span class="dd__thumb"><img src="assets/images/civil-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit Civil <span class="dd__tag">Dédié corporate</span></span>
-                <span class="dd__desc">Contentieux stratégique, obligations, responsabilité &amp; voies d'exécution OHADA</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item dd__item--full" href="index.html#domaines">
-              <span class="dd__thumb"><img src="assets/images/civil-litigation-court.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit Administratif</span>
-                <span class="dd__desc">Rapports avec l'administration, régulation &amp; visas</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="nav__item"><a class="nav__link" href="index.html#contact">Contact</a></div>
-    </nav>
-
-    <div class="head__end">
-      <div class="lang" aria-label="Langue">
-        <a class="is-on" href="droit-propriete-intellectuelle.html" aria-current="true" hreflang="fr">FR</a><i>/</i><a href="en/intellectual-property.html" hreflang="en" lang="en">EN</a>
-      </div>
-      <a class="head__cta" href="index.html#contact">Nous contacter <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
-      <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="drawer"><span></span></button>
-    </div>
-  </div>
-</header>
-
-<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu de navigation">
-  <div class="wrap">
-    <nav class="drawer__list" aria-label="Navigation mobile">
-      <div class="drawer__item">
-        <a class="drawer__link" href="index.html"><i>01</i>Accueil</a>
-      </div>
-      <div class="drawer__item">
-        <a class="drawer__link" href="index.html#apropos"><i>02</i>À propos</a>
-      </div>
-      <div class="drawer__item">
-        <a class="drawer__link" href="index.html#domaines"><i>03</i>Domaines d'intervention</a>
-        <div class="drawer__sub">
-          <a href="droit-des-affaires.html">Droit des Affaires — OHADA &amp; M&amp;A</a>
-          <a href="droit-propriete-intellectuelle.html">Propriété Intellectuelle — Mandataire OAPI</a>
-          <a href="droit-maritime.html">Droit Maritime — Douala &amp; Kribi</a>
-          <a href="droit-social.html">Droit Social &amp; RH — Expert BIT / IAS</a>
-          <a href="droit-civil.html">Droit Civil — Dédié corporate</a>
-          <a href="index.html#domaines">Droit Administratif</a>
-        </div>
-      </div>
-      <div class="drawer__item">
-        <a class="drawer__link" href="index.html#contact"><i>04</i>Contact</a>
-      </div>
-    </nav>
-    <div class="drawer__foot">
-      <div class="drawer__lang">
-        <a class="is-on" href="droit-propriete-intellectuelle.html" hreflang="fr">Français</a><a href="en/intellectual-property.html" hreflang="en" lang="en">English</a>
-      </div>
-      <a class="mono" href="tel:+237233432234">(+237) 233 43 22 34</a>
-      <a class="mono" href="mailto:contact@cabinetmassoma.com">contact@cabinetmassoma.com</a>
-      <span class="mono mono--sm">Cour d'Appel, Bonanjo — BP 2668 Douala, Cameroun</span>
-      <span class="mono mono--sm">Barreau du Cameroun &amp; Barreau de Versailles</span>
-    </div>
-  </div>
-</div>
-<main id="main">
-
-  <!-- ===================================================================
-       HÉROS DE PAGE — Propriété Intellectuelle
-  ==================================================================== -->
-  <section class="phero" aria-label="Droit de la Propriété Intellectuelle et Valorisation des Actifs Immatériels — Cabinet Massoma">
-    <div class="wrap wrap--wide">
-      <nav class="crumb" aria-label="Fil d'Ariane">
-        <a href="index.html">Accueil</a><i>/</i>
-        <a href="index.html#domaines">Domaines d'intervention</a><i>/</i>
-        <span aria-current="page">Droit de la Propriété Intellectuelle</span>
-      </nav>
-
-      <div class="phero__grid">
-        <div>
-          <span class="eyebrow">Mandataire &amp; Conseil OAPI • Droit des Actifs Immatériels</span>
-          <h1 class="t-display t-hero phero__title">
-            <span class="mask"><span>Droit de la Propriété Intellectuelle &amp;</span></span>
-            <span class="mask l2"><span>Valorisation des Actifs Immatériels</span></span>
-          </h1>
-          <p class="lead phero__lead">
-            Sécurisation unitaire sur les 17 États membres de l'OAPI, pilotage stratégique de portefeuilles
-            de brevets et de marques, négociation de licences technologiques et défense contentieuse contre
-            la contrefaçon et le pillage d'actifs immatériels. Le Cabinet Massoma accompagne les directions
-            juridiques, les fonds d'investissement et les groupes industriels dans la constitution, la
-            valorisation et la défense de leur capital immatériel.
-          </p>
-
-          <div class="phero__metrics">
-            <div class="phero__metric"><span class="phero__mv">17 États</span><span class="phero__ml">Protection Unitaire<br>OAPI</span></div>
-            <div class="phero__metric"><span class="phero__mv">20+ Ans</span><span class="phero__ml">Pratique<br>Barreau &amp; OAPI</span></div>
-            <div class="phero__metric"><span class="phero__mv">Tier 1</span><span class="phero__ml">Standards<br>Grands Cabinets</span></div>
-          </div>
-
-          <div class="phero__acts">
-            <a class="btn btn--seal" href="#contact"><span>Auditer votre portefeuille PI</span><svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
-            <a class="btn btn--ghost" href="#expertises"><span>Découvrir les 6 piliers</span></a>
-          </div>
-        </div>
-
-        <figure class="phero__visual">
-          <div class="plate plate--portrait rv-plate">
-            <img class="plate__img" src="assets/images/ip-law-corporate.jpg" alt="Portefeuille de brevets et de marques déposé auprès de l'OAPI — Cabinet Massoma, Douala" loading="eager">
-          </div>
-          <div class="phero__stamp"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#i-seal"></use></svg></div>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       VISION / DOCTRINE
-  ==================================================================== -->
-  <section class="sec" id="vision" aria-label="Vision stratégique de la propriété intellectuelle">
-    <div class="wrap wrap--wide">
-      <div class="sec-head">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. I — Doctrine</span>
-            <h2 class="t-display t-2 sec-head__title">La Propriété Intellectuelle, Premier Moteur de Valorisation et Barrière Concurrentielle</h2>
-          </div>
-          <p class="mono sec-head__note">Souveraineté immatérielle<br>Rigueur internationale</p>
-        </div>
-      </div>
-
-      <div class="split split--visual-l">
-        <div>
-          <p class="lead">
-            Dans une économie africaine et mondiale transformée par la numérisation, la transition industrielle
-            et l'émergence de consortiums transfrontaliers, les actifs immatériels — marques notoires, brevets
-            technologiques, dessins industriels, logiciels, secrets d'affaires et bases de données — représentent
-            désormais plus de 80 % de la valeur économique réelle des entreprises de premier rang.
-          </p>
-          <p class="mt-md measure">
-            Le Cabinet Massoma déploie une pratique de pointe conçue pour les directions juridiques de
-            multinationales, les fonds d'investissement, les groupes pharmaceutiques, les géants des télécoms
-            et les institutions financières. Calquée sur l'excellence opérationnelle des cabinets internationaux,
-            cette pratique offre une maîtrise absolue de l'Accord de Bangui révisé — droit supranational unitaire
-            liant 17 nations africaines — combinée à une capacité d'intervention judiciaire et arbitrale immédiate.
-          </p>
-          <p class="mt-md measure">
-            L'ancrage au cœur du pôle économique de Douala-Bonanjo, à proximité immédiate de Yaoundé, siège de
-            l'OAPI, et l'admission au Barreau de Versailles permettent d'orchestrer une protection continue,
-            du préventif au contentieux de haute intensité.
-          </p>
-        </div>
-        <figure>
-          <div class="plate plate--portrait rv-plate">
-            <img class="plate__img" src="assets/images/ip-litigation-court.jpg" alt="Salle d'audience — contentieux de la propriété intellectuelle et défense des titres OAPI" loading="lazy">
-          </div>
-          <figcaption class="plate__cap">
-            <span class="plate__cap-n">PL. I</span>
-            <span class="plate__cap-t">Défense des droits incorporels — du préventif au contentieux de haute intensité.</span>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="highs mt-xl">
-        <article class="high rv">
-          <h3 class="high__t">Effet unitaire direct OAPI</h3>
-          <p class="high__d">Un seul titre délivré confère une exclusivité opposable sans validation locale dans 17 juridictions souveraines d'Afrique centrale et de l'Ouest.</p>
-        </article>
-        <article class="high rv">
-          <h3 class="high__t">Audits de due diligence M&amp;A</h3>
-          <p class="high__d">Vérification de la chaîne de titularité, purge des antériorités, évaluation financière et nantissement des actifs immatériels sous les Actes uniformes OHADA.</p>
-        </article>
-        <article class="high rv">
-          <h3 class="high__t">Tolérance zéro contrefaçon</h3>
-          <p class="high__d">Déploiement de saisies-contrefaçons judiciaires et de blocages douaniers d'urgence aux terminaux portuaires de Douala et de Kribi, avec exécution coordonnée des mesures.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       LES SIX PILIERS
-  ==================================================================== -->
-  <section class="sec deep" id="expertises" aria-label="Les six piliers stratégiques de la propriété intellectuelle">
-    <div class="wrap wrap--wide">
-      <div class="sec-head">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. II — Domaines d'excellence</span>
-            <h2 class="t-display t-2 sec-head__title">Les 6 Piliers Stratégiques de la Propriété Intellectuelle Corporate</h2>
-          </div>
-          <p class="mono sec-head__note">OAPI &amp; international<br>De la création au verrouillage</p>
-        </div>
-      </div>
-
-      <div class="prog">
-        <article class="prog__item rv">
-          <span class="prog__n">01</span>
-          <div>
-            <h3 class="prog__t">Brevets d'Invention &amp; Certificats d'Utilité OAPI</h3>
-            <p class="prog__d">Protection brevetable des innovations scientifiques, industrielles et biotechnologiques, de la rédaction des revendications jusqu'à l'entrée en phase régionale PCT.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Dépôts directs OAPI et extensions internationales par voie PCT</li>
-            <li>Études de brevetabilité et analyses de liberté d'exploitation (FTO)</li>
-            <li>Régime des inventions de salariés et clauses d'attribution</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">02</span>
-          <div>
-            <h3 class="prog__t">Marques de Produits, Services &amp; Noms Commerciaux</h3>
-            <p class="prog__d">Constitution de monopoles d'exploitation régionaux par le dépôt stratégique multimarque, la gestion des portefeuilles et la défense contre le cybersquattage.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Recherches d'antériorités phonétiques, visuelles et conceptuelles</li>
-            <li>Dépôts OAPI multimarques (Classification de Nice révisée)</li>
-            <li>Procédures d'opposition formelle contre des dépôts frauduleux</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">03</span>
-          <div>
-            <h3 class="prog__t">Dessins, Modèles Industriels &amp; Packaging</h3>
-            <p class="prog__d">Verrouillage de l'apparence esthétique, des formes industrielles tridimensionnelles, des contenants, du packaging et de l'identité visuelle de vos gammes.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Enregistrement unitaire sous l'Annexe IV de l'Accord de Bangui</li>
-            <li>Protection cumulée : droit d'auteur &amp; dessins et modèles</li>
-            <li>Lutte contre le parasitisme et l'imitation servile de packagings</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">04</span>
-          <div>
-            <h3 class="prog__t">Contrats de Licences, Cessions &amp; Transfert de Technologie</h3>
-            <p class="prog__d">Structuration contractuelle hermétique pour l'exploitation commerciale, les franchises internationales, les accords de R&amp;D et la transmission de savoir-faire.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Rédaction de licences exclusives / non-exclusives et calcul de royalties</li>
-            <li>Validation réglementaire des contrats de transfert de technologie</li>
-            <li>Inscription obligatoire des actes aux registres spéciaux de l'OAPI</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">05</span>
-          <div>
-            <h3 class="prog__t">Audits de Portefeuille, Due Diligence PI &amp; M&amp;A</h3>
-            <p class="prog__d">Audit probatoire d'acquisition, sécurisation de la chaîne de transmission des droits et valorisation bilancielle lors d'opérations de haut de bilan.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Audit d'intégrité de la chaîne de titularité et détection de failles</li>
-            <li>Nantissement de marques, brevets et fonds de commerce (AUS OHADA)</li>
-            <li>Modélisation juridique des risques PI lors de prises de participation</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">06</span>
-          <div>
-            <h3 class="prog__t">Saisies-Contrefaçons, Douanes &amp; Recours OAPI (CSR)</h3>
-            <p class="prog__d">Offensive judiciaire d'urgence pour neutraliser la contrefaçon, faire intercepter les conteneurs illicites et plaider devant la Commission Supérieure de Recours.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Requêtes d'urgence en ordonnance de saisie-contrefaçon (TGI)</li>
-            <li>Surveillance douanière et retenues aux frontières portuaires</li>
-            <li>Plaidoiries devant la Commission Supérieure de Recours à Yaoundé</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       MATRICE COMPARATIVE — OAPI vs régimes nationaux & internationaux
-  ==================================================================== -->
-  <section class="sec" aria-label="Matrice comparative OAPI et régimes internationaux">
-    <div class="wrap wrap--wide">
-      <div class="sec-head">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. III — Analyse normative stratégique</span>
-            <h2 class="t-display t-2 sec-head__title">Matrice Comparatiste : Système OAPI vs Régimes Nationaux &amp; Traités Internationaux</h2>
-          </div>
-          <p class="mono sec-head__note">Accord de Bangui révisé<br>Puissance de frappe panafricaine</p>
-        </div>
-      </div>
-
-      <div class="matrix-wrap">
-        <table class="matrix">
-          <thead>
-            <tr>
-              <th>Paramètre clé</th>
-              <th>Système unitaire OAPI (Accord de Bangui)</th>
-              <th>Systèmes nationaux &amp; traités internationaux</th>
-              <th>Valeur ajoutée &amp; rôle du Cabinet Massoma</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Portée territoriale</td>
-              <td>17 États immédiats : un titre unique couvre simultanément le Cameroun, la Côte d'Ivoire, le Sénégal, le Gabon, etc.</td>
-              <td>Multiplication des dépôts pays par pays, coûts cumulés et risques d'asymétrie juridique.</td>
-              <td>Centralisation unifiée des dépôts, des renouvellements et de la gestion globale de portefeuille depuis notre bureau de Douala.</td>
-            </tr>
-            <tr>
-              <td>Mandat obligatoire</td>
-              <td>Mandat légal exclusif : obligation stricte de recourir à un mandataire agréé ou à un avocat pour toute entité étrangère.</td>
-              <td>Variable selon les législations nationales, souvent fragmenté entre correspondants locaux.</td>
-              <td>Représentation directe accréditée sans intermédiaire, garantissant une réactivité immédiate et des coûts maîtrisés.</td>
-            </tr>
-            <tr>
-              <td>Procédures d'opposition</td>
-              <td>Délai légal de 6 mois à compter de la publication au BOPI pour contester un enregistrement devant l'OAPI.</td>
-              <td>Délais disparates (de 30 jours à 3 mois) augmentant le risque d'expiration des recours.</td>
-              <td>Veille active systématique sur les publications du BOPI et déclenchement d'oppositions blindées en amont.</td>
-            </tr>
-            <tr>
-              <td>Voie de saisie d'urgence</td>
-              <td>Saisie-contrefaçon par ordonnance sur requête présidentielle, avec assistance d'experts et saisie réelle.</td>
-              <td>Procédures parfois limitées au simple constat d'huissier, sans séquestre physique immédiat.</td>
-              <td>Obtention d'ordonnances en référé d'heure à heure devant le TGI du Wouri et exécution coordonnée avec les forces de sécurité.</td>
-            </tr>
-            <tr>
-              <td>Recours juridictionnel</td>
-              <td>Double degré : Commission Supérieure de Recours (CSR) à Yaoundé et cours nationales de fond.</td>
-              <td>Tribunaux administratifs nationaux souvent engorgés et peu familiers des brevets de haute technologie.</td>
-              <td>Pratique réputée de rédaction de mémoires contentieux et de plaidoiries devant la CSR et les juridictions de cassation.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       PLAIDOIRIE & JURIDICTIONS
-  ==================================================================== -->
-  <section class="sec" id="juridictions" aria-label="Juridictions et instances compétentes en propriété intellectuelle">
-    <div class="wrap wrap--wide">
-      <div class="sec-head">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. IV — Rayonnement judiciaire</span>
-            <h2 class="t-display t-2 sec-head__title">Une Présence Directe au Cœur des Centres de Décision de la Propriété Intellectuelle</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="split split--visual">
-        <figure>
-          <div class="plate plate--wide rv-plate">
-            <img class="plate__img" src="assets/images/civil-litigation-court.jpg" alt="Salle d'audience d'une juridiction de première instance — contentieux des affaires, Douala" loading="lazy">
-          </div>
-          <figcaption class="plate__cap">
-            <span class="plate__cap-n">PL. II</span>
-            <span class="plate__cap-t">Maîtrise des prétoires — TGI du Wouri, Cour d'Appel du Littoral et juridictions du Barreau de Versailles.</span>
-          </figcaption>
-        </figure>
-        <div>
-          <div class="quote">
-            <span class="mono mono--accent">Plaidoirie institutionnelle &amp; maîtrise des prétoires</span>
-            <p class="quote__d">Intervention directe de Maître Massoma devant la Commission Supérieure de Recours à Yaoundé, les Tribunaux de Grande Instance, la Cour d'Appel du Littoral et les juridictions européennes du Barreau de Versailles.</p>
-          </div>
-          <div class="juris mt-lg">
-            <div class="juris__box">
-              <span class="mono">Yaoundé</span>
-              <h4>Siège de l'OAPI &amp; Commission Supérieure de Recours</h4>
-              <p>Représentation directe auprès de la Direction Générale de l'OAPI et plaidoiries devant la Commission Supérieure de Recours, juridiction d'appel suprême de l'Organisation. Suivi des oppositions, des rejets d'enregistrement et des recours préfixes de 60 jours.</p>
-            </div>
-            <div class="juris__box">
-              <span class="mono">Douala</span>
-              <h4>TPI &amp; TGI du Wouri</h4>
-              <p>Ordonnances de saisies-contrefaçons d'urgence, référés interdictifs et actions au fond en dommages-intérêts civils et pénaux devant le Tribunal de Première Instance et le Tribunal de Grande Instance du Wouri.</p>
-            </div>
-            <div class="juris__box">
-              <span class="mono">Douala &amp; Kribi</span>
-              <h4>Douanes &amp; Ports de Douala et de Kribi</h4>
-              <p>Demandes de retenue douanière, blocage immédiat de cargaisons suspectes et poursuites douanières pour contrefaçon aux terminaux portuaires de Douala et de Kribi.</p>
-            </div>
-            <div class="juris__box">
-              <span class="mono">Versailles &amp; Genève</span>
-              <h4>Barreau de Versailles &amp; OMPI Genève</h4>
-              <p>Pilotage des litiges internationaux, coordination des dépôts PCT et Madrid et contentieux transfrontaliers France–Afrique depuis le Barreau de Versailles, en lien avec l'OMPI à Genève.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       MÉTHODE EN QUATRE PHASES
-  ==================================================================== -->
-  <section class="sec deep sec--tight" id="methode" aria-label="Démarche opérationnelle en quatre phases">
-    <div class="wrap wrap--wide">
-      <div class="sec-head" style="margin-bottom:1.75rem">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. V — Rigueur méthodologique</span>
-            <h2 class="t-display t-3 sec-head__title" style="margin-top:.75rem">Une Démarche Stratégique en 4 Phases d'Ingénierie</h2>
-          </div>
-          <span class="mono">Audit · Dépôt · Valorisation · Défense</span>
-        </div>
-      </div>
-
-      <div class="steps">
-        <article class="step rv">
-          <span class="step__n">01</span>
-          <div class="step__bar"></div>
-          <h3 class="step__t">Audit d'Antériorité &amp; Analyse FTO</h3>
-          <p class="step__d">Cartographie approfondie des droits existants, recherches de similarités au sein des bases OAPI et OMPI, et évaluation précise de la liberté d'exploitation commerciale.</p>
-        </article>
-        <article class="step rv">
-          <span class="step__n">02</span>
-          <div class="step__bar"></div>
-          <h3 class="step__t">Dépôt Unitaire &amp; Verrouillage OAPI</h3>
-          <p class="step__d">Structuration des libellés et des revendications, dépôts multimarques ou brevets auprès de l'OAPI, revendications de priorité internationale et suivi des formalités d'enregistrement.</p>
-        </article>
-        <article class="step rv">
-          <span class="step__n">03</span>
-          <div class="step__bar"></div>
-          <h3 class="step__t">Valorisation Contractuelle &amp; Licences</h3>
-          <p class="step__d">Négociation et rédaction des contrats de transfert de technologie, licences et cessions, assortis de l'inscription légale aux registres spéciaux pour opposabilité absolue aux tiers.</p>
-        </article>
-        <article class="step rv">
-          <span class="step__n">04</span>
-          <div class="step__bar"></div>
-          <h3 class="step__t">Surveillance Active &amp; Réponse Contentieuse</h3>
-          <p class="step__d">Monitoring continu des dépôts concurrents, déclenchement immédiat des saisies-contrefaçons et défense devant les tribunaux et la Commission Supérieure de Recours.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       QUESTIONS FRÉQUENTES
-  ==================================================================== -->
-  <section class="sec" id="faq" aria-label="Questions fréquentes sur la propriété intellectuelle OAPI et internationale">
-    <div class="wrap wrap--wide">
-      <div class="sec-head">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. VI — Éclairages</span>
-            <h2 class="t-display t-2 sec-head__title">Questions Stratégiques sur la Propriété Intellectuelle OAPI &amp; Internationale</h2>
-          </div>
-          <p class="mono sec-head__note">Cible : directions juridiques<br>et comités de direction</p>
-        </div>
-      </div>
-
-      <div class="faq">
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-1">
-            <span class="faq__n">01</span>
-            <span class="faq__qt">Comment fonctionne le principe de protection unitaire de l'OAPI pour une multinationale ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-1">
-            <div class="faq__a-inner">
-              <p>L'Organisation Africaine de la Propriété Intellectuelle (OAPI), instituée par l'Accord de Bangui révisé, applique un principe fondamental d'effet unitaire absolu. Un seul dépôt de brevet d'invention, de marque de produits ou services, ou de dessin et modèle industriel, effectué auprès de l'Organisation à Yaoundé, produit immédiatement et simultanément ses pleins effets juridiques dans chacun des 17 États membres : Cameroun, Bénin, Burkina Faso, Centrafrique, Comores, Congo, Côte d'Ivoire, Gabon, Guinée, Guinée-Bissau, Guinée Équatoriale, Mali, Mauritanie, Niger, Sénégal, Tchad et Togo.</p>
-              <p>Il n'existe aucune phase de validation nationale individuelle au sein des États membres. Ce mécanisme garantit une sécurité juridique supranationale sans équivalent, supprime les risques de disparités législatives locales et optimise de manière drastique les budgets de protection pour les groupes internationaux.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-2">
-            <span class="faq__n">02</span>
-            <span class="faq__qt">Quelle est la procédure légale d'urgence pour ordonner une saisie-contrefaçon au Cameroun ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-2">
-            <div class="faq__a-inner">
-              <p>La saisie-contrefaçon est l'outil probatoire et conservatoire le plus puissant prévu par l'Accord de Bangui. Dès qu'un acte de contrefaçon est suspecté — stocks commerciaux, entrepôt ou plateforme numérique — le titulaire du titre de PI dépose une requête unilatérale d'extrême urgence devant le Président du Tribunal de Grande Instance territorialement compétent, notamment le TGI du Wouri à Douala pour le poumon économique du pays.</p>
-              <p>L'ordonnance sur requête autorise un commissaire de justice (huissier), assisté au besoin d'un collège d'experts techniques et de la force publique, à investir les lieux sans préavis pour dresser un inventaire exhaustif, prélever des échantillons probatoires et procéder à la mise sous séquestre effective des marchandises et outils de fabrication illicites. Le demandeur est ensuite tenu d'assigner au fond dans un délai légal strict — généralement 10 à 30 jours selon le type de titre — sous peine de nullité de la mesure avec indemnisation du saisi.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-3">
-            <span class="faq__n">03</span>
-            <span class="faq__qt">Pourquoi la constitution d'un mandataire agréé est-elle obligatoire pour les entreprises étrangères ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-3">
-            <div class="faq__a-inner">
-              <p>L'article 6 de l'Accord de Bangui révisé dispose de manière impérative que tout déposant ou titulaire de droits de propriété industrielle dont le domicile ou le siège social se situe en dehors de l'espace OAPI est tenu de se faire représenter par un mandataire agréé ou un avocat inscrit au tableau de l'un des barreaux des États membres pour accomplir tout acte auprès de l'Organisation.</p>
-              <p>Le Cabinet Massoma, fondé et dirigé par des avocats inscrits au Barreau du Cameroun et au Barreau de Versailles, assure cette mission de représentation directe. Nous prenons en charge la réception des notifications officielles, la régularisation des oppositions, le paiement des annuités et le pilotage des contentieux sans dépendre d'intermédiaires informels.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-4">
-            <span class="faq__n">04</span>
-            <span class="faq__qt">Comment contester un rejet d'enregistrement ou un titre concurrent devant la Commission Supérieure de Recours (CSR) ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-4">
-            <div class="faq__a-inner">
-              <p>La Commission Supérieure de Recours (CSR) constitue la juridiction d'appel suprême au sein de l'OAPI, siégeant à Yaoundé. Elle est compétente pour trancher souverainement les litiges nés des décisions du Directeur Général de l'Organisation : rejet d'une demande de brevet ou de marque, contestations sur oppositions de tiers, refus d'inscription modificative.</p>
-              <p>Le recours doit être déposé dans un délai préfixe de 60 jours suivant la notification formelle de la décision de rejet. La procédure est écrite et contradictoire, avec la possibilité d'organiser des plaidoiries orales devant le collège des magistrats de la Commission. Le Cabinet Massoma rédige les mémoires ampliatifs et soutient les plaidoiries de haute précision pour rétablir les prérogatives exclusives de ses clients.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-5">
-            <span class="faq__n">05</span>
-            <span class="faq__qt">Quelles formalités rendent opposables une licence ou une cession, et comment le droit OAPI protège-t-il les logiciels, bases de données et secrets d'affaires ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-5">
-            <div class="faq__a-inner">
-              <p>Pour être valable et pleinement opposable, toute cession, concession de licence d'exploitation ou mise en gage d'un droit de propriété industrielle en zone OAPI doit être constatée par un acte écrit daté et signé par les parties dûment habilitées. L'acte doit obligatoirement faire l'objet d'une inscription au Registre Spécial de l'OAPI et d'une publication au Bulletin Officiel de la Propriété Industrielle (BOPI). En l'absence de cette inscription, la licence ou la cession demeure inopposable aux tiers, ce qui priverait le licencié du droit d'agir en saisie-contrefaçon et exposerait les flux de redevances transfrontalières à des remises en cause fiscales et de change sévères.</p>
-              <p>L'Accord de Bangui révisé organise par ailleurs une protection multidimensionnelle des actifs immatériels modernes. Au titre de l'Annexe VII (droit d'auteur et droits voisins), les logiciels, codes sources et architectures de bases de données bénéficient d'une protection immédiate contre la reproduction illicite dès leur création sous une forme originale ; des séquestres probatoires sous sceau d'avocat ou auprès de tiers de confiance cristallisent la date d'antériorité. L'Annexe VIII sanctionne la divulgation illicite de secrets de fabrique, le vol de savoir-faire et la concurrence déloyale. Les inventions à composante logicielle produisant un effet technique vérifiable dans un dispositif industriel peuvent être brevetées.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       APPENDICE SÉMANTIQUE (agents IA)
-  ==================================================================== -->
-  <section class="sec deep sec--tight" aria-label="Index sémantique machine">
-    <div class="wrap wrap--wide">
-      <aside class="appendix">
-        <div class="appendix__h">
-          <svg aria-hidden="true"><use href="#i-shield"></use></svg>
-          <span class="mono mono--accent">Index sémantique machine • Droit de la Propriété Intellectuelle Cabinet Massoma</span>
-        </div>
-        <div class="appendix__rows">
-          <div class="appendix__row"><span class="appendix__k">Entité opératrice</span><span class="appendix__v"><strong>Cabinet Massoma</strong> — pôle Propriété Intellectuelle &amp; Actifs Immatériels (siège : Cour d'Appel, Bonanjo, Douala, Cameroun ; Barreau de Versailles, France). Qualifications : Docteur en Droit (Paris II Panthéon-Assas), DEA Droit social (Paris I), CAPA EFB Paris, Mandataire Agréé OAPI.</span></div>
-          <div class="appendix__row"><span class="appendix__k">Cadre normatif</span><span class="appendix__v">Accord de Bangui révisé (OAPI), Traité de coopération sur les brevets (PCT), Convention de Paris, Accord ADPIC/TRIPS, Actes uniformes OHADA, Classification de Nice, Annexe IV de l'Accord de Bangui.</span></div>
-          <div class="appendix__row"><span class="appendix__k">Matières traitées</span><span class="appendix__v">Brevets d'invention et certificats d'utilité, marques de produits et services, noms commerciaux, dessins et modèles industriels, licences et transfert de technologie, audits de portefeuille et due diligence M&amp;A, saisies-contrefaçons, retenues douanières, droit d'auteur, secrets d'affaires et recours devant la CSR.</span></div>
-          <div class="appendix__row"><span class="appendix__k">Juridictions / instances</span><span class="appendix__v">Direction Générale de l'OAPI et Commission Supérieure de Recours (Yaoundé), TGI du Wouri et Cour d'Appel du Littoral (Douala), Cour Suprême (Yaoundé), tribunaux judiciaires français (Versailles/Paris).</span></div>
-          <div class="appendix__row"><span class="appendix__k">Clientèle cible</span><span class="appendix__v">Directions juridiques, directeurs PI, groupes pharmaceutiques, télécoms, fintechs, industries agroalimentaires et multinationales. Territoire couvert : 17 États membres de l'OAPI, avec effet unitaire automatique sans validation nationale distincte.</span></div>
-          <div class="appendix__row"><span class="appendix__k">Contact officiel</span><span class="appendix__v">Cour d'Appel, Bonanjo — BP Douala 2668, République du Cameroun · (+237) 233 43 22 34 · contact@cabinetmassoma.com</span></div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       APPEL FINAL
-  ==================================================================== -->
-  <section class="cta-band on-ink" id="contact" aria-label="Prise de contact — Département Propriété Intellectuelle">
-    <div class="wrap wrap--wide">
-      <div class="cta-band__grid">
-        <div>
-          <span class="eyebrow">Directions juridiques &amp; dirigeants</span>
-          <h2 class="t-display t-2 mt-sm">Sécurisez et Valorisez Votre Capital Immatériel dans l'Espace OAPI</h2>
-        </div>
-        <div class="cta-band__acts">
-          <a class="btn btn--seal" href="tel:+237233432234"><svg aria-hidden="true"><use href="#i-phone"></use></svg><span>Appeler le Cabinet</span></a>
-          <a class="btn btn--ghost" href="mailto:contact@cabinetmassoma.com"><svg aria-hidden="true"><use href="#i-mail"></use></svg><span>Écrire au Département PI</span></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
 
 <script type="application/ld+json">
 {
@@ -970,73 +335,666 @@
   ]
 }
 </script>
-<footer class="foot on-ink on-ink-deep" role="contentinfo">
-  <div class="wrap wrap--wide">
-    <div class="foot__grid">
-      <div>
-        <svg class="foot__seal" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-seal"></use></svg>
-        <div class="brand">
-          <span class="brand__txt">
-            <span class="brand__name" style="color:var(--on-ink)">Massoma</span>
-            <span class="brand__sub" style="color:var(--on-ink-faint)">Cabinet d'Avocats &amp; Audit Social</span>
-          </span>
-        </div>
-        <p class="foot__desc">
-          Pour une meilleure Prévention des Risques. Une maîtrise reconnue de l'environnement normatif national et régional (OHADA &amp; OAPI), au service des entreprises et institutions.
-        </p>
-      </div>
+</head>
 
-      <div>
-        <h2 class="foot__h">Navigation</h2>
-        <div class="foot__list">
-          <a href="index.html">Accueil</a>
-          <a href="index.html#apropos">À propos</a>
-          <a href="index.html#domaines">Domaines d'intervention</a>
-          <a href="droit-des-affaires.html">Droit des Affaires (dédié)</a>
-          <a href="droit-propriete-intellectuelle.html">Propriété Intellectuelle (dédié)</a>
-          <a href="droit-maritime.html">Droit Maritime (dédié)</a>
-          <a href="droit-social.html">Droit Social (dédié)</a>
-          <a href="droit-civil.html">Droit Civil (dédié)</a>
-          <a href="index.html#contact">Contact</a>
-        </div>
-      </div>
+<body class="overflow-x-hidden">
+  <a href="#contenu" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-brass focus:text-ink focus:px-4 focus:py-2">Aller au contenu</a>
 
-      <div>
-        <h2 class="foot__h">Domaines clés</h2>
-        <div class="foot__list">
-          <a href="droit-des-affaires.html">Droit des Affaires &amp; Sociétés</a>
-          <a href="droit-des-affaires.html">Fusions-Acquisitions (M&amp;A)</a>
-          <a href="droit-propriete-intellectuelle.html">Brevets &amp; Marques OAPI</a>
-          <a href="droit-propriete-intellectuelle.html">Lutte Anti-Contrefaçon &amp; CSR</a>
-          <a href="droit-maritime.html">Droit Maritime &amp; Portuaire</a>
-          <a href="droit-social.html">Droit Social &amp; Relations RH</a>
-          <a href="droit-civil.html">Droit Civil &amp; Contentieux</a>
-        </div>
-      </div>
+  <!-- ================= EN-TÊTE ================= -->
+  <header id="site-header" class="site-header fixed inset-x-0 top-0 z-50 border-b border-transparent transition-all duration-500">
+    <div class="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-4 sm:px-8">
+      <a href="index.html" class="group flex items-center gap-3 text-ivory" aria-label="Cabinet Massoma — Accueil">
+        <svg class="h-11 w-11 shrink-0" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="47" fill="none" stroke="#C9A46A" stroke-width="1.5"/>
+          <circle cx="50" cy="50" r="41" fill="none" stroke="#C9A46A" stroke-width=".6" opacity=".6"/>
+          <path d="M29 68V32.5L50 60 71 32.5V68" fill="none" stroke="#C9A46A" stroke-width="4.2" stroke-linejoin="miter" stroke-linecap="square"/>
+          <path d="M24 68h11M65 68h11" stroke="#C9A46A" stroke-width="2"/>
+          <circle cx="50" cy="24" r="2.2" fill="#C9A46A"/>
+        </svg>
+        <span class="leading-none">
+          <span class="block font-display text-[1.35rem] tracking-wide">Massoma</span>
+          <span class="eyebrow mt-1 block text-[0.56rem] text-brass">Cabinet · Douala</span>
+        </span>
+      </a>
 
-      <div>
-        <h2 class="foot__h">Implantations</h2>
-        <div class="foot__list">
-          <span>Cour d'Appel, Bonanjo</span>
-          <span>BP : Douala 2668</span>
-          <span>Douala • Yaoundé • Bafoussam</span>
-          <span>Barreau de Versailles (France)</span>
-          <a href="tel:+237233432234">(+237) 233 43 22 34</a>
-          <a href="mailto:contact@cabinetmassoma.com">contact@cabinetmassoma.com</a>
-        </div>
+      <nav aria-label="Navigation principale" class="hidden lg:block">
+        <ul class="flex items-center gap-10 text-[0.78rem] font-medium tracking-[0.18em] uppercase text-ivory/80">
+          <li><a href="index.html" class="u-link hover:text-ivory">Accueil</a></li>
+          <li><a href="index.html#a-propos" class="u-link hover:text-ivory">A PROPOS</a></li>
+          <li class="group/menu relative">
+            <a href="index.html#domaines" class="u-link inline-flex items-center gap-2 py-7 text-ivory" aria-haspopup="true">
+              DOMAINES D'INTERVENTION
+              <svg class="h-2.5 w-2.5 transition-transform duration-300 group-hover/menu:rotate-180 group-focus-within/menu:rotate-180" viewBox="0 0 10 10" aria-hidden="true"><path d="m1.5 3.5 3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+            </a>
+            <div class="mega invisible absolute left-1/2 top-full w-[820px] -translate-x-1/2 translate-y-2 pt-1 opacity-0 transition-all duration-300 group-hover/menu:visible group-hover/menu:translate-y-0 group-hover/menu:opacity-100 group-focus-within/menu:visible group-focus-within/menu:translate-y-0 group-focus-within/menu:opacity-100">
+              <div class="grid grid-cols-[1.15fr_1fr_1fr] border border-brass/25 bg-ink normal-case tracking-normal shadow-2xl shadow-black/50">
+                <a href="audit-social.html" class="group/feat relative flex flex-col justify-between overflow-hidden bg-wouri p-7 text-ivory">
+                  <span aria-hidden="true" class="absolute -bottom-16 -right-16 h-44 w-44 rounded-full border border-ivory/15"></span>
+                  <span>
+                    <span class="eyebrow text-[0.58rem] text-brass">Expertise phare</span>
+                    <span class="mt-4 block font-display text-[1.9rem] leading-none">Audit Social</span>
+                    <span class="mt-3 block text-[0.85rem] leading-relaxed text-ivory/75">Conformité sociale, due diligence RH et prévention des risques pour les corporates et institutions.</span>
+                  </span>
+                  <span class="mt-8 inline-flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-brass">Découvrir <span aria-hidden="true" class="transition-transform group-hover/feat:translate-x-1">→</span></span>
+                </a>
+                <div class="p-7">
+                  <a href="droit-prive.html" class="group/dp block border-b border-brass/30 pb-4 text-ivory">
+                    <span class="block font-display text-[1.3rem] leading-none">Droit Privé</span>
+                    <span class="mt-2 block text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-brass">Vue d'ensemble</span>
+                  </a>
+                  <ul class="mt-4 space-y-3 font-display text-[1.05rem] text-ivory/85">
+                    <li><a href="droit-civil.html" class="hover:text-brass">Droit Civil</a></li>
+                    <li><a href="droit-social.html" class="hover:text-brass">Droit Social</a></li>
+                    <li><a href="droit-maritime.html" class="hover:text-brass">Droit Maritime</a></li>
+                    <li><a href="droit-des-affaires.html" class="hover:text-brass">Droit des Affaires</a></li>
+                    <li><a href="droit-propriete-intellectuelle.html" aria-current="page" class="text-brass">Droit de la Propriété Intellectuelle</a></li>
+                  </ul>
+                </div>
+                <div class="flex flex-col justify-between border-l border-ivory/10 p-7">
+                  <div>
+                    <p class="eyebrow text-[0.58rem] text-brass">Droit public</p>
+                    <p class="mt-5 font-display text-[1.05rem] leading-snug text-ivory/85">Droit administratif et procédures administratives</p>
+                    <p class="mt-2 text-[0.8rem] leading-relaxed text-ivory/55">Rapports avec l'administration, autorisations diverses, Visas.</p>
+                  </div>
+                  <a href="index.html#domaines" class="mt-8 inline-flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-ivory/70 hover:text-brass">Tous les domaines <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="contact.html" class="u-link hover:text-ivory">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="contact.html" class="hidden sm:inline-flex items-center gap-3 border border-brass/60 px-5 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-brass transition hover:bg-brass hover:text-ink">
+          Nous contacter
+          <svg class="h-3 w-3" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 11 11 1M4 1h7v7" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+        </a>
+        <button id="menu-btn" class="lg:hidden flex h-11 w-11 flex-col items-center justify-center gap-1.5 text-ivory" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+          <span class="h-px w-6 bg-current transition"></span>
+          <span class="h-px w-6 bg-current transition"></span>
+        </button>
       </div>
     </div>
 
-    <div class="foot__bottom">
-      <p>Copyright ©<span data-year>2026</span> <strong>Cabinet Massoma</strong> — Propulsé par Honowa Technologies</p>
-      <div class="foot__marks">
-        <span class="mono mono--sm">Conseil agréé OAPI</span><span class="mono mono--sm">•</span><span class="mono mono--sm">Standard normatif OHADA</span><span class="mono mono--sm">•</span><span class="mono mono--sm">IAS Paris</span><span class="mono mono--sm">•</span><span class="mono mono--sm">Expertise BIT &amp; GICAM</span>
+    <div id="mobile-menu" class="lg:hidden hidden max-h-[calc(100svh-5rem)] overflow-y-auto border-t border-brass/20 bg-ink">
+      <nav aria-label="Navigation mobile" class="px-4 py-8 sm:px-8">
+        <ul class="space-y-5 font-display text-3xl text-ivory">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#a-propos">A Propos</a></li>
+          <li>
+            <a href="index.html#domaines">Domaines d'intervention</a>
+            <ul class="mt-4 space-y-3 border-l border-brass/30 pl-5 font-sans text-base text-ivory/70">
+              <li><a href="audit-social.html">Audit Social</a></li>
+              <li><a href="droit-prive.html">Droit Privé — vue d'ensemble</a></li>
+              <li><a href="droit-civil.html">Droit Civil</a></li>
+              <li><a href="droit-social.html">Droit Social</a></li>
+              <li><a href="droit-maritime.html">Droit Maritime</a></li>
+              <li><a href="droit-des-affaires.html">Droit des Affaires</a></li>
+              <li><a href="droit-propriete-intellectuelle.html" aria-current="page" class="text-brass">Droit de la Propriété Intellectuelle</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ================= HÉRO ================= -->
+    <section aria-labelledby="page-title" class="grain guides relative isolate overflow-hidden bg-ink text-ivory">
+      <div aria-hidden="true" class="pointer-events-none absolute -right-40 -top-40 -z-10 h-[46rem] w-[46rem] rounded-full bg-wouri/45 blur-[140px]"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute -bottom-60 -left-40 -z-10 h-[34rem] w-[34rem] rounded-full bg-brass/10 blur-[120px]"></div>
+
+      <div class="mx-auto grid max-w-[1400px] grid-cols-12 gap-x-6 px-4 pb-24 pt-32 sm:px-8 lg:pb-28 lg:pt-40">
+        <div class="col-span-12 lg:col-span-7">
+          <nav aria-label="Fil d'Ariane">
+            <ol class="flex flex-wrap items-center gap-2 font-mono text-[0.68rem] uppercase tracking-[0.18em] text-ivory/50">
+              <li><a href="index.html" class="hover:text-brass">Accueil</a></li>
+              <li aria-hidden="true">/</li>
+              <li><a href="index.html#domaines" class="hover:text-brass">Domaines d'intervention</a></li>
+              <li aria-hidden="true">/</li>
+              <li aria-current="page" class="text-brass">Droit de la Propriété Intellectuelle</li>
+            </ol>
+          </nav>
+
+          <p class="eyebrow mt-12 flex items-center gap-4 text-brass"><span class="h-px w-10 shrink-0 bg-brass"></span> Mandataire &amp; Conseil OAPI • Droit des Actifs Immatériels</p>
+          <h1 id="page-title" class="mt-6 font-display font-light leading-[0.98] tracking-[-0.02em] text-[clamp(2.4rem,5.6vw,5.2rem)]">
+            <span class="line-mask"><span>Droit de la Propriété Intellectuelle &amp;</span></span>
+            <span class="line-mask"><span><em class="italic text-brass">Valorisation des Actifs Immatériels</em></span></span>
+          </h1>
+          <p class="mt-8 max-w-2xl text-[1.05rem] leading-relaxed text-ivory/70 reveal" data-delay="1">
+            Sécurisation unitaire sur les 17 États membres de l'OAPI, pilotage stratégique de portefeuilles
+            de brevets et de marques, négociation de licences technologiques et défense contentieuse contre
+            la contrefaçon et le pillage d'actifs immatériels. Le Cabinet Massoma accompagne les directions
+            juridiques, les fonds d'investissement et les groupes industriels dans la constitution, la
+            valorisation et la défense de leur capital immatériel.
+          </p>
+
+          <dl class="mt-10 grid max-w-2xl grid-cols-1 gap-px bg-ivory/10 sm:grid-cols-3 reveal" data-delay="2">
+            <div class="flex flex-col-reverse bg-ink p-5">
+              <dt class="mt-2 eyebrow text-[0.58rem] leading-relaxed text-ivory/55">Protection Unitaire<br>OAPI</dt>
+              <dd class="font-display text-3xl text-brass">17 États</dd>
+            </div>
+            <div class="flex flex-col-reverse bg-ink p-5">
+              <dt class="mt-2 eyebrow text-[0.58rem] leading-relaxed text-ivory/55">Pratique<br>Barreau &amp; OAPI</dt>
+              <dd class="font-display text-3xl text-brass">20+ Ans</dd>
+            </div>
+            <div class="flex flex-col-reverse bg-ink p-5">
+              <dt class="mt-2 eyebrow text-[0.58rem] leading-relaxed text-ivory/55">Standards<br>Grands Cabinets</dt>
+              <dd class="font-display text-3xl text-brass">Tier 1</dd>
+            </div>
+          </dl>
+
+          <div class="mt-10 flex flex-wrap items-center gap-4 reveal" data-delay="3">
+            <a href="#contact" class="group inline-flex items-center gap-4 bg-brass px-7 py-4 text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-ink transition hover:bg-ivory">
+              Auditer votre portefeuille PI
+              <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span>
+            </a>
+            <a href="#expertises" class="inline-flex items-center gap-3 px-2 py-4 text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-ivory/80 hover:text-ivory">
+              <span class="u-link">Découvrir les 6 piliers</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="relative col-span-12 mt-16 lg:col-span-5 lg:mt-6">
+          <figure class="relative mx-auto w-full max-w-[30rem] reveal" data-delay="1">
+            <div class="overflow-hidden rounded-t-[999px] border border-brass/30 p-3">
+              <img src="images/hero-cour-appel-bonanjo-560.webp" srcset="images/hero-cour-appel-bonanjo-560.webp 560w, images/hero-cour-appel-bonanjo-1120.webp 1120w" sizes="(min-width: 1024px) 30rem, 90vw"
+                   alt="Avocat relisant un dossier relié à son bureau, face aux toits de Douala au coucher du soleil"
+                   width="1120" height="1400" fetchpriority="high"
+                   class="aspect-[4/5] w-full rounded-t-[999px] object-cover">
+            </div>
+            <figcaption class="absolute -bottom-10 -left-4 w-[82%] bg-ivory p-6 text-ink shadow-2xl shadow-black/40 sm:-left-10">
+              <p class="eyebrow text-[0.6rem] text-brass-2">Espace OAPI · 17 États</p>
+              <p class="mt-3 font-display text-lg leading-snug">Brevets · Marques · Dessins &amp; Modèles · Contentieux</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VISION / DOCTRINE ================= -->
+    <section id="vision" aria-labelledby="vision-title" class="bg-paper py-24 lg:py-32">
+      <div class="mx-auto max-w-[1400px] px-4 sm:px-8">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div class="lg:col-span-8 reveal">
+            <p class="eyebrow flex items-center gap-4 text-brass-2"><span class="h-px w-10 shrink-0 bg-brass-2"></span> Art. I — Doctrine</p>
+            <h2 id="vision-title" class="mt-6 font-display text-[clamp(2.1rem,4.2vw,3.6rem)] font-light leading-[1.05] tracking-tight">La Propriété Intellectuelle, <em class="italic text-wouri">Premier Moteur de Valorisation</em> et Barrière Concurrentielle</h2>
+          </div>
+          <p class="eyebrow text-[0.62rem] leading-loose text-ink/50 lg:col-span-3 lg:col-start-10 reveal" data-delay="1">Souveraineté immatérielle<br>Rigueur internationale</p>
+        </div>
+
+        <div class="mt-16 grid gap-14 lg:grid-cols-12">
+          <figure class="relative lg:col-span-5 reveal">
+            <img src="images/apropos-bibliotheque-560.webp" srcset="images/apropos-bibliotheque-560.webp 560w, images/apropos-bibliotheque-1120.webp 1120w" sizes="(min-width: 1024px) 38vw, 92vw" alt="Bibliothèque juridique d'un cabinet d'avocats, codes reliés et lampe de banquier sur le bureau" width="1120" height="1400" loading="lazy" class="aspect-[4/5] w-full object-cover">
+            <div aria-hidden="true" class="absolute -bottom-5 -right-5 hidden h-full w-full border border-brass/50 sm:block" style="z-index:-1"></div>
+            <figcaption class="mt-8 flex gap-4 text-sm leading-relaxed text-ink/60">
+              <span class="font-mono text-xs text-brass-2">PL. I</span>
+              <span>Défense des droits incorporels — du préventif au contentieux de haute intensité.</span>
+            </figcaption>
+          </figure>
+          <div class="lg:col-span-6 lg:col-start-7 reveal" data-delay="1">
+            <p class="font-display text-2xl font-light leading-snug sm:text-[1.6rem]">
+              Dans une économie africaine et mondiale transformée par la numérisation, la transition industrielle
+              et l'émergence de consortiums transfrontaliers, les actifs immatériels — marques notoires, brevets
+              technologiques, dessins industriels, logiciels, secrets d'affaires et bases de données — représentent
+              désormais plus de 80 % de la valeur économique réelle des entreprises de premier rang.
+            </p>
+            <p class="mt-8 text-lg leading-relaxed text-ink/70">
+              Le Cabinet Massoma déploie une pratique de pointe conçue pour les directions juridiques de
+              multinationales, les fonds d'investissement, les groupes pharmaceutiques, les géants des télécoms
+              et les institutions financières. Calquée sur l'excellence opérationnelle des cabinets internationaux,
+              cette pratique offre une maîtrise absolue de l'Accord de Bangui révisé — droit supranational unitaire
+              liant 17 nations africaines — combinée à une capacité d'intervention judiciaire et arbitrale immédiate.
+            </p>
+            <p class="mt-5 text-lg leading-relaxed text-ink/70">
+              L'ancrage au cœur du pôle économique de Douala-Bonanjo, à proximité immédiate de Yaoundé, siège de
+              l'OAPI, et l'admission au Barreau de Versailles permettent d'orchestrer une protection continue,
+              du préventif au contentieux de haute intensité.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-20 grid gap-6 md:grid-cols-3">
+          <article class="border border-line bg-ivory p-8 reveal">
+            <span aria-hidden="true" class="block h-1.5 w-1.5 rotate-45 bg-brass"></span>
+            <h3 class="mt-6 font-display text-2xl">Effet unitaire direct OAPI</h3>
+            <p class="mt-3 leading-relaxed text-ink/70">Un seul titre délivré confère une exclusivité opposable sans validation locale dans 17 juridictions souveraines d'Afrique centrale et de l'Ouest.</p>
+          </article>
+          <article class="border border-line bg-ivory p-8 reveal" data-delay="1">
+            <span aria-hidden="true" class="block h-1.5 w-1.5 rotate-45 bg-brass"></span>
+            <h3 class="mt-6 font-display text-2xl">Audits de due diligence M&amp;A</h3>
+            <p class="mt-3 leading-relaxed text-ink/70">Vérification de la chaîne de titularité, purge des antériorités, évaluation financière et nantissement des actifs immatériels sous les Actes uniformes OHADA.</p>
+          </article>
+          <article class="border border-line bg-ivory p-8 reveal" data-delay="2">
+            <span aria-hidden="true" class="block h-1.5 w-1.5 rotate-45 bg-brass"></span>
+            <h3 class="mt-6 font-display text-2xl">Tolérance zéro contrefaçon</h3>
+            <p class="mt-3 leading-relaxed text-ink/70">Déploiement de saisies-contrefaçons judiciaires et de blocages douaniers d'urgence aux terminaux portuaires de Douala et de Kribi, avec exécution coordonnée des mesures.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LES SIX PILIERS ================= -->
+    <section id="expertises" aria-labelledby="expertises-title" class="bg-ivory py-24 lg:py-32">
+      <div class="mx-auto max-w-[1400px] px-4 sm:px-8">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div class="lg:col-span-8 reveal">
+            <p class="eyebrow flex items-center gap-4 text-brass-2"><span class="h-px w-10 shrink-0 bg-brass-2"></span> Art. II — Domaines d'excellence</p>
+            <h2 id="expertises-title" class="mt-6 font-display text-[clamp(2.1rem,4.2vw,3.6rem)] font-light leading-[1.05] tracking-tight">Les 6 Piliers Stratégiques de la <em class="italic text-wouri">Propriété Intellectuelle Corporate</em></h2>
+          </div>
+          <p class="eyebrow text-[0.62rem] leading-loose text-ink/50 lg:col-span-3 lg:col-start-10 reveal" data-delay="1">OAPI &amp; international<br>De la création au verrouillage</p>
+        </div>
+
+        <div class="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article class="flex flex-col border border-line bg-paper p-8 sm:p-10 reveal">
+            <span class="font-mono text-xs text-brass-2">01</span>
+            <h3 class="mt-6 font-display text-2xl sm:text-[1.7rem] leading-tight">Brevets d'Invention &amp; Certificats d'Utilité OAPI</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Protection brevetable des innovations scientifiques, industrielles et biotechnologiques, de la rédaction des revendications jusqu'à l'entrée en phase régionale PCT.</p>
+            <ul class="mt-6 space-y-3 border-t border-ink/10 pt-6 text-[0.95rem] leading-relaxed text-ink/75">
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Dépôts directs OAPI et extensions internationales par voie PCT</li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Études de brevetabilité et analyses de liberté d'exploitation (FTO)</li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Régime des inventions de salariés et clauses d'attribution</li>
+            </ul>
+          </article>
+
+          <article class="flex flex-col border border-line bg-paper p-8 sm:p-10 reveal" data-delay="1">
+            <span class="font-mono text-xs text-brass-2">02</span>
+            <h3 class="mt-6 font-display text-2xl sm:text-[1.7rem] leading-tight">Marques de Produits, Services &amp; Noms Commerciaux</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Constitution de monopoles d'exploitation régionaux par le dépôt stratégique multimarque, la gestion des portefeuilles et la défense contre le cybersquattage.</p>
+            <ul class="mt-6 space-y-3 border-t border-ink/10 pt-6 text-[0.95rem] leading-relaxed text-ink/75">
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Recherches d'antériorités phonétiques, visuelles et conceptuelles</li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Dépôts OAPI multimarques (Classification de Nice révisée)</li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Procédures d'opposition formelle contre des dépôts frauduleux</li>
+            </ul>
+          </article>
+
+          <article class="flex flex-col border border-line bg-paper p-8 sm:p-10 reveal" data-delay="2">
+            <span class="font-mono text-xs text-brass-2">03</span>
+            <h3 class="mt-6 font-display text-2xl sm:text-[1.7rem] leading-tight">Dessins, Modèles Industriels &amp; Packaging</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Verrouillage de l'apparence esthétique, des formes industrielles tridimensionnelles, des contenants, du packaging et de l'identité visuelle de vos gammes.</p>
+            <ul class="mt-6 space-y-3 border-t border-ink/10 pt-6 text-[0.95rem] leading-relaxed text-ink/75">
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Enregistrement unitaire sous l'Annexe IV de l'Accord de Bangui</li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Protection cumulée : droit d'auteur &amp; dessins et modèles</li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Lutte contre le parasitisme et l'imitation servile de packagings</li>
+            </ul>
+          </article>
+
+          <article class="flex flex-col border border-line bg-paper p-8 sm:p-10 reveal">
+            <span class="font-mono text-xs text-brass-2">04</span>
+            <h3 class="mt-6 font-display text-2xl sm:text-[1.7rem] leading-tight">Contrats de Licences, Cessions &amp; Transfert de Technologie</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Structuration contractuelle hermétique pour l'exploitation commerciale, les franchises internationales, les accords de R&amp;D et la transmission de savoir-faire.</p>
+            <ul class="mt-6 space-y-3 border-t border-ink/10 pt-6 text-[0.95rem] leading-relaxed text-ink/75">
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Rédaction de licences exclusives / non-exclusives et calcul de royalties</li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Validation réglementaire des contrats de transfert de technologie</li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Inscription obligatoire des actes aux registres spéciaux de l'OAPI</li>
+            </ul>
+          </article>
+
+          <article class="flex flex-col border border-line bg-paper p-8 sm:p-10 reveal" data-delay="1">
+            <span class="font-mono text-xs text-brass-2">05</span>
+            <h3 class="mt-6 font-display text-2xl sm:text-[1.7rem] leading-tight">Audits de Portefeuille, Due Diligence PI &amp; M&amp;A</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Audit probatoire d'acquisition, sécurisation de la chaîne de transmission des droits et valorisation bilancielle lors d'opérations de haut de bilan.</p>
+            <ul class="mt-6 space-y-3 border-t border-ink/10 pt-6 text-[0.95rem] leading-relaxed text-ink/75">
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Audit d'intégrité de la chaîne de titularité et détection de failles</li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Nantissement de marques, brevets et fonds de commerce (AUS OHADA)</li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Modélisation juridique des risques PI lors de prises de participation</li>
+            </ul>
+          </article>
+
+          <article class="flex flex-col bg-ink-2 p-8 text-ivory sm:p-10 reveal" data-delay="2">
+            <span class="font-mono text-xs text-brass">06</span>
+            <h3 class="mt-6 font-display text-2xl sm:text-[1.7rem] leading-tight">Saisies-Contrefaçons, Douanes &amp; Recours OAPI (CSR)</h3>
+            <p class="mt-4 leading-relaxed text-ivory/70">Offensive judiciaire d'urgence pour neutraliser la contrefaçon, faire intercepter les conteneurs illicites et plaider devant la Commission Supérieure de Recours.</p>
+            <ul class="mt-6 space-y-3 border-t border-ivory/15 pt-6 text-[0.95rem] leading-relaxed text-ivory/80">
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Requêtes d'urgence en ordonnance de saisie-contrefaçon (TGI)</li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Surveillance douanière et retenues aux frontières portuaires</li>
+              <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Plaidoiries devant la Commission Supérieure de Recours à Yaoundé</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MATRICE COMPARATIVE ================= -->
+    <section id="matrice" aria-labelledby="matrice-title" class="bg-paper py-24 lg:py-32">
+      <div class="mx-auto max-w-[1400px] px-4 sm:px-8">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div class="lg:col-span-8 reveal">
+            <p class="eyebrow flex items-center gap-4 text-brass-2"><span class="h-px w-10 shrink-0 bg-brass-2"></span> Art. III — Analyse normative stratégique</p>
+            <h2 id="matrice-title" class="mt-6 font-display text-[clamp(2.1rem,4.2vw,3.6rem)] font-light leading-[1.05] tracking-tight">Matrice Comparatiste : <em class="italic text-wouri">Système OAPI</em> vs Régimes Nationaux &amp; Traités Internationaux</h2>
+          </div>
+          <p class="eyebrow text-[0.62rem] leading-loose text-ink/50 lg:col-span-3 lg:col-start-10 reveal" data-delay="1">Accord de Bangui révisé<br>Puissance de frappe panafricaine</p>
+        </div>
+
+        <div class="mt-14 overflow-x-auto reveal" data-delay="1">
+          <table class="w-full min-w-[920px] border-collapse text-left">
+            <caption class="sr-only">Comparaison entre le système unitaire OAPI, les systèmes nationaux et traités internationaux, et la valeur ajoutée du Cabinet Massoma</caption>
+            <thead>
+              <tr class="border-b-2 border-ink">
+                <th scope="col" class="w-[16%] py-4 pr-6 eyebrow text-[0.62rem] font-medium text-ink">Paramètre clé</th>
+                <th scope="col" class="w-[28%] py-4 pr-6 eyebrow text-[0.62rem] font-medium text-ink">Système unitaire OAPI (Accord de Bangui)</th>
+                <th scope="col" class="w-[28%] py-4 pr-6 eyebrow text-[0.62rem] font-medium text-ink">Systèmes nationaux &amp; traités internationaux</th>
+                <th scope="col" class="py-4 eyebrow text-[0.62rem] font-medium text-brass-2">Valeur ajoutée &amp; rôle du Cabinet Massoma</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-ink/10 align-top">
+              <tr>
+                <th scope="row" class="py-6 pr-6 font-display text-xl font-normal">Portée territoriale</th>
+                <td class="py-6 pr-6 leading-relaxed text-ink/75">17 États immédiats : un titre unique couvre simultanément le Cameroun, la Côte d'Ivoire, le Sénégal, le Gabon, etc.</td>
+                <td class="py-6 pr-6 leading-relaxed text-ink/60">Multiplication des dépôts pays par pays, coûts cumulés et risques d'asymétrie juridique.</td>
+                <td class="bg-ivory px-5 py-6 leading-relaxed text-ink/80">Centralisation unifiée des dépôts, des renouvellements et de la gestion globale de portefeuille depuis notre bureau de Douala.</td>
+              </tr>
+              <tr>
+                <th scope="row" class="py-6 pr-6 font-display text-xl font-normal">Mandat obligatoire</th>
+                <td class="py-6 pr-6 leading-relaxed text-ink/75">Mandat légal exclusif : obligation stricte de recourir à un mandataire agréé ou à un avocat pour toute entité étrangère.</td>
+                <td class="py-6 pr-6 leading-relaxed text-ink/60">Variable selon les législations nationales, souvent fragmenté entre correspondants locaux.</td>
+                <td class="bg-ivory px-5 py-6 leading-relaxed text-ink/80">Représentation directe accréditée sans intermédiaire, garantissant une réactivité immédiate et des coûts maîtrisés.</td>
+              </tr>
+              <tr>
+                <th scope="row" class="py-6 pr-6 font-display text-xl font-normal">Procédures d'opposition</th>
+                <td class="py-6 pr-6 leading-relaxed text-ink/75">Délai légal de 6 mois à compter de la publication au BOPI pour contester un enregistrement devant l'OAPI.</td>
+                <td class="py-6 pr-6 leading-relaxed text-ink/60">Délais disparates (de 30 jours à 3 mois) augmentant le risque d'expiration des recours.</td>
+                <td class="bg-ivory px-5 py-6 leading-relaxed text-ink/80">Veille active systématique sur les publications du BOPI et déclenchement d'oppositions blindées en amont.</td>
+              </tr>
+              <tr>
+                <th scope="row" class="py-6 pr-6 font-display text-xl font-normal">Voie de saisie d'urgence</th>
+                <td class="py-6 pr-6 leading-relaxed text-ink/75">Saisie-contrefaçon par ordonnance sur requête présidentielle, avec assistance d'experts et saisie réelle.</td>
+                <td class="py-6 pr-6 leading-relaxed text-ink/60">Procédures parfois limitées au simple constat d'huissier, sans séquestre physique immédiat.</td>
+                <td class="bg-ivory px-5 py-6 leading-relaxed text-ink/80">Obtention d'ordonnances en référé d'heure à heure devant le TGI du Wouri et exécution coordonnée avec les forces de sécurité.</td>
+              </tr>
+              <tr>
+                <th scope="row" class="py-6 pr-6 font-display text-xl font-normal">Recours juridictionnel</th>
+                <td class="py-6 pr-6 leading-relaxed text-ink/75">Double degré : Commission Supérieure de Recours (CSR) à Yaoundé et cours nationales de fond.</td>
+                <td class="py-6 pr-6 leading-relaxed text-ink/60">Tribunaux administratifs nationaux souvent engorgés et peu familiers des brevets de haute technologie.</td>
+                <td class="bg-ivory px-5 py-6 leading-relaxed text-ink/80">Pratique réputée de rédaction de mémoires contentieux et de plaidoiries devant la CSR et les juridictions de cassation.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-4 font-mono text-[0.65rem] uppercase tracking-[0.18em] text-ink/40 md:hidden" aria-hidden="true">← Faire défiler le tableau →</p>
+      </div>
+    </section>
+
+    <!-- ================= JURIDICTIONS ================= -->
+    <section id="juridictions" aria-labelledby="juridictions-title" class="bg-ivory py-24 lg:py-32">
+      <div class="mx-auto max-w-[1400px] px-4 sm:px-8">
+        <div class="max-w-4xl reveal">
+          <p class="eyebrow flex items-center gap-4 text-brass-2"><span class="h-px w-10 shrink-0 bg-brass-2"></span> Art. IV — Rayonnement judiciaire</p>
+          <h2 id="juridictions-title" class="mt-6 font-display text-[clamp(2.1rem,4.2vw,3.6rem)] font-light leading-[1.05] tracking-tight">Une Présence Directe au Cœur des <em class="italic text-wouri">Centres de Décision</em> de la Propriété Intellectuelle</h2>
+        </div>
+
+        <div class="mt-16 grid gap-14 lg:grid-cols-12">
+          <div class="lg:col-span-5 reveal">
+            <blockquote class="border-l-2 border-brass bg-paper p-8 sm:p-10">
+              <p class="eyebrow text-[0.62rem] text-brass-2">Plaidoirie institutionnelle &amp; maîtrise des prétoires</p>
+              <p class="mt-5 font-display text-2xl font-light leading-snug">Intervention directe de Maître Massoma devant la Commission Supérieure de Recours à Yaoundé, les Tribunaux de Grande Instance, la Cour d'Appel du Littoral et les juridictions européennes du Barreau de Versailles.</p>
+            </blockquote>
+            <p class="mt-8 flex gap-4 text-sm leading-relaxed text-ink/60">
+              <span class="font-mono text-xs text-brass-2">PL. II</span>
+              <span>Maîtrise des prétoires — TGI du Wouri, Cour d'Appel du Littoral et juridictions du Barreau de Versailles.</span>
+            </p>
+          </div>
+
+          <div class="grid gap-px border border-line bg-line sm:grid-cols-2 lg:col-span-7 reveal" data-delay="1">
+            <article class="bg-paper p-8">
+              <p class="eyebrow text-[0.6rem] text-brass-2">Yaoundé</p>
+              <h3 class="mt-4 font-display text-2xl leading-tight">Siège de l'OAPI &amp; Commission Supérieure de Recours</h3>
+              <p class="mt-3 leading-relaxed text-ink/70">Représentation directe auprès de la Direction Générale de l'OAPI et plaidoiries devant la Commission Supérieure de Recours, juridiction d'appel suprême de l'Organisation. Suivi des oppositions, des rejets d'enregistrement et des recours préfixes de 60 jours.</p>
+            </article>
+            <article class="bg-paper p-8">
+              <p class="eyebrow text-[0.6rem] text-brass-2">Douala</p>
+              <h3 class="mt-4 font-display text-2xl leading-tight">TPI &amp; TGI du Wouri</h3>
+              <p class="mt-3 leading-relaxed text-ink/70">Ordonnances de saisies-contrefaçons d'urgence, référés interdictifs et actions au fond en dommages-intérêts civils et pénaux devant le Tribunal de Première Instance et le Tribunal de Grande Instance du Wouri.</p>
+            </article>
+            <article class="bg-paper p-8">
+              <p class="eyebrow text-[0.6rem] text-brass-2">Douala &amp; Kribi</p>
+              <h3 class="mt-4 font-display text-2xl leading-tight">Douanes &amp; Ports de Douala et de Kribi</h3>
+              <p class="mt-3 leading-relaxed text-ink/70">Demandes de retenue douanière, blocage immédiat de cargaisons suspectes et poursuites douanières pour contrefaçon aux terminaux portuaires de Douala et de Kribi.</p>
+            </article>
+            <article class="bg-paper p-8">
+              <p class="eyebrow text-[0.6rem] text-brass-2">Versailles &amp; Genève</p>
+              <h3 class="mt-4 font-display text-2xl leading-tight">Barreau de Versailles &amp; OMPI Genève</h3>
+              <p class="mt-3 leading-relaxed text-ink/70">Pilotage des litiges internationaux, coordination des dépôts PCT et Madrid et contentieux transfrontaliers France–Afrique depuis le Barreau de Versailles, en lien avec l'OMPI à Genève.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MÉTHODE EN QUATRE PHASES ================= -->
+    <section id="methode" aria-labelledby="methode-title" class="grain relative overflow-hidden bg-ink py-24 text-ivory lg:py-32">
+      <div aria-hidden="true" class="absolute -right-40 top-0 h-[30rem] w-[30rem] rounded-full bg-wouri/40 blur-[120px]"></div>
+      <div class="relative mx-auto max-w-[1400px] px-4 sm:px-8">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div class="lg:col-span-8 reveal">
+            <p class="eyebrow text-brass">Art. V — Rigueur méthodologique</p>
+            <h2 id="methode-title" class="mt-6 font-display text-[clamp(2.1rem,4.2vw,3.6rem)] font-light leading-[1.05]">Une Démarche Stratégique en <em class="italic text-brass">4 Phases d'Ingénierie</em></h2>
+          </div>
+          <p class="eyebrow text-[0.62rem] leading-loose text-ivory/50 lg:col-span-3 lg:col-start-10 reveal" data-delay="1">Audit · Dépôt · Valorisation · Défense</p>
+        </div>
+
+        <ol class="relative mt-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          <li aria-hidden="true" class="absolute left-0 right-0 top-6 hidden h-px bg-gradient-to-r from-brass/70 via-brass/30 to-transparent lg:block"></li>
+          <li class="relative reveal">
+            <span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-brass bg-ink font-mono text-sm text-brass">01</span>
+            <h3 class="mt-8 font-display text-2xl">Audit d'Antériorité &amp; Analyse FTO</h3>
+            <p class="mt-3 leading-relaxed text-ivory/65">Cartographie approfondie des droits existants, recherches de similarités au sein des bases OAPI et OMPI, et évaluation précise de la liberté d'exploitation commerciale.</p>
+          </li>
+          <li class="relative reveal" data-delay="1">
+            <span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-brass bg-ink font-mono text-sm text-brass">02</span>
+            <h3 class="mt-8 font-display text-2xl">Dépôt Unitaire &amp; Verrouillage OAPI</h3>
+            <p class="mt-3 leading-relaxed text-ivory/65">Structuration des libellés et des revendications, dépôts multimarques ou brevets auprès de l'OAPI, revendications de priorité internationale et suivi des formalités d'enregistrement.</p>
+          </li>
+          <li class="relative reveal" data-delay="2">
+            <span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-brass bg-ink font-mono text-sm text-brass">03</span>
+            <h3 class="mt-8 font-display text-2xl">Valorisation Contractuelle &amp; Licences</h3>
+            <p class="mt-3 leading-relaxed text-ivory/65">Négociation et rédaction des contrats de transfert de technologie, licences et cessions, assortis de l'inscription légale aux registres spéciaux pour opposabilité absolue aux tiers.</p>
+          </li>
+          <li class="relative reveal" data-delay="3">
+            <span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-brass bg-brass font-mono text-sm text-ink">04</span>
+            <h3 class="mt-8 font-display text-2xl">Surveillance Active &amp; Réponse Contentieuse</h3>
+            <p class="mt-3 leading-relaxed text-ivory/65">Monitoring continu des dépôts concurrents, déclenchement immédiat des saisies-contrefaçons et défense devant les tribunaux et la Commission Supérieure de Recours.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section id="faq" aria-labelledby="faq-title" class="bg-paper py-24 lg:py-32">
+      <div class="mx-auto grid max-w-[1400px] gap-14 px-4 sm:px-8 lg:grid-cols-12">
+        <div class="lg:col-span-4 reveal">
+          <p class="eyebrow flex items-center gap-4 text-brass-2"><span class="h-px w-10 shrink-0 bg-brass-2"></span> Art. VI — Éclairages</p>
+          <h2 id="faq-title" class="mt-6 font-display text-[clamp(2rem,3.6vw,3rem)] font-light leading-[1.08]">Questions Stratégiques sur la Propriété Intellectuelle OAPI &amp; Internationale</h2>
+          <p class="eyebrow mt-6 text-[0.62rem] leading-loose text-ink/50">Cible : directions juridiques<br>et comités de direction</p>
+        </div>
+        <div class="lg:col-span-8 reveal" data-delay="1">
+          <details class="border-t border-ink/15 py-6" open>
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl"><span class="mr-3 font-mono text-xs align-middle text-brass-2">01</span>Comment fonctionne le principe de protection unitaire de l'OAPI pour une multinationale ?</h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <div class="mt-4 max-w-2xl space-y-4 leading-relaxed text-ink/70">
+              <p>L'Organisation Africaine de la Propriété Intellectuelle (OAPI), instituée par l'Accord de Bangui révisé, applique un principe fondamental d'effet unitaire absolu. Un seul dépôt de brevet d'invention, de marque de produits ou services, ou de dessin et modèle industriel, effectué auprès de l'Organisation à Yaoundé, produit immédiatement et simultanément ses pleins effets juridiques dans chacun des 17 États membres : Cameroun, Bénin, Burkina Faso, Centrafrique, Comores, Congo, Côte d'Ivoire, Gabon, Guinée, Guinée-Bissau, Guinée Équatoriale, Mali, Mauritanie, Niger, Sénégal, Tchad et Togo.</p>
+              <p>Il n'existe aucune phase de validation nationale individuelle au sein des États membres. Ce mécanisme garantit une sécurité juridique supranationale sans équivalent, supprime les risques de disparités législatives locales et optimise de manière drastique les budgets de protection pour les groupes internationaux.</p>
+            </div>
+          </details>
+          <details class="border-t border-ink/15 py-6">
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl"><span class="mr-3 font-mono text-xs align-middle text-brass-2">02</span>Quelle est la procédure légale d'urgence pour ordonner une saisie-contrefaçon au Cameroun ?</h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <div class="mt-4 max-w-2xl space-y-4 leading-relaxed text-ink/70">
+              <p>La saisie-contrefaçon est l'outil probatoire et conservatoire le plus puissant prévu par l'Accord de Bangui. Dès qu'un acte de contrefaçon est suspecté — stocks commerciaux, entrepôt ou plateforme numérique — le titulaire du titre de PI dépose une requête unilatérale d'extrême urgence devant le Président du Tribunal de Grande Instance territorialement compétent, notamment le TGI du Wouri à Douala pour le poumon économique du pays.</p>
+              <p>L'ordonnance sur requête autorise un commissaire de justice (huissier), assisté au besoin d'un collège d'experts techniques et de la force publique, à investir les lieux sans préavis pour dresser un inventaire exhaustif, prélever des échantillons probatoires et procéder à la mise sous séquestre effective des marchandises et outils de fabrication illicites. Le demandeur est ensuite tenu d'assigner au fond dans un délai légal strict — généralement 10 à 30 jours selon le type de titre — sous peine de nullité de la mesure avec indemnisation du saisi.</p>
+            </div>
+          </details>
+          <details class="border-t border-ink/15 py-6">
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl"><span class="mr-3 font-mono text-xs align-middle text-brass-2">03</span>Pourquoi la constitution d'un mandataire agréé est-elle obligatoire pour les entreprises étrangères ?</h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <div class="mt-4 max-w-2xl space-y-4 leading-relaxed text-ink/70">
+              <p>L'article 6 de l'Accord de Bangui révisé dispose de manière impérative que tout déposant ou titulaire de droits de propriété industrielle dont le domicile ou le siège social se situe en dehors de l'espace OAPI est tenu de se faire représenter par un mandataire agréé ou un avocat inscrit au tableau de l'un des barreaux des États membres pour accomplir tout acte auprès de l'Organisation.</p>
+              <p>Le Cabinet Massoma, fondé et dirigé par des avocats inscrits au Barreau du Cameroun et au Barreau de Versailles, assure cette mission de représentation directe. Nous prenons en charge la réception des notifications officielles, la régularisation des oppositions, le paiement des annuités et le pilotage des contentieux sans dépendre d'intermédiaires informels.</p>
+            </div>
+          </details>
+          <details class="border-t border-ink/15 py-6">
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl"><span class="mr-3 font-mono text-xs align-middle text-brass-2">04</span>Comment contester un rejet d'enregistrement ou un titre concurrent devant la Commission Supérieure de Recours (CSR) ?</h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <div class="mt-4 max-w-2xl space-y-4 leading-relaxed text-ink/70">
+              <p>La Commission Supérieure de Recours (CSR) constitue la juridiction d'appel suprême au sein de l'OAPI, siégeant à Yaoundé. Elle est compétente pour trancher souverainement les litiges nés des décisions du Directeur Général de l'Organisation : rejet d'une demande de brevet ou de marque, contestations sur oppositions de tiers, refus d'inscription modificative.</p>
+              <p>Le recours doit être déposé dans un délai préfixe de 60 jours suivant la notification formelle de la décision de rejet. La procédure est écrite et contradictoire, avec la possibilité d'organiser des plaidoiries orales devant le collège des magistrats de la Commission. Le Cabinet Massoma rédige les mémoires ampliatifs et soutient les plaidoiries de haute précision pour rétablir les prérogatives exclusives de ses clients.</p>
+            </div>
+          </details>
+          <details class="border-y border-ink/15 py-6">
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl"><span class="mr-3 font-mono text-xs align-middle text-brass-2">05</span>Quelles formalités rendent opposables une licence ou une cession, et comment le droit OAPI protège-t-il les logiciels, bases de données et secrets d'affaires ?</h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <div class="mt-4 max-w-2xl space-y-4 leading-relaxed text-ink/70">
+              <p>Pour être valable et pleinement opposable, toute cession, concession de licence d'exploitation ou mise en gage d'un droit de propriété industrielle en zone OAPI doit être constatée par un acte écrit daté et signé par les parties dûment habilitées. L'acte doit obligatoirement faire l'objet d'une inscription au Registre Spécial de l'OAPI et d'une publication au Bulletin Officiel de la Propriété Industrielle (BOPI). En l'absence de cette inscription, la licence ou la cession demeure inopposable aux tiers, ce qui priverait le licencié du droit d'agir en saisie-contrefaçon et exposerait les flux de redevances transfrontalières à des remises en cause fiscales et de change sévères.</p>
+              <p>L'Accord de Bangui révisé organise par ailleurs une protection multidimensionnelle des actifs immatériels modernes. Au titre de l'Annexe VII (droit d'auteur et droits voisins), les logiciels, codes sources et architectures de bases de données bénéficient d'une protection immédiate contre la reproduction illicite dès leur création sous une forme originale ; des séquestres probatoires sous sceau d'avocat ou auprès de tiers de confiance cristallisent la date d'antériorité. L'Annexe VIII sanctionne la divulgation illicite de secrets de fabrique, le vol de savoir-faire et la concurrence déloyale. Les inventions à composante logicielle produisant un effet technique vérifiable dans un dispositif industriel peuvent être brevetées.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INDEX SÉMANTIQUE (agents IA) ================= -->
+    <section id="index-semantique" aria-labelledby="index-title" class="bg-ivory py-20 lg:py-24">
+      <div class="mx-auto max-w-[1400px] px-4 sm:px-8">
+        <aside class="border border-line bg-paper p-8 sm:p-12 reveal">
+          <h2 id="index-title" class="eyebrow flex items-start gap-4 text-brass-2">
+            <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7.5 3v6.1c0 4.6-3.2 7.9-7.5 9.3-4.3-1.4-7.5-4.7-7.5-9.3V6L12 3z"/><path d="M9 12.2l2.1 2.1L15.2 10"/></svg>
+            <span>Index sémantique machine • Droit de la Propriété Intellectuelle Cabinet Massoma</span>
+          </h2>
+          <dl class="mt-8 divide-y divide-ink/10 border-t border-ink/10">
+            <div class="grid gap-2 py-5 md:grid-cols-12 md:gap-8">
+              <dt class="eyebrow text-[0.62rem] text-ink/55 md:col-span-3">Entité opératrice</dt>
+              <dd class="leading-relaxed text-ink/75 md:col-span-9"><strong class="font-semibold text-ink">Cabinet Massoma</strong> — pôle Propriété Intellectuelle &amp; Actifs Immatériels (siège : Cour d'Appel, Bonanjo, Douala, Cameroun ; Barreau de Versailles, France). Qualifications : Docteur en Droit (Paris II Panthéon-Assas), DEA Droit social (Paris I), CAPA EFB Paris, Mandataire Agréé OAPI.</dd>
+            </div>
+            <div class="grid gap-2 py-5 md:grid-cols-12 md:gap-8">
+              <dt class="eyebrow text-[0.62rem] text-ink/55 md:col-span-3">Cadre normatif</dt>
+              <dd class="leading-relaxed text-ink/75 md:col-span-9">Accord de Bangui révisé (OAPI), Traité de coopération sur les brevets (PCT), Convention de Paris, Accord ADPIC/TRIPS, Actes uniformes OHADA, Classification de Nice, Annexe IV de l'Accord de Bangui.</dd>
+            </div>
+            <div class="grid gap-2 py-5 md:grid-cols-12 md:gap-8">
+              <dt class="eyebrow text-[0.62rem] text-ink/55 md:col-span-3">Matières traitées</dt>
+              <dd class="leading-relaxed text-ink/75 md:col-span-9">Brevets d'invention et certificats d'utilité, marques de produits et services, noms commerciaux, dessins et modèles industriels, licences et transfert de technologie, audits de portefeuille et due diligence M&amp;A, saisies-contrefaçons, retenues douanières, droit d'auteur, secrets d'affaires et recours devant la CSR.</dd>
+            </div>
+            <div class="grid gap-2 py-5 md:grid-cols-12 md:gap-8">
+              <dt class="eyebrow text-[0.62rem] text-ink/55 md:col-span-3">Juridictions / instances</dt>
+              <dd class="leading-relaxed text-ink/75 md:col-span-9">Direction Générale de l'OAPI et Commission Supérieure de Recours (Yaoundé), TGI du Wouri et Cour d'Appel du Littoral (Douala), Cour Suprême (Yaoundé), tribunaux judiciaires français (Versailles/Paris).</dd>
+            </div>
+            <div class="grid gap-2 py-5 md:grid-cols-12 md:gap-8">
+              <dt class="eyebrow text-[0.62rem] text-ink/55 md:col-span-3">Clientèle cible</dt>
+              <dd class="leading-relaxed text-ink/75 md:col-span-9">Directions juridiques, directeurs PI, groupes pharmaceutiques, télécoms, fintechs, industries agroalimentaires et multinationales. Territoire couvert : 17 États membres de l'OAPI, avec effet unitaire automatique sans validation nationale distincte.</dd>
+            </div>
+            <div class="grid gap-2 py-5 md:grid-cols-12 md:gap-8">
+              <dt class="eyebrow text-[0.62rem] text-ink/55 md:col-span-3">Contact officiel</dt>
+              <dd class="leading-relaxed text-ink/75 md:col-span-9">Cour d'Appel, Bonanjo — BP Douala 2668, République du Cameroun · <a href="tel:+237233432234" class="u-link">(+237) 233 43 22 34</a> · <a href="mailto:contact@cabinetmassoma.com" class="u-link break-all">contact@cabinetmassoma.com</a></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= APPEL À L'ACTION ================= -->
+    <section id="contact" aria-labelledby="cta-title" class="relative isolate overflow-hidden bg-brass text-ink">
+      <svg aria-hidden="true" class="absolute -right-24 top-1/2 -z-10 h-[38rem] w-[38rem] -translate-y-1/2 opacity-15" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="47" fill="none" stroke="#0C1620" stroke-width=".6"/>
+        <path d="M29 68V32.5L50 60 71 32.5V68" fill="none" stroke="#0C1620" stroke-width="1.6"/>
+      </svg>
+      <div class="mx-auto flex max-w-[1400px] flex-col gap-10 px-4 py-24 sm:px-8 lg:flex-row lg:items-end lg:justify-between lg:py-28">
+        <div class="reveal">
+          <p class="eyebrow text-ink/60">Directions juridiques &amp; dirigeants</p>
+          <h2 id="cta-title" class="mt-5 max-w-3xl font-display text-[clamp(2.2rem,5vw,4.2rem)] font-light leading-[1.04]">Sécurisez et Valorisez Votre Capital Immatériel dans l'Espace OAPI</h2>
+        </div>
+        <div class="flex shrink-0 flex-col items-start gap-5 reveal" data-delay="1">
+          <a href="tel:+237233432234" class="group inline-flex items-center gap-5 bg-ink px-8 py-5 text-[0.8rem] font-semibold uppercase tracking-[0.22em] text-ivory transition-colors hover:bg-ink-3">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            Appeler le Cabinet
+            <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span>
+          </a>
+          <a href="mailto:contact@cabinetmassoma.com" class="group inline-flex items-center gap-3 font-display text-2xl text-ink">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14"/><path d="M3.4 6.4L12 13l8.6-6.6"/></svg>
+            <span class="u-link">Écrire au Département PI</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PIED DE PAGE ================= -->
+  <footer class="bg-ink text-ivory/70">
+    <div class="mx-auto max-w-[1400px] px-4 pt-20 sm:px-8">
+      <div class="grid gap-14 border-b border-ivory/10 pb-16 md:grid-cols-2 lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <a href="index.html" class="flex items-center gap-4 text-ivory" aria-label="Cabinet Massoma — Accueil">
+            <svg class="h-14 w-14" viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="47" fill="none" stroke="#C9A46A" stroke-width="1.5"/>
+              <circle cx="50" cy="50" r="41" fill="none" stroke="#C9A46A" stroke-width=".6" opacity=".6"/>
+              <path d="M29 68V32.5L50 60 71 32.5V68" fill="none" stroke="#C9A46A" stroke-width="4.2"/>
+              <path d="M24 68h11M65 68h11" stroke="#C9A46A" stroke-width="2"/>
+              <circle cx="50" cy="24" r="2.2" fill="#C9A46A"/>
+            </svg>
+            <span class="font-display text-3xl">Cabinet Massoma</span>
+          </a>
+          <p class="mt-6 max-w-sm leading-relaxed">Avocats Conseil - Auditeur Social. Audit et Conseil pour une meilleure Prévention des Risques.</p>
+        </div>
+
+        <nav aria-label="Pied de page — navigation" class="lg:col-span-2">
+          <p class="eyebrow text-[0.6rem] text-brass">Cabinet</p>
+          <ul class="mt-6 space-y-3">
+            <li><a href="index.html" class="u-link hover:text-ivory">Accueil</a></li>
+            <li><a href="index.html#a-propos" class="u-link hover:text-ivory">A Propos</a></li>
+            <li><a href="index.html#domaines" class="u-link hover:text-ivory">Domaines d'intervention</a></li>
+            <li><a href="contact.html" class="u-link hover:text-ivory">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Pied de page — domaines" class="lg:col-span-3">
+          <p class="eyebrow text-[0.6rem] text-brass">Domaines</p>
+          <ul class="mt-6 space-y-3">
+            <li><a href="audit-social.html" class="u-link hover:text-ivory">Audit Social</a></li>
+            <li><a href="droit-prive.html" class="u-link hover:text-ivory">Droit Privé</a></li>
+            <li><a href="droit-civil.html" class="u-link hover:text-ivory">Droit Civil</a></li>
+            <li><a href="droit-social.html" class="u-link hover:text-ivory">Droit Social</a></li>
+            <li><a href="droit-maritime.html" class="u-link hover:text-ivory">Droit Maritime</a></li>
+            <li><a href="droit-des-affaires.html" class="u-link hover:text-ivory">Droit des Affaires</a></li>
+            <li><a href="droit-propriete-intellectuelle.html" aria-current="page" class="u-link text-ivory">Droit de la Propriété Intellectuelle</a></li>
+          </ul>
+        </nav>
+
+        <div class="lg:col-span-2">
+          <p class="eyebrow text-[0.6rem] text-brass">Adresse</p>
+          <address class="mt-6 not-italic leading-relaxed">
+            Cour D'Appel<br>
+            Bonanjo Douala-Cameroun
+            <a href="tel:+237699821988" class="mt-5 block font-display text-xl text-ivory hover:text-brass">+237 699 82 19 88</a>
+          </address>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 py-8 text-sm sm:flex-row sm:items-center sm:justify-between">
+        <p>Copyright © Cabinet Massoma | Propulsé par <a href="https://honowa.com" class="u-link text-ivory" target="_blank" rel="noopener noreferrer">Honowa Technologies</a></p>
+        <a href="#contenu" class="eyebrow inline-flex items-center gap-3 text-[0.6rem] text-brass hover:text-ivory">Haut de page <span aria-hidden="true">↑</span></a>
       </div>
     </div>
-  </div>
-</footer>
+    <p aria-hidden="true" class="select-none overflow-hidden whitespace-nowrap text-center font-display text-[22vw] font-light leading-[0.75] text-ivory/[0.04]">Massoma</p>
+  </footer>
 
-<div class="gauge" aria-hidden="true"><div class="gauge__bar"></div><div class="gauge__n">00 / 100</div></div>
-<script src="assets/js/massoma.js" defer></script>
+  <script>
+    requestAnimationFrame(() => document.body.classList.add('is-loaded'));
+
+    const header = document.getElementById('site-header');
+    const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 40);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') !== 'true';
+      menu.classList.toggle('hidden', !open);
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+      header.classList.toggle('is-scrolled', open || window.scrollY > 40);
+    });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
 </body>
 </html>

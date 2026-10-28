@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="fr" prefix="og: https://ogp.me/ns#">
+<html lang="fr" prefix="og: https://ogp.me/ns#" class="scroll-smooth">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+  <!-- ============ SEO : balises principales ============ -->
   <title>Droit Social & Stratégie Sociale des Entreprises | Cabinet Massoma - Douala & Versailles</title>
   <meta name="description" content="Cabinet Massoma : Haute expertise en Droit Social, Restructurations d'entreprises, Audit Social et Contentieux du travail à Douala (Cameroun) & Barreau de Versailles. Expert National BIT, Consultant GICAM, DEA Droit Social Paris I Sorbonne, Membre IAS Paris. Sécurisation RH, licenciements collectifs et défense patronale.">
   <meta name="keywords" content="Droit Social Cameroun, Avocat Droit du Travail Douala, Audit Social Cameroun, Restructuration d'entreprise Cameroun, Licenciement Collectif Douala, Expert BIT Cameroun, Consultant GICAM, Inspection du Travail Douala, Contentieux Prud'homal TPI Bonanjo, Conventions Collectives Cameroun, Avocat Droit Social Versailles, Cabinet Massoma Droit Social">
   <meta name="author" content="Cabinet Massoma">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://cabinetmassoma.com/droit-social.html">
+  <meta name="theme-color" content="#0C1620">
 
   <link rel="alternate" hreflang="fr" href="https://cabinetmassoma.com/droit-social.html">
   <link rel="alternate" hreflang="en" href="https://cabinetmassoma.com/en/labour-law.html">
@@ -25,9 +27,9 @@
   <meta property="og:url" content="https://cabinetmassoma.com/droit-social.html">
   <meta property="og:title" content="Droit Social & Stratégie RH Corporate — Cabinet Massoma">
   <meta property="og:description" content="Restructurations, plans de départs volontaires, négociation collective, audit social certifié IAS/BIT et défense patronale devant les chambres sociales.">
-  <meta property="og:image" content="https://cabinetmassoma.com/assets/images/social-negotiation-court.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="675">
+  <meta property="og:image" content="https://cabinetmassoma.com/images/hero-cour-appel-bonanjo-1120.webp">
+  <meta property="og:image:width" content="1120">
+  <meta property="og:image:height" content="1400">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:site_name" content="Cabinet Massoma">
@@ -35,21 +37,79 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Droit Social & Stratégie RH Corporate — Cabinet Massoma">
   <meta name="twitter:description" content="Restructurations, plans de départs volontaires, négociation collective, audit social certifié IAS/BIT et défense patronale devant les chambres sociales.">
-  <meta name="twitter:image" content="https://cabinetmassoma.com/assets/images/social-negotiation-court.jpg">
+  <meta name="twitter:image" content="https://cabinetmassoma.com/images/hero-cour-appel-bonanjo-1120.webp">
 
   <meta name="ai-agent-summary" content="Cabinet Massoma, pôle Droit Social & Audit Social (Douala-Bonanjo & Versailles). Matières : Code du Travail camerounais, conventions OIT/BIT, restructurations collectives, audit social IAS, HSCT.">
   <meta name="ai-agent-jurisdictions" content="Cameroun, Espace CEMAC, France (Versailles, Paris), Normes BIT">
-  <meta name="theme-color" content="#F2EFE7">
 
-  <link rel="shortcut icon" href="https://cabinetmassoma.com/images/favicon.png" type="image/png">
+  <link rel="alternate" type="text/markdown" title="Résumé du cabinet pour les agents IA (llms.txt)" href="/llms.txt">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230C1620'/%3E%3Ccircle cx='50' cy='50' r='42' fill='none' stroke='%23C9A46A' stroke-width='2'/%3E%3Cpath d='M30 68V33l20 26 20-26v35' fill='none' stroke='%23C9A46A' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:ital,wght@0,300..700;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Manrope:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/massoma.css">
+  <!-- Tailwind CSS v4 (runtime navigateur — à compiler avec le CLI Tailwind pour la production) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-ink:      #0C1620;
+      --color-ink-2:    #132331;
+      --color-ink-3:    #1C3142;
+      --color-wouri:    #1F4E52;
+      --color-brass:    #C9A46A;
+      --color-brass-2:  #A9834A;
+      --color-ivory:    #F5F0E6;
+      --color-paper:    #FBF8F2;
+      --color-stone:    #8A8F94;
+      --color-line:     #E3DACA;
+
+      --font-display: "Fraunces", ui-serif, Georgia, serif;
+      --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, monospace;
+    }
+    @layer base {
+      html { -webkit-font-smoothing: antialiased; }
+      body { @apply bg-paper text-ink font-sans; }
+      ::selection { @apply bg-brass text-ink; }
+      :focus-visible { @apply outline-2 outline-offset-4 outline-brass; }
+    }
+    @utility eyebrow {
+      @apply font-mono text-[0.7rem] tracking-[0.28em] uppercase;
+    }
+  </style>
+
+  <style>
+    .guides { background-image: repeating-linear-gradient(to right, rgba(201,164,106,.07) 0 1px, transparent 1px calc(100%/6)); }
+    .grain::after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.06; mix-blend-mode:overlay;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+    .js .reveal { opacity: 0; transform: translateY(28px); transition: opacity 1s cubic-bezier(.2,.7,.2,1), transform 1s cubic-bezier(.2,.7,.2,1); }
+    .js .reveal.is-in { opacity: 1; transform: none; }
+    .reveal[data-delay="1"] { transition-delay: .12s; }
+    .reveal[data-delay="2"] { transition-delay: .24s; }
+    .reveal[data-delay="3"] { transition-delay: .36s; }
+
+    .js .line-mask > span { display:block; transform: translateY(105%); transition: transform 1.2s cubic-bezier(.2,.8,.2,1); }
+    .js .is-loaded .line-mask > span { transform: none; }
+    .line-mask { overflow: hidden; padding-bottom: .08em; }
+
+    .u-link { background: linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat; transition: background-size .5s; }
+    .u-link:hover { background-size: 100% 1px; }
+
+    .site-header.is-scrolled { background: rgba(12,22,32,.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-color: rgba(201,164,106,.18); }
+
+    section[id] { scroll-margin-top: 5rem; }
+    details > summary { list-style: none; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] .faq-plus { transform: rotate(45deg); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .js .reveal, .js .line-mask > span { opacity: 1; transform: none; transition: none; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
   <script>document.documentElement.classList.add('js');</script>
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -67,7 +127,7 @@
       "foundingDate": "2003",
       "email": "contact@cabinetmassoma.com",
       "telephone": "+237233432234",
-      "image": "https://cabinetmassoma.com/assets/images/hero-partners.jpg",
+      "image": "https://cabinetmassoma.com/images/hero-cour-appel-bonanjo-1120.webp",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Cour d'Appel, Bonanjo",
@@ -190,639 +250,6 @@
   ]
 }
 </script>
-</head>
-<body id="top">
-<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- SCEAU — la marque du cabinet -->
-    <symbol id="i-seal" viewBox="0 0 200 200">
-      <circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="1.4"/>
-      <circle cx="100" cy="100" r="86" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="1.3 3.7"/>
-      <circle cx="100" cy="100" r="63" fill="none" stroke="currentColor" stroke-width=".6" opacity=".5"/>
-      <path d="M74 126V74l26 31 26-31v52" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="miter"/>
-      <path d="M67 74h12M121 74h12M67 126h12M121 126h12" fill="none" stroke="currentColor" stroke-width="1.6"/>
-      <path d="M74 138h52" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".6"/>
-    </symbol>
-
-    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M4 12h15"/><path d="M13 6l6 6-6 6"/>
-    </symbol>
-
-    <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M5 9l7 7 7-7"/>
-    </symbol>
-
-    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M6.4 3h3.1l1.6 4.1-2.1 1.5a12.3 12.3 0 0 0 6.4 6.4l1.5-2.1L21 14.5v3.1a2 2 0 0 1-2.2 2A17.2 17.2 0 0 1 4.4 5.2 2 2 0 0 1 6.4 3z"/>
-    </symbol>
-
-    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="3" y="5" width="18" height="14"/><path d="M3.4 6.4L12 13l8.6-6.6"/>
-    </symbol>
-
-    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 21.2s7-6.5 7-11.2a7 7 0 1 0-14 0c0 4.7 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/>
-    </symbol>
-
-    <symbol id="i-city" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M3 21h18"/><path d="M5 21V6.4L12 3v18"/><path d="M12 21V9.6L19 12.6V21"/><path d="M8 8.4h.01M8 12.4h.01M8 16.4h.01M16 14.6h.01M16 18.2h.01"/>
-    </symbol>
-
-    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 3l7.5 3v6.1c0 4.6-3.2 7.9-7.5 9.3-4.3-1.4-7.5-4.7-7.5-9.3V6L12 3z"/><path d="M9 12.2l2.1 2.1L15.2 10"/>
-    </symbol>
-
-    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M14 3H7.5A1.5 1.5 0 0 0 6 4.5v15A1.5 1.5 0 0 0 7.5 21h9a1.5 1.5 0 0 0 1.5-1.5V7l-4-4z"/><path d="M14 3v4h4"/><path d="M9 12.5h6M9 16h6"/>
-    </symbol>
-
-    <symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 3v18"/><path d="M7 21h10"/><path d="M4 7h16"/><path d="M4 7l-2.4 5.2a3 3 0 0 0 4.8 0L4 7z"/><path d="M20 7l-2.4 5.2a3 3 0 0 0 4.8 0L20 7z"/>
-    </symbol>
-
-    <symbol id="i-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M14 4h6v6"/><path d="M20 4l-8.5 8.5"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>
-    </symbol>
-  </defs>
-</svg>
-
-<a class="skip" href="#main">Aller au contenu principal</a>
-
-<header class="head" role="banner">
-  <div class="head__top">
-    <div class="wrap wrap--wide">
-      <div class="head__top-l">
-        <a href="tel:+237233432234"><svg aria-hidden="true"><use href="#i-phone"></use></svg>(+237) 233 43 22 34</a>
-        <a href="tel:+237699821988">(+237) 699 82 19 88</a>
-        <a href="mailto:contact@cabinetmassoma.com"><svg aria-hidden="true"><use href="#i-mail"></use></svg>contact@cabinetmassoma.com</a>
-      </div>
-      <div class="head__top-r">
-        <span class="head__cred"><i></i>Barreau du Cameroun — 2003</span>
-        <span class="head__cred"><i></i>Barreau de Versailles</span>
-        <span class="head__cred"><i></i>Cour d'Appel de Douala</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="head__main wrap wrap--wide">
-    <a class="brand" href="index.html" aria-label="Cabinet Massoma — accueil">
-      <svg class="brand__mark" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-seal"></use></svg>
-      <span class="brand__txt">
-        <span class="brand__name">Massoma</span>
-        <span class="brand__sub">Cabinet d'Avocats &amp; Audit Social</span>
-      </span>
-    </a>
-
-    <nav class="nav" aria-label="Navigation principale">
-      <div class="nav__item"><a class="nav__link" href="index.html">Accueil</a></div>
-      <div class="nav__item"><a class="nav__link" href="index.html#apropos">À propos</a></div>
-      <div class="nav__item">
-        <a class="nav__link" href="index.html#domaines" aria-haspopup="true" aria-expanded="false">Domaines d'intervention <svg aria-hidden="true"><use href="#i-chev"></use></svg></a>
-        <div class="dd" role="group" aria-label="Pratiques dédiées">
-          <div class="dd__head">
-            <span class="mono mono--accent">Expertises &amp; pratiques dédiées</span>
-            <span class="mono mono--sm">Six pôles</span>
-          </div>
-          <div class="dd__list">
-            <a class="dd__item" href="droit-des-affaires.html">
-              <span class="dd__thumb"><img src="assets/images/business-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit des Affaires <span class="dd__tag">OHADA &amp; M&amp;A</span></span>
-                <span class="dd__desc">Sociétés, fusions-acquisitions, pactes d'associés, contrats &amp; arbitrage CCJA</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item" href="droit-propriete-intellectuelle.html">
-              <span class="dd__thumb"><img src="assets/images/ip-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Propriété Intellectuelle <span class="dd__tag">Mandataire OAPI</span></span>
-                <span class="dd__desc">Brevets, marques OAPI, actifs immatériels, cybersécurité &amp; contentieux contrefaçon</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item" href="droit-maritime.html">
-              <span class="dd__thumb"><img src="assets/images/maritime-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit Maritime <span class="dd__tag">Douala &amp; Kribi</span></span>
-                <span class="dd__desc">Saisies de navires, affrètement, droit portuaire &amp; P&amp;I Clubs</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item" href="droit-social.html">
-              <span class="dd__thumb"><img src="assets/images/social-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit Social &amp; RH <span class="dd__tag">Expert BIT / IAS</span></span>
-                <span class="dd__desc">Relations de travail, restructurations, audit social &amp; contentieux prud'homal</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item" href="droit-civil.html">
-              <span class="dd__thumb"><img src="assets/images/civil-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit Civil <span class="dd__tag">Dédié corporate</span></span>
-                <span class="dd__desc">Contentieux stratégique, obligations, responsabilité &amp; voies d'exécution OHADA</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item dd__item--full" href="index.html#domaines">
-              <span class="dd__thumb"><img src="assets/images/civil-litigation-court.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit Administratif</span>
-                <span class="dd__desc">Rapports avec l'administration, régulation &amp; visas</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="nav__item"><a class="nav__link" href="index.html#contact">Contact</a></div>
-    </nav>
-
-    <div class="head__end">
-      <div class="lang" aria-label="Langue">
-        <a class="is-on" href="droit-social.html" aria-current="true" hreflang="fr">FR</a><i>/</i><a href="en/labour-law.html" hreflang="en" lang="en">EN</a>
-      </div>
-      <a class="head__cta" href="index.html#contact">Nous contacter <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
-      <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="drawer"><span></span></button>
-    </div>
-  </div>
-</header>
-
-<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu de navigation">
-  <div class="wrap">
-    <nav class="drawer__list" aria-label="Navigation mobile">
-      <div class="drawer__item">
-        <a class="drawer__link" href="index.html"><i>01</i>Accueil</a>
-      </div>
-      <div class="drawer__item">
-        <a class="drawer__link" href="index.html#apropos"><i>02</i>À propos</a>
-      </div>
-      <div class="drawer__item">
-        <a class="drawer__link" href="index.html#domaines"><i>03</i>Domaines d'intervention</a>
-        <div class="drawer__sub">
-          <a href="droit-des-affaires.html">Droit des Affaires — OHADA &amp; M&amp;A</a>
-          <a href="droit-propriete-intellectuelle.html">Propriété Intellectuelle — Mandataire OAPI</a>
-          <a href="droit-maritime.html">Droit Maritime — Douala &amp; Kribi</a>
-          <a href="droit-social.html">Droit Social &amp; RH — Expert BIT / IAS</a>
-          <a href="droit-civil.html">Droit Civil — Dédié corporate</a>
-          <a href="index.html#domaines">Droit Administratif</a>
-        </div>
-      </div>
-      <div class="drawer__item">
-        <a class="drawer__link" href="index.html#contact"><i>04</i>Contact</a>
-      </div>
-    </nav>
-    <div class="drawer__foot">
-      <div class="drawer__lang">
-        <a class="is-on" href="droit-social.html" hreflang="fr">Français</a><a href="en/labour-law.html" hreflang="en" lang="en">English</a>
-      </div>
-      <a class="mono" href="tel:+237233432234">(+237) 233 43 22 34</a>
-      <a class="mono" href="mailto:contact@cabinetmassoma.com">contact@cabinetmassoma.com</a>
-      <span class="mono mono--sm">Cour d'Appel, Bonanjo — BP 2668 Douala, Cameroun</span>
-      <span class="mono mono--sm">Barreau du Cameroun &amp; Barreau de Versailles</span>
-    </div>
-  </div>
-</div>
-<main id="main">
-
-  <!-- ===================================================================
-       HÉROS DE PAGE — ouverture de l'article
-  ==================================================================== -->
-  <section class="phero" aria-label="Droit Social &amp; Stratégie RH Corporate">
-    <div class="wrap wrap--wide">
-      <nav class="crumb" aria-label="Fil d'Ariane">
-        <a href="index.html">Accueil</a><i>/</i>
-        <a href="index.html#domaines">Domaines d'intervention</a><i>/</i>
-        <span aria-current="page">Droit Social</span>
-      </nav>
-
-      <div class="phero__grid">
-        <div>
-          <span class="eyebrow">Stratégie RH &amp; Conformité Sociale • Expert BIT / IAS</span>
-          <h1 class="t-display t-hero phero__title">
-            <span class="mask"><span>Droit Social &amp;</span></span>
-            <span class="mask l2"><span>Stratégie RH Corporate</span></span>
-          </h1>
-          <p class="lead phero__lead">
-            Restructurations d'effectifs, contentieux prud'homal, mobilité des expatriés, dialogue social
-            sous tension : les décisions sociales engagent la trésorerie, la réputation et la continuité
-            de l'entreprise. Le cabinet en sécurise chaque étape, de l'ingénierie contractuelle à la
-            défense devant les chambres sociales, au Cameroun comme à l'international.
-          </p>
-
-          <div class="phero__metrics">
-            <div class="phero__metric"><span class="phero__mv">Expert BIT</span><span class="phero__ml">Bureau International<br>du Travail</span></div>
-            <div class="phero__metric"><span class="phero__mv">IAS Paris</span><span class="phero__ml">Institut Int. de<br>l'Audit Social</span></div>
-            <div class="phero__metric"><span class="phero__mv">Sorbonne</span><span class="phero__ml">DEA Droit Social<br>(Paris I)</span></div>
-          </div>
-
-          <div class="phero__acts">
-            <a class="btn btn--seal" href="#contact"><span>Solliciter une consultation</span><svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
-            <a class="btn btn--ghost" href="#expertises"><span>Découvrir les 6 piliers</span></a>
-          </div>
-        </div>
-
-        <figure class="phero__visual">
-          <div class="plate plate--portrait rv-plate">
-            <img class="plate__img" src="assets/images/social-law-corporate.jpg" alt="Avocats du Cabinet Massoma en consultation de stratégie sociale avec une direction des ressources humaines" loading="eager">
-          </div>
-          <div class="phero__stamp"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#i-seal"></use></svg></div>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       ART. I — VISION / DOCTRINE SOCIALE
-  ==================================================================== -->
-  <section class="sec" id="vision" aria-label="Vision stratégique du droit social">
-    <div class="wrap wrap--wide">
-      <div class="sec-head">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. I — Doctrine sociale</span>
-            <h2 class="t-display t-2 sec-head__title">Le Droit Social comme Levier de Performance et de Sécurité Bilancielle</h2>
-          </div>
-          <p class="mono sec-head__note">Vision stratégique<br>Employeurs &amp; DRH</p>
-        </div>
-      </div>
-
-      <div class="split split--visual-l">
-        <div>
-          <p class="lead">
-            Dans l'économie contemporaine, le droit social ne se réduit pas à une contrainte administrative
-            ou prud'homale. Pour les multinationales, les groupes industriels, les compagnies maritimes et
-            les banques opérant en Afrique centrale, il constitue un actif immatériel stratégique : un levier
-            d'optimisation de la masse salariale, un rempart contre le risque réputationnel et un instrument
-            d'accompagnement des mutations industrielles. La qualité des relations de travail conditionne la
-            valeur de l'entreprise, la solidité de son bilan social et la confiance durable de ses
-            investisseurs, en amont comme au contentieux.
-          </p>
-          <p class="mt-md measure">
-            Le cabinet inscrit sa pratique dans les standards des grandes places du droit social d'affaires.
-            Dirigé par un avocat titulaire d'un DEA en droit social de Paris I Panthéon-Sorbonne, membre de
-            l'Institut international de l'audit social (IAS Paris), Expert national du Bureau international
-            du Travail et consultant du GICAM, il apporte une crédibilité institutionnelle reconnue auprès
-            des inspecteurs du travail, des magistrats et des partenaires sociaux.
-          </p>
-          <p class="mt-md measure">
-            Cette double culture, contentieuse et normative, permet d'anticiper la décision administrative,
-            de calibrer la négociation collective et de chiffrer les passifs sociaux avant qu'ils ne
-            deviennent des condamnations. Chaque dossier est traité comme une opération juridique à part
-            entière, avec ses pièces, son calendrier et son plan de sortie.
-          </p>
-        </div>
-        <figure>
-          <div class="plate plate--portrait rv-plate">
-            <img class="plate__img" src="assets/images/consulting-audit.jpg" alt="Séance de conseil social et d'audit des risques RH au Cabinet Massoma" loading="lazy">
-          </div>
-          <figcaption class="plate__cap">
-            <span class="plate__cap-n">PL. I</span>
-            <span class="plate__cap-t">Consultation de stratégie sociale avec une direction des ressources humaines — Douala, Bonanjo.</span>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="highs mt-xl">
-        <article class="high rv">
-          <h3 class="high__t">Due Diligence &amp; Audit Social</h3>
-          <p class="high__d">Mesure exhaustive des passifs sociaux, chiffrage des engagements de retraite, vérification des cotisations CNPS et sécurisation des garanties de passif social lors des cessions.</p>
-        </article>
-        <article class="high rv">
-          <h3 class="high__t">Dialogue Social &amp; Conventions</h3>
-          <p class="high__d">Négociation collective sous maîtrise, accords d'entreprise dérogatoires, élections professionnelles et gestion préventive des préavis de grève, afin de préserver le climat interne et la continuité d'exploitation.</p>
-        </article>
-        <article class="high rv">
-          <h3 class="high__t">Défense Patronale de Haute Intensité</h3>
-          <p class="high__d">Représentation devant les chambres sociales, contestation des nullités procédurales et des condamnations infondées, au fond comme en référé, sécurisation des transactions et purge des voies de recours.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       ART. II — LES SIX PILIERS STRATÉGIQUES
-  ==================================================================== -->
-  <section class="sec deep" id="expertises" aria-label="Les six piliers du droit social">
-    <div class="wrap wrap--wide">
-      <div class="sec-head">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. II — Domaines d'excellence</span>
-            <h2 class="t-display t-2 sec-head__title">Les 6 Piliers Stratégiques en Droit Social &amp; Relations de Travail</h2>
-          </div>
-          <p class="mono sec-head__note">Ingénierie contractuelle<br>Restructurations &amp; gestion de crise</p>
-        </div>
-      </div>
-
-      <div class="prog">
-        <article class="prog__item rv">
-          <span class="prog__n">01</span>
-          <div>
-            <h3 class="prog__t">Restructurations Sociales &amp; Licenciements Collectifs</h3>
-            <p class="prog__d">Ingénierie juridique des réorganisations d'effectifs, fermetures de sites, filialisation et licenciements pour motif économique au Cameroun et en zone CEMAC, avec sécurisation des critères d'ordre et des justificatifs économiques.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Conformité scrupuleuse à l'article 40 du Code du Travail camerounais</li>
-            <li>Élaboration de plans de départs volontaires (PDV) sécurisés</li>
-            <li>Pilotage des échanges avec l'Inspection du Travail et les ministères</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">02</span>
-          <div>
-            <h3 class="prog__t">Statut des Dirigeants &amp; Mobilité des Expatriés</h3>
-            <p class="prog__d">Sécurisation du statut des mandataires sociaux, des rémunérations différées et des packages d'expatriation, ainsi que des visas de travail des cadres étrangers exerçant au Cameroun.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Articulation du mandat social et du contrat de travail</li>
-            <li>Visa des contrats de travail étrangers (article 27)</li>
-            <li>Clauses de non-concurrence, d'exclusivité et golden parachutes</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">03</span>
-          <div>
-            <h3 class="prog__t">Négociations Collectives &amp; Relations Syndicales</h3>
-            <p class="prog__d">Accompagnement patronal lors des négociations périodiques, gestion des délégués du personnel et résorption des crises sociales, de la table de négociation au référé d'expulsion.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Rédaction d'accords d'établissement et de conventions d'entreprise</li>
-            <li>Supervision juridique des élections des délégués du personnel</li>
-            <li>Gestion d'urgence des préavis de grève et référés d'évacuation</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">04</span>
-          <div>
-            <h3 class="prog__t">Audit Social &amp; Conformité Normative (BIT / IAS)</h3>
-            <p class="prog__d">Audit de conformité sociale conduit selon les normes de l'Institut international de l'audit social (IAS Paris) et les conventions fondamentales du BIT, du contrôle de paie à la due diligence d'acquisition.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Contrôle de la paie, des cotisations CNPS et du temps de travail</li>
-            <li>Due diligence RH dans le cadre des fusions-acquisitions (M&amp;A)</li>
-            <li>Charte éthique, RSE et règlement intérieur conformes</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">05</span>
-          <div>
-            <h3 class="prog__t">Contentieux Social &amp; Défense Patronale</h3>
-            <p class="prog__d">Assistance stratégique dès la conciliation préalable devant l'Inspecteur du Travail jusqu'aux plaidoiries devant les chambres sociales des tribunaux, en première instance comme en appel.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Représentation impérative en conciliation d'Inspection du Travail</li>
-            <li>Défense contre les allégations de licenciement abusif ou vexatoire</li>
-            <li>Négociation de protocoles transactionnels avec quittance pour solde</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">06</span>
-          <div>
-            <h3 class="prog__t">Hygiène, Sécurité (HSCT) &amp; Risques Psychosociaux</h3>
-            <p class="prog__d">Protection pénale et civile de l'employeur face aux accidents du travail, aux maladies professionnelles et au contrôle des obligations de sécurité de résultat, y compris en matière de RPS.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Gestion des sinistres corporels graves et enquêtes d'accidents</li>
-            <li>Délégations de pouvoirs HSCT et exonération de responsabilité</li>
-            <li>Enquêtes internes sur harcèlement ou discrimination</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       ART. III — PLAIDOIRIE & JURIDICTIONS
-  ==================================================================== -->
-  <section class="sec" id="juridictions" aria-label="Juridictions et instances compétentes">
-    <div class="wrap wrap--wide">
-      <div class="sec-head">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. III — Rayonnement judiciaire</span>
-            <h2 class="t-display t-2 sec-head__title">Une Maîtrise Complète des Instances Administratives et Judiciaires</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="split split--visual">
-        <figure>
-          <div class="plate plate--wide rv-plate">
-            <img class="plate__img" src="assets/images/social-negotiation-court.jpg" alt="Négociation collective et conciliation devant l'Inspection du Travail à Douala" loading="lazy">
-          </div>
-          <figcaption class="plate__cap">
-            <span class="plate__cap-n">PL. II</span>
-            <span class="plate__cap-t">Séance de conciliation devant l'Inspection du Travail — Douala, Littoral.</span>
-          </figcaption>
-        </figure>
-        <div>
-          <div class="quote">
-            <span class="mono mono--accent">Crédibilité &amp; Maîtrise Institutionnelle</span>
-            <p class="quote__d">La gestion d'un litige du travail suppose d'anticiper chaque stade de la procédure sociale camerounaise : la conciliation obligatoire devant l'Inspecteur du Travail, puis l'instance juridictionnelle devant la chambre sociale du Tribunal de première instance et la Cour d'appel. Cette maîtrise procédurale détermine l'issue du dossier autant que le droit applicable.</p>
-          </div>
-          <div class="juris mt-lg">
-            <div class="juris__box">
-              <span class="mono">Premier degré administratif</span>
-              <h4>Inspections Régionales du Travail</h4>
-              <p>Douala (Littoral), Yaoundé (Centre), Kribi et Bafoussam : conciliations individuelles, enquêtes administratives préalables et instruction des sanctions patronales.</p>
-            </div>
-            <div class="juris__box">
-              <span class="mono">Première instance</span>
-              <h4>Chambres Sociales des TPI</h4>
-              <p>Tribunaux de première instance de Douala-Bonanjo, Douala-Ndokoti et Yaoundé : jugement au fond, avec assesseurs patronaux et représentants des salariés.</p>
-            </div>
-            <div class="juris__box">
-              <span class="mono">Second degré</span>
-              <h4>Cour d'Appel de Douala-Bonanjo</h4>
-              <p>Chambres sociales d'appel : réformation des jugements défavorables, sursis à exécution et sécurisation des jurisprudences régionales.</p>
-            </div>
-            <div class="juris__box">
-              <span class="mono">International</span>
-              <h4>Barreau de Versailles &amp; Instances BIT</h4>
-              <p>Contentieux des détachements transfrontaliers en France et recours aux normes internationales du travail, dans le cadre des procédures du BIT.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       ART. IV — MÉTHODE EN QUATRE PHASES
-  ==================================================================== -->
-  <section class="sec deep sec--tight" id="methode" aria-label="Démarche opérationnelle en quatre phases">
-    <div class="wrap wrap--wide">
-      <div class="sec-head" style="margin-bottom:1.75rem">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. IV — Rigueur méthodologique</span>
-            <h2 class="t-display t-3 sec-head__title" style="margin-top:.75rem">Une Démarche Stratégique en 4 Phases</h2>
-          </div>
-          <span class="mono">Rigueur &amp; Déontologie</span>
-        </div>
-      </div>
-
-      <div class="steps">
-        <article class="step rv">
-          <span class="step__n">01</span>
-          <div class="step__bar"></div>
-          <h3 class="step__t">Audit du Risque &amp; Conformité</h3>
-          <p class="step__d">Revue approfondie des dossiers contractuels, analyse des faits reprochés, contrôle de la régularité des sanctions antérieures et calcul des provisions. Chaque pièce est datée, chaque délai vérifié et chaque exposition chiffrée avant toute décision.</p>
-        </article>
-        <article class="step rv">
-          <span class="step__n">02</span>
-          <div class="step__bar"></div>
-          <h3 class="step__t">Ingénierie &amp; Cadrage Procédural</h3>
-          <p class="step__d">Rédaction des courriers d'entretien préalable, respect strict des délais légaux, formalisation des motifs et préparation des simulations de sortie comme des scénarios de transaction.</p>
-        </article>
-        <article class="step rv">
-          <span class="step__n">03</span>
-          <div class="step__bar"></div>
-          <h3 class="step__t">Négociation ou Conciliation</h3>
-          <p class="step__d">Conduite ferme et équilibrée des débats devant l'Inspection du Travail, négociation d'accords transactionnels sous le sceau du secret professionnel de l'avocat, avec quittance pour solde.</p>
-        </article>
-        <article class="step rv">
-          <span class="step__n">04</span>
-          <div class="step__bar"></div>
-          <h3 class="step__t">Défense en Prétoire &amp; Sécurisation</h3>
-          <p class="step__d">Plaidoirie rigoureuse devant le Tribunal de première instance et la Cour d'appel, production de conclusions exhaustives et purge complète de tout risque de recours.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       ART. V — QUESTIONS FRÉQUENTES
-  ==================================================================== -->
-  <section class="sec" id="faq" aria-label="Questions fréquentes en droit social">
-    <div class="wrap wrap--wide">
-      <div class="sec-head">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. V — Éclairages</span>
-            <h2 class="t-display t-2 sec-head__title">Questions Stratégiques en Droit Social &amp; Relations de Travail</h2>
-          </div>
-          <p class="mono sec-head__note">Cible : directions juridiques<br>et comités de direction</p>
-        </div>
-      </div>
-
-      <div class="faq">
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-1">
-            <span class="faq__n">01</span>
-            <span class="faq__qt">Quelle est la procédure légale impérative d'un licenciement collectif pour motif économique au Cameroun ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-1">
-            <div class="faq__a-inner">
-              <p>L'article 40 du Code du Travail camerounais encadre strictement le licenciement pour motif économique, qu'il résulte d'une diminution d'activité, d'une réorganisation interne ou de difficultés financières. L'employeur doit réunir les délégués du personnel pour recueillir leurs suggestions, en leur communiquant la liste des postes impactés et les critères d'ordre des licenciements : ancienneté, charges de famille, compétences professionnelles. L'Inspecteur du Travail du ressort est formellement informé et tenu en copie de l'ensemble du processus. Le cabinet accompagne les directions générales dès la phase amont pour étayer les justificatifs économiques, conduire le calendrier social et négocier, si opportun, des plans de départs volontaires (PDV) qui neutralisent l'aléa prud'homal.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-2">
-            <span class="faq__n">02</span>
-            <span class="faq__qt">Comment sécuriser le statut et le visa de travail d'un cadre dirigeant étranger ou expatrié ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-2">
-            <div class="faq__a-inner">
-              <p>Selon l'article 27 du Code du Travail, tout contrat de travail stipulant une exécution au Cameroun et concernant un travailleur de nationalité étrangère doit, préalablement à tout commencement d'exécution, être visé par le ministère du Travail. L'absence de visa frappe le contrat d'une nullité relative invocable par le travailleur et expose l'entreprise à des sanctions pénales et administratives. Le cabinet instruit l'intégralité des dossiers de visa de travail, structure les conventions de détachement ou de mise à disposition intragroupe et assure la conformité fiscale et sociale locale, notamment le versement des cotisations CNPS et les retenues sur salaires.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-3">
-            <span class="faq__n">03</span>
-            <span class="faq__qt">Quel est l'intérêt concret d'un audit social d'entreprise certifié (normes IAS / BIT) ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-3">
-            <div class="faq__a-inner">
-              <p>L'audit social identifie et quantifie les passifs cachés de l'entreprise : contrats à durée déterminée irrégulièrement renouvelés et susceptibles de requalification en contrat à durée indéterminée, heures supplémentaires non déclarées, cotisations CNPS éludées, absence de règlement intérieur conforme ou défaillances des dispositifs HSCT. Fort de son affiliation à l'Institut international de l'audit social (IAS Paris), le cabinet remet aux comités de direction un rapport exhaustif, assorti d'une matrice de criticité des risques et d'un plan de mise en conformité prioritaire. Ce document devient une pièce déterminante lors des levées de fonds, des cessions et des fusions-acquisitions.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-4">
-            <span class="faq__n">04</span>
-            <span class="faq__qt">Comment réagir face à un préavis de grève ou à une occupation illicite d'usine ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-4">
-            <div class="faq__a-inner">
-              <p>Le droit de grève est constitutionnellement reconnu, mais subordonné à l'épuisement préalable des voies de conciliation et d'arbitrage prévues par le Code du Travail camerounais. Toute grève déclenchée sans respecter ces préalables est illicite et constitue une faute lourde, privative de préavis et d'indemnités de licenciement pour les meneurs. En cas de blocage d'un site industriel ou logistique, le cabinet mandate un huissier pour établir les constats matériels, saisit le juge des référés d'heure à heure aux fins d'expulsion des occupants avec recours à la force publique, et assiste la direction générale dans les pourparlers avec les représentants légitimes du personnel.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-5">
-            <span class="faq__n">05</span>
-            <span class="faq__qt">Pourquoi la phase de conciliation devant l'Inspection du Travail est-elle déterminante pour l'employeur ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-5">
-            <div class="faq__a-inner">
-              <p>L'article 139 du Code du Travail rend obligatoire la tentative de conciliation devant l'Inspecteur du Travail avant toute saisine du tribunal. Si un accord intervient, l'Inspecteur dresse un procès-verbal de conciliation totale qui éteint définitivement l'action en justice et a force de jugement définitif. En cas d'échec ou de conciliation partielle, le procès-verbal de non-conciliation délimite strictement les prétentions des parties. Être assisté dès cette phase évite les concessions imprudentes, démontre la rigueur de l'employeur et permet souvent de conclure une transaction définitive à des conditions maîtrisées.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       APPENDICE SÉMANTIQUE (agents IA)
-  ==================================================================== -->
-  <section class="sec deep sec--tight" aria-label="Index sémantique machine">
-    <div class="wrap wrap--wide">
-      <aside class="appendix">
-        <div class="appendix__h">
-          <svg aria-hidden="true"><use href="#i-shield"></use></svg>
-          <span class="mono mono--accent">Index sémantique machine • Droit Social Cabinet Massoma</span>
-        </div>
-        <div class="appendix__rows">
-          <div class="appendix__row"><span class="appendix__k">Entité opératrice</span><span class="appendix__v">Cabinet Massoma — avocats conseils et auditeurs sociaux. Cour d'Appel, Bonanjo, Douala (Cameroun) &amp; Barreau de Versailles (France).</span></div>
-          <div class="appendix__row"><span class="appendix__k">Cadre normatif</span><span class="appendix__v">Code du Travail camerounais (articles 27, 40 et 139), conventions OIT/BIT, normes de l'Institut international de l'audit social (IAS Paris), réglementation CNPS et obligations HSCT.</span></div>
-          <div class="appendix__row"><span class="appendix__k">Matières traitées</span><span class="appendix__v">Restructurations et licenciements collectifs, plans de départs volontaires, mobilité des expatriés, négociation collective, audit social, contentieux prud'homal, risques psychosociaux.</span></div>
-          <div class="appendix__row"><span class="appendix__k">Juridictions / instances</span><span class="appendix__v">Inspections régionales du Travail, chambres sociales des TPI, Cour d'Appel de Douala-Bonanjo, Barreau de Versailles et instances du BIT.</span></div>
-          <div class="appendix__row"><span class="appendix__k">Clientèle cible</span><span class="appendix__v">Directions des ressources humaines, directions générales, directions juridiques, groupes multinationaux et employeurs de l'espace CEMAC.</span></div>
-          <div class="appendix__row"><span class="appendix__k">Contact officiel</span><span class="appendix__v">Cour d'Appel, Bonanjo, BP 2668 Douala | (+237) 233 43 22 34 | auditsocial@cabinetmassoma.com</span></div>
-        </div>
-      </aside>
-    </div>
-  </section>
-
-  <!-- ===================================================================
-       APPEL FINAL
-  ==================================================================== -->
-  <section class="cta-band on-ink" id="contact" aria-label="Prise de contact">
-    <div class="wrap wrap--wide">
-      <div class="cta-band__grid">
-        <div>
-          <span class="eyebrow">Directions des Ressources Humaines &amp; Directions Générales</span>
-          <h2 class="t-display t-2 mt-sm">Sécurisez Vos Relations Sociales &amp; Vos Projets de Restructuration</h2>
-        </div>
-        <div class="cta-band__acts">
-          <a class="btn btn--seal" href="tel:+237233432234"><svg aria-hidden="true"><use href="#i-phone"></use></svg><span>Appeler le Cabinet</span></a>
-          <a class="btn btn--ghost" href="mailto:contact@cabinetmassoma.com"><svg aria-hidden="true"><use href="#i-mail"></use></svg><span>Écrire au Pôle Audit Social</span></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -907,73 +334,571 @@
   ]
 }
 </script>
-<footer class="foot on-ink on-ink-deep" role="contentinfo">
-  <div class="wrap wrap--wide">
-    <div class="foot__grid">
-      <div>
-        <svg class="foot__seal" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-seal"></use></svg>
-        <div class="brand">
-          <span class="brand__txt">
-            <span class="brand__name" style="color:var(--on-ink)">Massoma</span>
-            <span class="brand__sub" style="color:var(--on-ink-faint)">Cabinet d'Avocats &amp; Audit Social</span>
-          </span>
-        </div>
-        <p class="foot__desc">
-          Pour une meilleure Prévention des Risques. Une maîtrise reconnue de l'environnement normatif national et régional (OHADA), au service des entreprises et institutions.
-        </p>
-      </div>
+</head>
 
-      <div>
-        <h2 class="foot__h">Navigation</h2>
-        <div class="foot__list">
-          <a href="index.html">Accueil</a>
-          <a href="index.html#apropos">À propos</a>
-          <a href="index.html#domaines">Domaines d'intervention</a>
-          <a href="droit-des-affaires.html">Droit des Affaires (dédié)</a>
-          <a href="droit-propriete-intellectuelle.html">Propriété Intellectuelle (dédié)</a>
-          <a href="droit-maritime.html">Droit Maritime (dédié)</a>
-          <a href="droit-social.html">Droit Social (dédié)</a>
-          <a href="droit-civil.html">Droit Civil (dédié)</a>
-          <a href="index.html#contact">Contact</a>
-        </div>
-      </div>
+<body class="overflow-x-hidden">
+  <a href="#contenu" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-brass focus:text-ink focus:px-4 focus:py-2">Aller au contenu</a>
 
-      <div>
-        <h2 class="foot__h">Domaines clés</h2>
-        <div class="foot__list">
-          <a href="droit-des-affaires.html">Droit des Affaires &amp; Sociétés</a>
-          <a href="droit-des-affaires.html">Fusions-Acquisitions (M&amp;A)</a>
-          <a href="droit-propriete-intellectuelle.html">Brevets &amp; Marques OAPI</a>
-          <a href="droit-maritime.html">Droit Maritime &amp; Portuaire</a>
-          <a href="droit-social.html">Droit Social &amp; Relations RH</a>
-          <a href="droit-civil.html">Droit Civil &amp; Contentieux</a>
-          <a href="droit-social.html">Audit Social &amp; Conventions</a>
-        </div>
-      </div>
+  <!-- ================= EN-TÊTE ================= -->
+  <header id="site-header" class="site-header fixed inset-x-0 top-0 z-50 border-b border-transparent transition-all duration-500">
+    <div class="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-4 sm:px-8">
+      <a href="index.html" class="group flex items-center gap-3 text-ivory" aria-label="Cabinet Massoma — Accueil">
+        <svg class="h-11 w-11 shrink-0" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="47" fill="none" stroke="#C9A46A" stroke-width="1.5"/>
+          <circle cx="50" cy="50" r="41" fill="none" stroke="#C9A46A" stroke-width=".6" opacity=".6"/>
+          <path d="M29 68V32.5L50 60 71 32.5V68" fill="none" stroke="#C9A46A" stroke-width="4.2" stroke-linejoin="miter" stroke-linecap="square"/>
+          <path d="M24 68h11M65 68h11" stroke="#C9A46A" stroke-width="2"/>
+          <circle cx="50" cy="24" r="2.2" fill="#C9A46A"/>
+        </svg>
+        <span class="leading-none">
+          <span class="block font-display text-[1.35rem] tracking-wide">Massoma</span>
+          <span class="eyebrow mt-1 block text-[0.56rem] text-brass">Cabinet · Douala</span>
+        </span>
+      </a>
 
-      <div>
-        <h2 class="foot__h">Implantations</h2>
-        <div class="foot__list">
-          <span>Cour d'Appel, Bonanjo</span>
-          <span>BP : Douala 2668</span>
-          <span>Douala • Yaoundé • Bafoussam</span>
-          <span>Barreau de Versailles (France)</span>
-          <a href="tel:+237233432234">(+237) 233 43 22 34</a>
-          <a href="mailto:contact@cabinetmassoma.com">contact@cabinetmassoma.com</a>
-        </div>
+      <nav aria-label="Navigation principale" class="hidden lg:block">
+        <ul class="flex items-center gap-10 text-[0.78rem] font-medium tracking-[0.18em] uppercase text-ivory/80">
+          <li><a href="index.html" class="u-link hover:text-ivory">Accueil</a></li>
+          <li><a href="index.html#a-propos" class="u-link hover:text-ivory">A PROPOS</a></li>
+          <li class="group/menu relative">
+            <a href="index.html#domaines" class="u-link inline-flex items-center gap-2 py-7 text-ivory" aria-haspopup="true">
+              DOMAINES D'INTERVENTION
+              <svg class="h-2.5 w-2.5 transition-transform duration-300 group-hover/menu:rotate-180 group-focus-within/menu:rotate-180" viewBox="0 0 10 10" aria-hidden="true"><path d="m1.5 3.5 3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
+            </a>
+            <div class="mega invisible absolute left-1/2 top-full w-[820px] -translate-x-1/2 translate-y-2 pt-1 opacity-0 transition-all duration-300 group-hover/menu:visible group-hover/menu:translate-y-0 group-hover/menu:opacity-100 group-focus-within/menu:visible group-focus-within/menu:translate-y-0 group-focus-within/menu:opacity-100">
+              <div class="grid grid-cols-[1.15fr_1fr_1fr] border border-brass/25 bg-ink normal-case tracking-normal shadow-2xl shadow-black/50">
+                <a href="audit-social.html" class="group/feat relative flex flex-col justify-between overflow-hidden bg-wouri p-7 text-ivory">
+                  <span aria-hidden="true" class="absolute -bottom-16 -right-16 h-44 w-44 rounded-full border border-ivory/15"></span>
+                  <span>
+                    <span class="eyebrow text-[0.58rem] text-brass">Expertise phare</span>
+                    <span class="mt-4 block font-display text-[1.9rem] leading-none">Audit Social</span>
+                    <span class="mt-3 block text-[0.85rem] leading-relaxed text-ivory/75">Conformité sociale, due diligence RH et prévention des risques pour les corporates et institutions.</span>
+                  </span>
+                  <span class="mt-8 inline-flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-brass">Découvrir <span aria-hidden="true" class="transition-transform group-hover/feat:translate-x-1">→</span></span>
+                </a>
+                <div class="p-7">
+                  <a href="droit-prive.html" class="group/dp block border-b border-brass/30 pb-4 text-ivory hover:text-brass">
+                    <span class="block font-display text-[1.3rem] leading-none">Droit Privé</span>
+                    <span class="mt-2 inline-flex items-center gap-1.5 text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-brass">Vue d'ensemble <span aria-hidden="true" class="transition-transform group-hover/dp:translate-x-1">→</span></span>
+                  </a>
+                  <ul class="mt-4 space-y-3 font-display text-[1.05rem] text-ivory/85">
+                    <li><a href="droit-civil.html" class="hover:text-brass">Droit Civil</a></li>
+                    <li><a href="droit-social.html" aria-current="page" class="text-brass">Droit Social</a></li>
+                    <li><a href="droit-maritime.html" class="hover:text-brass">Droit Maritime</a></li>
+                    <li><a href="droit-des-affaires.html" class="hover:text-brass">Droit des Affaires</a></li>
+                    <li><a href="droit-propriete-intellectuelle.html" class="hover:text-brass">Droit de la Propriété Intellectuelle</a></li>
+                  </ul>
+                </div>
+                <div class="flex flex-col justify-between border-l border-ivory/10 p-7">
+                  <div>
+                    <p class="eyebrow text-[0.58rem] text-brass">Droit public</p>
+                    <p class="mt-5 font-display text-[1.05rem] leading-snug text-ivory/85">Droit administratif et procédures administratives</p>
+                    <p class="mt-2 text-[0.8rem] leading-relaxed text-ivory/55">Rapports avec l'administration, autorisations diverses, Visas.</p>
+                  </div>
+                  <a href="index.html#domaines" class="mt-8 inline-flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-ivory/70 hover:text-brass">Tous les domaines <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="contact.html" class="u-link hover:text-ivory">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="contact.html" class="hidden sm:inline-flex items-center gap-3 border border-brass/60 px-5 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-brass transition hover:bg-brass hover:text-ink">
+          Nous contacter
+          <svg class="h-3 w-3" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 11 11 1M4 1h7v7" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+        </a>
+        <button id="menu-btn" class="lg:hidden flex h-11 w-11 flex-col items-center justify-center gap-1.5 text-ivory" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+          <span class="h-px w-6 bg-current transition"></span>
+          <span class="h-px w-6 bg-current transition"></span>
+        </button>
       </div>
     </div>
 
-    <div class="foot__bottom">
-      <p>Copyright ©<span data-year>2026</span> <strong>Cabinet Massoma</strong> — Propulsé par Honowa Technologies</p>
-      <div class="foot__marks">
-        <span class="mono mono--sm">Standard normatif OHADA</span><span class="mono mono--sm">•</span><span class="mono mono--sm">IAS Paris</span><span class="mono mono--sm">•</span><span class="mono mono--sm">Expertise BIT &amp; GICAM</span>
+    <div id="mobile-menu" class="lg:hidden hidden max-h-[calc(100svh-5rem)] overflow-y-auto border-t border-brass/20 bg-ink">
+      <nav aria-label="Navigation mobile" class="px-4 py-8 sm:px-8">
+        <ul class="space-y-5 font-display text-3xl text-ivory">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#a-propos">A Propos</a></li>
+          <li>
+            <a href="index.html#domaines">Domaines d'intervention</a>
+            <ul class="mt-4 space-y-3 border-l border-brass/30 pl-5 font-sans text-base text-ivory/70">
+              <li><a href="audit-social.html">Audit Social</a></li>
+              <li><a href="droit-prive.html">Droit Privé — vue d'ensemble</a></li>
+              <li><a href="droit-civil.html">Droit Civil</a></li>
+              <li><a href="droit-social.html" aria-current="page" class="text-brass">Droit Social</a></li>
+              <li><a href="droit-maritime.html">Droit Maritime</a></li>
+              <li><a href="droit-des-affaires.html">Droit des Affaires</a></li>
+              <li><a href="droit-propriete-intellectuelle.html">Droit de la Propriété Intellectuelle</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ================= HÉRO ================= -->
+    <section aria-labelledby="page-title" class="grain guides relative isolate overflow-hidden bg-ink text-ivory">
+      <div aria-hidden="true" class="pointer-events-none absolute -right-40 -top-40 -z-10 h-[46rem] w-[46rem] rounded-full bg-wouri/45 blur-[140px]"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute -bottom-60 -left-40 -z-10 h-[34rem] w-[34rem] rounded-full bg-brass/10 blur-[120px]"></div>
+
+      <div class="mx-auto grid max-w-[1400px] grid-cols-12 gap-x-6 px-4 pb-24 pt-32 sm:px-8 lg:pb-28 lg:pt-40">
+        <div class="col-span-12 lg:col-span-7">
+          <nav aria-label="Fil d'Ariane">
+            <ol class="flex flex-wrap items-center gap-2 font-mono text-[0.68rem] uppercase tracking-[0.18em] text-ivory/50">
+              <li><a href="index.html" class="hover:text-brass">Accueil</a></li>
+              <li aria-hidden="true">/</li>
+              <li><a href="index.html#domaines" class="hover:text-brass">Domaines d'intervention</a></li>
+              <li aria-hidden="true">/</li>
+              <li aria-current="page" class="text-brass">Droit Social</li>
+            </ol>
+          </nav>
+
+          <p class="eyebrow mt-12 flex items-center gap-4 text-brass"><span class="h-px w-10 shrink-0 bg-brass"></span> Stratégie RH &amp; Conformité Sociale • Expert BIT / IAS</p>
+          <h1 id="page-title" class="mt-6 font-display font-light leading-[0.95] tracking-[-0.02em] text-[clamp(2.8rem,7vw,6.6rem)]">
+            <span class="line-mask"><span>Droit Social &amp;</span></span>
+            <span class="line-mask"><span><em class="italic text-brass">Stratégie RH Corporate</em></span></span>
+          </h1>
+          <p class="mt-8 max-w-2xl text-[1.05rem] leading-relaxed text-ivory/70 reveal" data-delay="1">
+            Restructurations d'effectifs, contentieux prud'homal, mobilité des expatriés, dialogue social
+            sous tension : les décisions sociales engagent la trésorerie, la réputation et la continuité
+            de l'entreprise. Le cabinet en sécurise chaque étape, de l'ingénierie contractuelle à la
+            défense devant les chambres sociales, au Cameroun comme à l'international.
+          </p>
+
+          <dl class="mt-10 grid max-w-2xl grid-cols-1 gap-px bg-ivory/10 sm:grid-cols-3 reveal" data-delay="2">
+            <div class="bg-ink p-5">
+              <dt class="font-display text-2xl text-brass">Expert BIT</dt>
+              <dd class="mt-2 text-[0.8rem] leading-snug text-ivory/60">Bureau International<br>du Travail</dd>
+            </div>
+            <div class="bg-ink p-5">
+              <dt class="font-display text-2xl text-brass">IAS Paris</dt>
+              <dd class="mt-2 text-[0.8rem] leading-snug text-ivory/60">Institut Int. de<br>l'Audit Social</dd>
+            </div>
+            <div class="bg-ink p-5">
+              <dt class="font-display text-2xl text-brass">Sorbonne</dt>
+              <dd class="mt-2 text-[0.8rem] leading-snug text-ivory/60">DEA Droit Social<br>(Paris I)</dd>
+            </div>
+          </dl>
+
+          <div class="mt-10 flex flex-wrap items-center gap-4 reveal" data-delay="3">
+            <a href="#contact" class="group inline-flex items-center gap-4 bg-brass px-7 py-4 text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-ink transition hover:bg-ivory">
+              Solliciter une consultation
+              <svg class="h-3.5 w-3.5 transition group-hover:translate-x-0.5" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6h10M6.5 1.5 11 6l-4.5 4.5" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            </a>
+            <a href="#expertises" class="inline-flex items-center gap-3 px-2 py-4 text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-ivory/80 hover:text-ivory">
+              <span class="u-link">Découvrir les 6 piliers</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="relative col-span-12 mt-16 lg:col-span-5 lg:mt-6">
+          <figure class="relative mx-auto max-w-[30rem] reveal" data-delay="1">
+            <div class="overflow-hidden rounded-t-[999px] border border-brass/30 p-3">
+              <img src="images/hero-cour-appel-bonanjo-560.webp" srcset="images/hero-cour-appel-bonanjo-560.webp 560w, images/hero-cour-appel-bonanjo-1120.webp 1120w" sizes="(min-width: 1024px) 30rem, 90vw"
+                   alt="Avocat relisant un dossier relié à son bureau, face aux toits de Douala au coucher du soleil"
+                   width="1120" height="1400" fetchpriority="high" class="aspect-[4/5] w-full rounded-t-[999px] object-cover">
+            </div>
+            <div aria-hidden="true" class="absolute -bottom-8 -left-4 h-28 w-28 rounded-full bg-ink p-2 text-brass shadow-2xl shadow-black/40 sm:-left-10">
+              <svg class="h-full w-full" viewBox="0 0 200 200">
+                <circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                <circle cx="100" cy="100" r="86" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="1.3 3.7"/>
+                <circle cx="100" cy="100" r="63" fill="none" stroke="currentColor" stroke-width=".6" opacity=".5"/>
+                <path d="M74 126V74l26 31 26-31v52" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="miter"/>
+                <path d="M67 74h12M121 74h12M67 126h12M121 126h12" fill="none" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M74 138h52" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".6"/>
+              </svg>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ART. I — VISION ================= -->
+    <section id="vision" aria-labelledby="vision-title" class="bg-paper py-24 lg:py-32">
+      <div class="mx-auto max-w-[1400px] px-4 sm:px-8">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div class="lg:col-span-8 reveal">
+            <p class="eyebrow flex items-center gap-4 text-brass-2"><span class="h-px w-10 bg-brass-2"></span> ART. I — Doctrine sociale</p>
+            <h2 id="vision-title" class="mt-6 font-display text-[clamp(2.2rem,4.4vw,3.8rem)] font-light leading-[1.03] tracking-tight">Le Droit Social comme Levier de Performance et de <em class="italic text-wouri">Sécurité Bilancielle</em></h2>
+          </div>
+          <p class="eyebrow text-[0.62rem] leading-relaxed text-ink/50 lg:col-span-3 lg:col-start-10 lg:text-right reveal" data-delay="1">Vision stratégique<br>Employeurs &amp; DRH</p>
+        </div>
+
+        <div class="mt-16 grid gap-14 lg:grid-cols-12">
+          <figure class="relative lg:col-span-5 reveal">
+            <img src="images/expertise-audit-social-640.webp" srcset="images/expertise-audit-social-640.webp 640w, images/expertise-audit-social-1280.webp 1280w" sizes="(min-width: 1024px) 38vw, 92vw" alt="Avocat annotant une grille d'audit et des dossiers du personnel sur son bureau" width="1280" height="960" loading="lazy" class="aspect-[4/5] w-full object-cover object-[62%_50%]">
+            <div aria-hidden="true" class="absolute -bottom-5 -right-5 hidden h-full w-full border border-brass/50 sm:block" style="z-index:-1"></div>
+          </figure>
+          <div class="lg:col-span-6 lg:col-start-7 reveal" data-delay="1">
+            <p class="font-display text-2xl font-light leading-snug sm:text-[1.6rem]">
+              Dans l'économie contemporaine, le droit social ne se réduit pas à une contrainte administrative
+              ou prud'homale. Pour les multinationales, les groupes industriels, les compagnies maritimes et
+              les banques opérant en Afrique centrale, il constitue un actif immatériel stratégique : un levier
+              d'optimisation de la masse salariale, un rempart contre le risque réputationnel et un instrument
+              d'accompagnement des mutations industrielles. La qualité des relations de travail conditionne la
+              valeur de l'entreprise, la solidité de son bilan social et la confiance durable de ses
+              investisseurs, en amont comme au contentieux.
+            </p>
+            <p class="mt-8 text-lg leading-relaxed text-ink/70">
+              Le cabinet inscrit sa pratique dans les standards des grandes places du droit social d'affaires.
+              Dirigé par un avocat titulaire d'un DEA en droit social de Paris I Panthéon-Sorbonne, membre de
+              l'Institut international de l'audit social (IAS Paris), Expert national du Bureau international
+              du Travail et consultant du GICAM, il apporte une crédibilité institutionnelle reconnue auprès
+              des inspecteurs du travail, des magistrats et des partenaires sociaux.
+            </p>
+            <p class="mt-5 text-lg leading-relaxed text-ink/70">
+              Cette double culture, contentieuse et normative, permet d'anticiper la décision administrative,
+              de calibrer la négociation collective et de chiffrer les passifs sociaux avant qu'ils ne
+              deviennent des condamnations. Chaque dossier est traité comme une opération juridique à part
+              entière, avec ses pièces, son calendrier et son plan de sortie.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-20 grid gap-6 md:grid-cols-3">
+          <article class="border border-line bg-ivory p-8 reveal">
+            <span aria-hidden="true" class="block h-px w-10 bg-brass"></span>
+            <h3 class="mt-6 font-display text-2xl">Due Diligence &amp; Audit Social</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Mesure exhaustive des passifs sociaux, chiffrage des engagements de retraite, vérification des cotisations CNPS et sécurisation des garanties de passif social lors des cessions.</p>
+          </article>
+          <article class="border border-line bg-ivory p-8 reveal" data-delay="1">
+            <span aria-hidden="true" class="block h-px w-10 bg-brass"></span>
+            <h3 class="mt-6 font-display text-2xl">Dialogue Social &amp; Conventions</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Négociation collective sous maîtrise, accords d'entreprise dérogatoires, élections professionnelles et gestion préventive des préavis de grève, afin de préserver le climat interne et la continuité d'exploitation.</p>
+          </article>
+          <article class="border border-line bg-ivory p-8 reveal" data-delay="2">
+            <span aria-hidden="true" class="block h-px w-10 bg-brass"></span>
+            <h3 class="mt-6 font-display text-2xl">Défense Patronale de Haute Intensité</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Représentation devant les chambres sociales, contestation des nullités procédurales et des condamnations infondées, au fond comme en référé, sécurisation des transactions et purge des voies de recours.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ART. II — LES SIX PILIERS ================= -->
+    <section id="expertises" aria-labelledby="expertises-title" class="bg-ivory py-24 lg:py-32">
+      <div class="mx-auto max-w-[1400px] px-4 sm:px-8">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div class="lg:col-span-8 reveal">
+            <p class="eyebrow flex items-center gap-4 text-brass-2"><span class="h-px w-10 bg-brass-2"></span> ART. II — Domaines d'excellence</p>
+            <h2 id="expertises-title" class="mt-6 font-display text-[clamp(2.2rem,4.6vw,4rem)] font-light leading-[1.03] tracking-tight">Les 6 Piliers Stratégiques en <em class="italic text-wouri">Droit Social &amp; Relations de Travail</em></h2>
+          </div>
+          <p class="eyebrow text-[0.62rem] leading-relaxed text-ink/50 lg:col-span-3 lg:col-start-10 lg:text-right reveal" data-delay="1">Ingénierie contractuelle<br>Restructurations &amp; gestion de crise</p>
+        </div>
+
+        <div class="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article class="flex flex-col border border-line bg-paper p-8 sm:p-10 reveal">
+            <span class="font-mono text-xs text-brass-2">01</span>
+            <h3 class="mt-6 font-display text-2xl sm:text-[1.7rem] leading-tight">Restructurations Sociales &amp; Licenciements Collectifs</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Ingénierie juridique des réorganisations d'effectifs, fermetures de sites, filialisation et licenciements pour motif économique au Cameroun et en zone CEMAC, avec sécurisation des critères d'ordre et des justificatifs économiques.</p>
+            <ul class="mt-8 space-y-3 border-t border-ink/10 pt-6 text-[0.95rem] leading-relaxed text-ink/75">
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Conformité scrupuleuse à l'article 40 du Code du Travail camerounais</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Élaboration de plans de départs volontaires (PDV) sécurisés</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Pilotage des échanges avec l'Inspection du Travail et les ministères</li>
+            </ul>
+          </article>
+
+          <article class="flex flex-col border border-line bg-paper p-8 sm:p-10 reveal" data-delay="1">
+            <span class="font-mono text-xs text-brass-2">02</span>
+            <h3 class="mt-6 font-display text-2xl sm:text-[1.7rem] leading-tight">Statut des Dirigeants &amp; Mobilité des Expatriés</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Sécurisation du statut des mandataires sociaux, des rémunérations différées et des packages d'expatriation, ainsi que des visas de travail des cadres étrangers exerçant au Cameroun.</p>
+            <ul class="mt-8 space-y-3 border-t border-ink/10 pt-6 text-[0.95rem] leading-relaxed text-ink/75">
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Articulation du mandat social et du contrat de travail</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Visa des contrats de travail étrangers (article 27)</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Clauses de non-concurrence, d'exclusivité et golden parachutes</li>
+            </ul>
+          </article>
+
+          <article class="flex flex-col border border-line bg-paper p-8 sm:p-10 reveal" data-delay="2">
+            <span class="font-mono text-xs text-brass-2">03</span>
+            <h3 class="mt-6 font-display text-2xl sm:text-[1.7rem] leading-tight">Négociations Collectives &amp; Relations Syndicales</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Accompagnement patronal lors des négociations périodiques, gestion des délégués du personnel et résorption des crises sociales, de la table de négociation au référé d'expulsion.</p>
+            <ul class="mt-8 space-y-3 border-t border-ink/10 pt-6 text-[0.95rem] leading-relaxed text-ink/75">
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Rédaction d'accords d'établissement et de conventions d'entreprise</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Supervision juridique des élections des délégués du personnel</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Gestion d'urgence des préavis de grève et référés d'évacuation</li>
+            </ul>
+          </article>
+
+          <article class="flex flex-col bg-wouri p-8 text-ivory sm:p-10 reveal">
+            <span class="font-mono text-xs text-brass">04</span>
+            <h3 class="mt-6 font-display text-2xl sm:text-[1.7rem] leading-tight">Audit Social &amp; Conformité Normative (BIT / IAS)</h3>
+            <p class="mt-4 leading-relaxed text-ivory/75">Audit de conformité sociale conduit selon les normes de l'Institut international de l'audit social (IAS Paris) et les conventions fondamentales du BIT, du contrôle de paie à la due diligence d'acquisition.</p>
+            <ul class="mt-8 space-y-3 border-t border-ivory/15 pt-6 text-[0.95rem] leading-relaxed text-ivory/85">
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Contrôle de la paie, des cotisations CNPS et du temps de travail</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Due diligence RH dans le cadre des fusions-acquisitions (M&amp;A)</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Charte éthique, RSE et règlement intérieur conformes</li>
+            </ul>
+          </article>
+
+          <article class="flex flex-col border border-line bg-paper p-8 sm:p-10 reveal" data-delay="1">
+            <span class="font-mono text-xs text-brass-2">05</span>
+            <h3 class="mt-6 font-display text-2xl sm:text-[1.7rem] leading-tight">Contentieux Social &amp; Défense Patronale</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Assistance stratégique dès la conciliation préalable devant l'Inspecteur du Travail jusqu'aux plaidoiries devant les chambres sociales des tribunaux, en première instance comme en appel.</p>
+            <ul class="mt-8 space-y-3 border-t border-ink/10 pt-6 text-[0.95rem] leading-relaxed text-ink/75">
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Représentation impérative en conciliation d'Inspection du Travail</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Défense contre les allégations de licenciement abusif ou vexatoire</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Négociation de protocoles transactionnels avec quittance pour solde</li>
+            </ul>
+          </article>
+
+          <article class="flex flex-col bg-ink-2 p-8 text-ivory sm:p-10 reveal" data-delay="2">
+            <span class="font-mono text-xs text-brass">06</span>
+            <h3 class="mt-6 font-display text-2xl sm:text-[1.7rem] leading-tight">Hygiène, Sécurité (HSCT) &amp; Risques Psychosociaux</h3>
+            <p class="mt-4 leading-relaxed text-ivory/70">Protection pénale et civile de l'employeur face aux accidents du travail, aux maladies professionnelles et au contrôle des obligations de sécurité de résultat, y compris en matière de RPS.</p>
+            <ul class="mt-8 space-y-3 border-t border-ivory/15 pt-6 text-[0.95rem] leading-relaxed text-ivory/80">
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Gestion des sinistres corporels graves et enquêtes d'accidents</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Délégations de pouvoirs HSCT et exonération de responsabilité</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Enquêtes internes sur harcèlement ou discrimination</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ART. III — JURIDICTIONS ================= -->
+    <section id="juridictions" aria-labelledby="juridictions-title" class="bg-paper py-24 lg:py-32">
+      <div class="mx-auto max-w-[1400px] px-4 sm:px-8">
+        <div class="max-w-4xl reveal">
+          <p class="eyebrow flex items-center gap-4 text-brass-2"><span class="h-px w-10 bg-brass-2"></span> ART. III — Rayonnement judiciaire</p>
+          <h2 id="juridictions-title" class="mt-6 font-display text-[clamp(2.2rem,4.4vw,3.8rem)] font-light leading-[1.03] tracking-tight">Une Maîtrise Complète des <em class="italic text-wouri">Instances Administratives et Judiciaires</em></h2>
+        </div>
+
+        <div class="mt-16 grid gap-14 lg:grid-cols-12">
+          <div class="lg:col-span-5 reveal">
+            <div class="border-l-2 border-brass bg-ivory p-8 sm:p-10">
+              <p class="eyebrow text-brass-2">Crédibilité &amp; Maîtrise Institutionnelle</p>
+              <p class="mt-6 font-display text-xl font-light leading-snug sm:text-2xl">La gestion d'un litige du travail suppose d'anticiper chaque stade de la procédure sociale camerounaise : la conciliation obligatoire devant l'Inspecteur du Travail, puis l'instance juridictionnelle devant la chambre sociale du Tribunal de première instance et la Cour d'appel. Cette maîtrise procédurale détermine l'issue du dossier autant que le droit applicable.</p>
+            </div>
+          </div>
+          <ol class="grid gap-px self-start border border-line bg-line sm:grid-cols-2 lg:col-span-7">
+            <li class="bg-paper p-8 reveal">
+              <p class="eyebrow text-[0.6rem] text-brass-2"><span class="font-mono">01</span> · Premier degré administratif</p>
+              <h3 class="mt-4 font-display text-2xl">Inspections Régionales du Travail</h3>
+              <p class="mt-3 leading-relaxed text-ink/70">Douala (Littoral), Yaoundé (Centre), Kribi et Bafoussam : conciliations individuelles, enquêtes administratives préalables et instruction des sanctions patronales.</p>
+            </li>
+            <li class="bg-paper p-8 reveal" data-delay="1">
+              <p class="eyebrow text-[0.6rem] text-brass-2"><span class="font-mono">02</span> · Première instance</p>
+              <h3 class="mt-4 font-display text-2xl">Chambres Sociales des TPI</h3>
+              <p class="mt-3 leading-relaxed text-ink/70">Tribunaux de première instance de Douala-Bonanjo, Douala-Ndokoti et Yaoundé : jugement au fond, avec assesseurs patronaux et représentants des salariés.</p>
+            </li>
+            <li class="bg-paper p-8 reveal">
+              <p class="eyebrow text-[0.6rem] text-brass-2"><span class="font-mono">03</span> · Second degré</p>
+              <h3 class="mt-4 font-display text-2xl">Cour d'Appel de Douala-Bonanjo</h3>
+              <p class="mt-3 leading-relaxed text-ink/70">Chambres sociales d'appel : réformation des jugements défavorables, sursis à exécution et sécurisation des jurisprudences régionales.</p>
+            </li>
+            <li class="bg-paper p-8 reveal" data-delay="1">
+              <p class="eyebrow text-[0.6rem] text-brass-2"><span class="font-mono">04</span> · International</p>
+              <h3 class="mt-4 font-display text-2xl">Barreau de Versailles &amp; Instances BIT</h3>
+              <p class="mt-3 leading-relaxed text-ink/70">Contentieux des détachements transfrontaliers en France et recours aux normes internationales du travail, dans le cadre des procédures du BIT.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ART. IV — MÉTHODE ================= -->
+    <section id="methode" aria-labelledby="methode-title" class="relative overflow-hidden bg-ink py-24 text-ivory lg:py-32 grain">
+      <div aria-hidden="true" class="absolute -right-40 top-0 h-[30rem] w-[30rem] rounded-full bg-wouri/40 blur-[120px]"></div>
+      <div class="relative mx-auto max-w-[1400px] px-4 sm:px-8">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div class="lg:col-span-8 reveal">
+            <p class="eyebrow text-brass">ART. IV — Rigueur méthodologique</p>
+            <h2 id="methode-title" class="mt-6 font-display text-[clamp(2.2rem,4.6vw,4rem)] font-light leading-[1.03]">Une Démarche Stratégique <em class="italic text-brass">en 4 Phases</em></h2>
+          </div>
+          <p class="eyebrow text-[0.62rem] text-ivory/50 lg:col-span-3 lg:col-start-10 lg:text-right reveal" data-delay="1">Rigueur &amp; Déontologie</p>
+        </div>
+
+        <ol class="relative mt-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          <li aria-hidden="true" class="absolute left-0 right-0 top-6 hidden h-px bg-gradient-to-r from-brass/70 via-brass/30 to-transparent lg:block"></li>
+          <li class="relative reveal">
+            <span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-brass bg-ink font-mono text-sm text-brass">01</span>
+            <h3 class="mt-8 font-display text-2xl">Audit du Risque &amp; Conformité</h3>
+            <p class="mt-3 leading-relaxed text-ivory/65">Revue approfondie des dossiers contractuels, analyse des faits reprochés, contrôle de la régularité des sanctions antérieures et calcul des provisions. Chaque pièce est datée, chaque délai vérifié et chaque exposition chiffrée avant toute décision.</p>
+          </li>
+          <li class="relative reveal" data-delay="1">
+            <span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-brass bg-ink font-mono text-sm text-brass">02</span>
+            <h3 class="mt-8 font-display text-2xl">Ingénierie &amp; Cadrage Procédural</h3>
+            <p class="mt-3 leading-relaxed text-ivory/65">Rédaction des courriers d'entretien préalable, respect strict des délais légaux, formalisation des motifs et préparation des simulations de sortie comme des scénarios de transaction.</p>
+          </li>
+          <li class="relative reveal" data-delay="2">
+            <span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-brass bg-ink font-mono text-sm text-brass">03</span>
+            <h3 class="mt-8 font-display text-2xl">Négociation ou Conciliation</h3>
+            <p class="mt-3 leading-relaxed text-ivory/65">Conduite ferme et équilibrée des débats devant l'Inspection du Travail, négociation d'accords transactionnels sous le sceau du secret professionnel de l'avocat, avec quittance pour solde.</p>
+          </li>
+          <li class="relative reveal" data-delay="3">
+            <span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-brass bg-brass font-mono text-sm text-ink">04</span>
+            <h3 class="mt-8 font-display text-2xl">Défense en Prétoire &amp; Sécurisation</h3>
+            <p class="mt-3 leading-relaxed text-ivory/65">Plaidoirie rigoureuse devant le Tribunal de première instance et la Cour d'appel, production de conclusions exhaustives et purge complète de tout risque de recours.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= ART. V — FAQ ================= -->
+    <section id="faq" aria-labelledby="faq-title" class="bg-ivory py-24 lg:py-32">
+      <div class="mx-auto grid max-w-[1400px] gap-14 px-4 sm:px-8 lg:grid-cols-12">
+        <div class="lg:col-span-4 reveal">
+          <p class="eyebrow flex items-center gap-4 text-brass-2"><span class="h-px w-10 bg-brass-2"></span> ART. V — Éclairages</p>
+          <h2 id="faq-title" class="mt-6 font-display text-[clamp(2.2rem,4vw,3.4rem)] font-light leading-[1.05]">Questions Stratégiques en Droit Social &amp; Relations de Travail</h2>
+          <p class="eyebrow mt-8 text-[0.6rem] leading-relaxed text-ink/50">Cible : directions juridiques<br>et comités de direction</p>
+        </div>
+        <div class="lg:col-span-8 reveal" data-delay="1">
+          <details class="border-t border-ink/15 py-6" open>
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="flex gap-5 font-display text-xl sm:text-2xl"><span aria-hidden="true" class="mt-1.5 shrink-0 font-mono text-xs text-brass-2">01</span><span>Quelle est la procédure légale impérative d'un licenciement collectif pour motif économique au Cameroun ?</span></h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70 sm:pl-10">L'article 40 du Code du Travail camerounais encadre strictement le licenciement pour motif économique, qu'il résulte d'une diminution d'activité, d'une réorganisation interne ou de difficultés financières. L'employeur doit réunir les délégués du personnel pour recueillir leurs suggestions, en leur communiquant la liste des postes impactés et les critères d'ordre des licenciements : ancienneté, charges de famille, compétences professionnelles. L'Inspecteur du Travail du ressort est formellement informé et tenu en copie de l'ensemble du processus. Le cabinet accompagne les directions générales dès la phase amont pour étayer les justificatifs économiques, conduire le calendrier social et négocier, si opportun, des plans de départs volontaires (PDV) qui neutralisent l'aléa prud'homal.</p>
+          </details>
+          <details class="border-t border-ink/15 py-6">
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="flex gap-5 font-display text-xl sm:text-2xl"><span aria-hidden="true" class="mt-1.5 shrink-0 font-mono text-xs text-brass-2">02</span><span>Comment sécuriser le statut et le visa de travail d'un cadre dirigeant étranger ou expatrié ?</span></h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70 sm:pl-10">Selon l'article 27 du Code du Travail, tout contrat de travail stipulant une exécution au Cameroun et concernant un travailleur de nationalité étrangère doit, préalablement à tout commencement d'exécution, être visé par le ministère du Travail. L'absence de visa frappe le contrat d'une nullité relative invocable par le travailleur et expose l'entreprise à des sanctions pénales et administratives. Le cabinet instruit l'intégralité des dossiers de visa de travail, structure les conventions de détachement ou de mise à disposition intragroupe et assure la conformité fiscale et sociale locale, notamment le versement des cotisations CNPS et les retenues sur salaires.</p>
+          </details>
+          <details class="border-t border-ink/15 py-6">
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="flex gap-5 font-display text-xl sm:text-2xl"><span aria-hidden="true" class="mt-1.5 shrink-0 font-mono text-xs text-brass-2">03</span><span>Quel est l'intérêt concret d'un audit social d'entreprise certifié (normes IAS / BIT) ?</span></h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70 sm:pl-10">L'audit social identifie et quantifie les passifs cachés de l'entreprise : contrats à durée déterminée irrégulièrement renouvelés et susceptibles de requalification en contrat à durée indéterminée, heures supplémentaires non déclarées, cotisations CNPS éludées, absence de règlement intérieur conforme ou défaillances des dispositifs HSCT. Fort de son affiliation à l'Institut international de l'audit social (IAS Paris), le cabinet remet aux comités de direction un rapport exhaustif, assorti d'une matrice de criticité des risques et d'un plan de mise en conformité prioritaire. Ce document devient une pièce déterminante lors des levées de fonds, des cessions et des fusions-acquisitions.</p>
+          </details>
+          <details class="border-t border-ink/15 py-6">
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="flex gap-5 font-display text-xl sm:text-2xl"><span aria-hidden="true" class="mt-1.5 shrink-0 font-mono text-xs text-brass-2">04</span><span>Comment réagir face à un préavis de grève ou à une occupation illicite d'usine ?</span></h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70 sm:pl-10">Le droit de grève est constitutionnellement reconnu, mais subordonné à l'épuisement préalable des voies de conciliation et d'arbitrage prévues par le Code du Travail camerounais. Toute grève déclenchée sans respecter ces préalables est illicite et constitue une faute lourde, privative de préavis et d'indemnités de licenciement pour les meneurs. En cas de blocage d'un site industriel ou logistique, le cabinet mandate un huissier pour établir les constats matériels, saisit le juge des référés d'heure à heure aux fins d'expulsion des occupants avec recours à la force publique, et assiste la direction générale dans les pourparlers avec les représentants légitimes du personnel.</p>
+          </details>
+          <details class="border-y border-ink/15 py-6">
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="flex gap-5 font-display text-xl sm:text-2xl"><span aria-hidden="true" class="mt-1.5 shrink-0 font-mono text-xs text-brass-2">05</span><span>Pourquoi la phase de conciliation devant l'Inspection du Travail est-elle déterminante pour l'employeur ?</span></h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70 sm:pl-10">L'article 139 du Code du Travail rend obligatoire la tentative de conciliation devant l'Inspecteur du Travail avant toute saisine du tribunal. Si un accord intervient, l'Inspecteur dresse un procès-verbal de conciliation totale qui éteint définitivement l'action en justice et a force de jugement définitif. En cas d'échec ou de conciliation partielle, le procès-verbal de non-conciliation délimite strictement les prétentions des parties. Être assisté dès cette phase évite les concessions imprudentes, démontre la rigueur de l'employeur et permet souvent de conclure une transaction définitive à des conditions maîtrisées.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= INDEX SÉMANTIQUE (agents IA) ================= -->
+    <section id="index-semantique" aria-label="Index sémantique machine" class="bg-paper py-20 lg:py-24">
+      <div class="mx-auto max-w-[1400px] px-4 sm:px-8">
+        <aside class="border border-line bg-ivory p-8 sm:p-10 reveal">
+          <p class="eyebrow flex items-center gap-3 text-brass-2">
+            <svg class="h-5 w-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.5 3v6.1c0 4.6-3.2 7.9-7.5 9.3-4.3-1.4-7.5-4.7-7.5-9.3V6L12 3z"/><path d="M9 12.2l2.1 2.1L15.2 10"/></svg>
+            Index sémantique machine • Droit Social Cabinet Massoma
+          </p>
+          <dl class="mt-8 divide-y divide-ink/10 border-t border-ink/10">
+            <div class="grid gap-2 py-4 sm:grid-cols-[14rem_1fr] sm:gap-8"><dt class="eyebrow pt-1 text-[0.6rem] text-ink/55">Entité opératrice</dt><dd class="leading-relaxed text-ink/75">Cabinet Massoma — avocats conseils et auditeurs sociaux. Cour d'Appel, Bonanjo, Douala (Cameroun) &amp; Barreau de Versailles (France).</dd></div>
+            <div class="grid gap-2 py-4 sm:grid-cols-[14rem_1fr] sm:gap-8"><dt class="eyebrow pt-1 text-[0.6rem] text-ink/55">Cadre normatif</dt><dd class="leading-relaxed text-ink/75">Code du Travail camerounais (articles 27, 40 et 139), conventions OIT/BIT, normes de l'Institut international de l'audit social (IAS Paris), réglementation CNPS et obligations HSCT.</dd></div>
+            <div class="grid gap-2 py-4 sm:grid-cols-[14rem_1fr] sm:gap-8"><dt class="eyebrow pt-1 text-[0.6rem] text-ink/55">Matières traitées</dt><dd class="leading-relaxed text-ink/75">Restructurations et licenciements collectifs, plans de départs volontaires, mobilité des expatriés, négociation collective, audit social, contentieux prud'homal, risques psychosociaux.</dd></div>
+            <div class="grid gap-2 py-4 sm:grid-cols-[14rem_1fr] sm:gap-8"><dt class="eyebrow pt-1 text-[0.6rem] text-ink/55">Juridictions / instances</dt><dd class="leading-relaxed text-ink/75">Inspections régionales du Travail, chambres sociales des TPI, Cour d'Appel de Douala-Bonanjo, Barreau de Versailles et instances du BIT.</dd></div>
+            <div class="grid gap-2 py-4 sm:grid-cols-[14rem_1fr] sm:gap-8"><dt class="eyebrow pt-1 text-[0.6rem] text-ink/55">Clientèle cible</dt><dd class="leading-relaxed text-ink/75">Directions des ressources humaines, directions générales, directions juridiques, groupes multinationaux et employeurs de l'espace CEMAC.</dd></div>
+            <div class="grid gap-2 py-4 sm:grid-cols-[14rem_1fr] sm:gap-8"><dt class="eyebrow pt-1 text-[0.6rem] text-ink/55">Contact officiel</dt><dd class="leading-relaxed text-ink/75">Cour d'Appel, Bonanjo, BP 2668 Douala | (+237) 233 43 22 34 | auditsocial@cabinetmassoma.com</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= APPEL FINAL ================= -->
+    <section id="contact" aria-labelledby="cta-title" class="relative isolate overflow-hidden bg-brass text-ink">
+      <svg aria-hidden="true" class="absolute -right-24 top-1/2 -z-10 h-[38rem] w-[38rem] -translate-y-1/2 opacity-15" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="47" fill="none" stroke="#0C1620" stroke-width=".6"/>
+        <path d="M29 68V32.5L50 60 71 32.5V68" fill="none" stroke="#0C1620" stroke-width="1.6"/>
+      </svg>
+      <div class="mx-auto flex max-w-[1400px] flex-col gap-10 px-4 py-24 sm:px-8 lg:flex-row lg:items-end lg:justify-between lg:py-28">
+        <div class="reveal">
+          <p class="eyebrow text-ink/60">Directions des Ressources Humaines &amp; Directions Générales</p>
+          <h2 id="cta-title" class="mt-5 max-w-3xl font-display text-[clamp(2.2rem,5vw,4.4rem)] font-light leading-[1.02]">Sécurisez Vos Relations Sociales &amp; Vos Projets de Restructuration</h2>
+        </div>
+        <div class="flex shrink-0 flex-col items-start gap-4 reveal" data-delay="1">
+          <a href="tel:+237233432234" class="group inline-flex items-center gap-4 bg-ink px-8 py-5 text-[0.8rem] font-semibold uppercase tracking-[0.22em] text-ivory transition-colors hover:bg-ink-3">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.4 3h3.1l1.6 4.1-2.1 1.5a12.3 12.3 0 0 0 6.4 6.4l1.5-2.1L21 14.5v3.1a2 2 0 0 1-2.2 2A17.2 17.2 0 0 1 4.4 5.2 2 2 0 0 1 6.4 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            Appeler le Cabinet
+          </a>
+          <a href="mailto:contact@cabinetmassoma.com" class="group inline-flex items-center gap-4 border border-ink/40 px-8 py-5 text-[0.8rem] font-semibold uppercase tracking-[0.22em] text-ink transition-colors hover:bg-ink hover:text-ivory">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3.4 6.4L12 13l8.6-6.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+            Écrire au Pôle Audit Social
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PIED DE PAGE ================= -->
+  <footer class="bg-ink text-ivory/70">
+    <div class="mx-auto max-w-[1400px] px-4 pt-20 sm:px-8">
+      <div class="grid gap-14 border-b border-ivory/10 pb-16 md:grid-cols-2 lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <a href="index.html" class="flex items-center gap-4 text-ivory" aria-label="Cabinet Massoma — Accueil">
+            <svg class="h-14 w-14" viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="47" fill="none" stroke="#C9A46A" stroke-width="1.5"/>
+              <circle cx="50" cy="50" r="41" fill="none" stroke="#C9A46A" stroke-width=".6" opacity=".6"/>
+              <path d="M29 68V32.5L50 60 71 32.5V68" fill="none" stroke="#C9A46A" stroke-width="4.2"/>
+              <path d="M24 68h11M65 68h11" stroke="#C9A46A" stroke-width="2"/>
+              <circle cx="50" cy="24" r="2.2" fill="#C9A46A"/>
+            </svg>
+            <span class="font-display text-3xl">Cabinet Massoma</span>
+          </a>
+          <p class="mt-6 max-w-sm leading-relaxed">Avocats Conseil - Auditeur Social. Audit et Conseil pour une meilleure Prévention des Risques.</p>
+        </div>
+
+        <nav aria-label="Pied de page — navigation" class="lg:col-span-2">
+          <p class="eyebrow text-[0.6rem] text-brass">Cabinet</p>
+          <ul class="mt-6 space-y-3">
+            <li><a href="index.html" class="u-link hover:text-ivory">Accueil</a></li>
+            <li><a href="index.html#a-propos" class="u-link hover:text-ivory">A Propos</a></li>
+            <li><a href="index.html#domaines" class="u-link hover:text-ivory">Domaines d'intervention</a></li>
+            <li><a href="contact.html" class="u-link hover:text-ivory">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Pied de page — domaines" class="lg:col-span-3">
+          <p class="eyebrow text-[0.6rem] text-brass">Domaines</p>
+          <ul class="mt-6 space-y-3">
+            <li><a href="audit-social.html" class="u-link hover:text-ivory">Audit Social</a></li>
+            <li><a href="droit-prive.html" class="u-link hover:text-ivory">Droit Privé</a></li>
+            <li><a href="droit-civil.html" class="u-link hover:text-ivory">Droit Civil</a></li>
+            <li><a href="droit-social.html" aria-current="page" class="u-link text-ivory">Droit Social</a></li>
+            <li><a href="droit-maritime.html" class="u-link hover:text-ivory">Droit Maritime</a></li>
+            <li><a href="droit-des-affaires.html" class="u-link hover:text-ivory">Droit des Affaires</a></li>
+            <li><a href="droit-propriete-intellectuelle.html" class="u-link hover:text-ivory">Droit de la Propriété Intellectuelle</a></li>
+          </ul>
+        </nav>
+
+        <div class="lg:col-span-2">
+          <p class="eyebrow text-[0.6rem] text-brass">Adresse</p>
+          <address class="mt-6 not-italic leading-relaxed">
+            Cour D'Appel<br>
+            Bonanjo Douala-Cameroun
+            <a href="tel:+237699821988" class="mt-5 block font-display text-xl text-ivory hover:text-brass">+237 699 82 19 88</a>
+          </address>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-4 py-8 text-sm sm:flex-row sm:items-center sm:justify-between">
+        <p>Copyright © Cabinet Massoma | Propulsé par <a href="https://honowa.com" class="u-link text-ivory" target="_blank" rel="noopener noreferrer">Honowa Technologies</a></p>
+        <a href="#contenu" class="eyebrow inline-flex items-center gap-3 text-[0.6rem] text-brass hover:text-ivory">Haut de page <span aria-hidden="true">↑</span></a>
       </div>
     </div>
-  </div>
-</footer>
+    <p aria-hidden="true" class="select-none overflow-hidden whitespace-nowrap text-center font-display text-[22vw] font-light leading-[0.75] text-ivory/[0.04]">Massoma</p>
+  </footer>
 
-<div class="gauge" aria-hidden="true"><div class="gauge__bar"></div><div class="gauge__n">00 / 100</div></div>
-<script src="assets/js/massoma.js" defer></script>
+  <script>
+    requestAnimationFrame(() => document.body.classList.add('is-loaded'));
+
+    const header = document.getElementById('site-header');
+    const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 40);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') !== 'true';
+      menu.classList.toggle('hidden', !open);
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+      header.classList.toggle('is-scrolled', open || window.scrollY > 40);
+    });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
 </body>
 </html>

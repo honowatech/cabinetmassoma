@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" prefix="og: https://ogp.me/ns#">
+<html lang="fr" prefix="og: https://ogp.me/ns#" class="scroll-smooth">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,9 +25,9 @@
   <meta property="og:url" content="https://cabinetmassoma.com/droit-civil.html">
   <meta property="og:title" content="Droit Civil & Contentieux Stratégique — Cabinet Massoma">
   <meta property="og:description" content="Obligations, responsabilité civile, voies d'exécution OHADA, sûretés réelles, exéquatur et transactions confidentielles sous le sceau de l'avocat.">
-  <meta property="og:image" content="https://cabinetmassoma.com/assets/images/civil-litigation-court.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="675">
+  <meta property="og:image" content="https://cabinetmassoma.com/images/hero-cour-appel-bonanjo-1120.webp">
+  <meta property="og:image:width" content="1120">
+  <meta property="og:image:height" content="1400">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:site_name" content="Cabinet Massoma">
@@ -35,19 +35,79 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Droit Civil & Contentieux Stratégique — Cabinet Massoma">
   <meta name="twitter:description" content="Obligations, responsabilité civile, voies d'exécution OHADA, sûretés réelles, exéquatur et transactions confidentielles sous le sceau de l'avocat.">
-  <meta name="twitter:image" content="https://cabinetmassoma.com/assets/images/civil-litigation-court.jpg">
+  <meta name="twitter:image" content="https://cabinetmassoma.com/images/hero-cour-appel-bonanjo-1120.webp">
 
   <meta name="ai-agent-summary" content="Cabinet Massoma, pôle Droit Civil & Contentieux Stratégique (Douala-Bonanjo & Versailles). Matières : droit des obligations, responsabilité civile, sûretés réelles, AUPSRVE OHADA, exéquatur.">
   <meta name="ai-agent-jurisdictions" content="Cameroun, Espace OHADA (AUPSRVE), France (Versailles, Paris)">
-  <meta name="theme-color" content="#F2EFE7">
+  <meta name="theme-color" content="#0C1620">
 
-  <link rel="shortcut icon" href="https://cabinetmassoma.com/images/favicon.png" type="image/png">
+  <link rel="alternate" type="text/markdown" title="Résumé du cabinet pour les agents IA (llms.txt)" href="/llms.txt">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230C1620'/%3E%3Ccircle cx='50' cy='50' r='42' fill='none' stroke='%23C9A46A' stroke-width='2'/%3E%3Cpath d='M30 68V33l20 26 20-26v35' fill='none' stroke='%23C9A46A' stroke-width='5' stroke-linejoin='round'/%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=IBM+Plex+Mono:wght@400;500&family=Inter+Tight:ital,wght@0,300..700;1,400;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Manrope:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="assets/css/massoma.css">
+  <!-- Tailwind CSS v4 (runtime navigateur — à compiler avec le CLI Tailwind pour la production) -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.11"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-ink:      #0C1620;
+      --color-ink-2:    #132331;
+      --color-ink-3:    #1C3142;
+      --color-wouri:    #1F4E52;
+      --color-brass:    #C9A46A;
+      --color-brass-2:  #A9834A;
+      --color-ivory:    #F5F0E6;
+      --color-paper:    #FBF8F2;
+      --color-stone:    #8A8F94;
+      --color-line:     #E3DACA;
+
+      --font-display: "Fraunces", ui-serif, Georgia, serif;
+      --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, monospace;
+    }
+    @layer base {
+      html { -webkit-font-smoothing: antialiased; }
+      body { @apply bg-paper text-ink font-sans; }
+      ::selection { @apply bg-brass text-ink; }
+      :focus-visible { @apply outline-2 outline-offset-4 outline-brass; }
+    }
+    @utility eyebrow {
+      @apply font-mono text-[0.7rem] tracking-[0.28em] uppercase;
+    }
+  </style>
+
+  <style>
+    .guides { background-image: repeating-linear-gradient(to right, rgba(201,164,106,.07) 0 1px, transparent 1px calc(100%/6)); }
+    .grain::after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.06; mix-blend-mode:overlay;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+    .js .reveal { opacity: 0; transform: translateY(28px); transition: opacity 1s cubic-bezier(.2,.7,.2,1), transform 1s cubic-bezier(.2,.7,.2,1); }
+    .js .reveal.is-in { opacity: 1; transform: none; }
+    .reveal[data-delay="1"] { transition-delay: .12s; }
+    .reveal[data-delay="2"] { transition-delay: .24s; }
+    .reveal[data-delay="3"] { transition-delay: .36s; }
+
+    .js .line-mask > span { display:block; transform: translateY(105%); transition: transform 1.2s cubic-bezier(.2,.8,.2,1); }
+    .js .is-loaded .line-mask > span { transform: none; }
+    .line-mask { overflow: hidden; padding-bottom: .08em; }
+
+    .u-link { background: linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat; transition: background-size .5s; }
+    .u-link:hover { background-size: 100% 1px; }
+
+    .site-header.is-scrolled { background: rgba(12,22,32,.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-color: rgba(201,164,106,.18); }
+
+    section[id] { scroll-margin-top: 5rem; }
+    details > summary { list-style: none; }
+    details > summary::-webkit-details-marker { display: none; }
+    details[open] .faq-plus { transform: rotate(45deg); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .js .reveal, .js .line-mask > span { opacity: 1; transform: none; transition: none; }
+      html { scroll-behavior: auto; }
+    }
+  </style>
   <script>document.documentElement.classList.add('js');</script>
 
 <script type="application/ld+json">
@@ -67,7 +127,7 @@
       "foundingDate": "2003",
       "email": "contact@cabinetmassoma.com",
       "telephone": "+237233432234",
-      "image": "https://cabinetmassoma.com/assets/images/hero-partners.jpg",
+      "image": "https://cabinetmassoma.com/images/hero-cour-appel-bonanjo-1120.webp",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Cour d'Appel, Bonanjo",
@@ -191,603 +251,486 @@
 }
 </script>
 </head>
-<body id="top">
-<svg class="sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <!-- SCEAU — la marque du cabinet -->
-    <symbol id="i-seal" viewBox="0 0 200 200">
-      <circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="1.4"/>
-      <circle cx="100" cy="100" r="86" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="1.3 3.7"/>
-      <circle cx="100" cy="100" r="63" fill="none" stroke="currentColor" stroke-width=".6" opacity=".5"/>
-      <path d="M74 126V74l26 31 26-31v52" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="miter"/>
-      <path d="M67 74h12M121 74h12M67 126h12M121 126h12" fill="none" stroke="currentColor" stroke-width="1.6"/>
-      <path d="M74 138h52" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".6"/>
-    </symbol>
 
-    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M4 12h15"/><path d="M13 6l6 6-6 6"/>
-    </symbol>
+<body id="top" class="overflow-x-hidden">
+  <a href="#contenu" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-brass focus:text-ink focus:px-4 focus:py-2">Aller au contenu</a>
 
-    <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M5 9l7 7 7-7"/>
-    </symbol>
+  <!-- ================= EN-TÊTE ================= -->
+  <header id="site-header" class="site-header fixed inset-x-0 top-0 z-50 border-b border-transparent transition-all duration-500">
+    <div class="mx-auto flex h-20 max-w-[1400px] items-center justify-between px-4 sm:px-8">
+      <a href="index.html" class="group flex items-center gap-3 text-ivory" aria-label="Cabinet Massoma — Accueil">
+        <svg class="h-11 w-11 shrink-0" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="47" fill="none" stroke="#C9A46A" stroke-width="1.5"/>
+          <circle cx="50" cy="50" r="41" fill="none" stroke="#C9A46A" stroke-width=".6" opacity=".6"/>
+          <path d="M29 68V32.5L50 60 71 32.5V68" fill="none" stroke="#C9A46A" stroke-width="4.2" stroke-linejoin="miter" stroke-linecap="square"/>
+          <path d="M24 68h11M65 68h11" stroke="#C9A46A" stroke-width="2"/>
+          <circle cx="50" cy="24" r="2.2" fill="#C9A46A"/>
+        </svg>
+        <span class="leading-none">
+          <span class="block font-display text-[1.35rem] tracking-wide">Massoma</span>
+          <span class="eyebrow mt-1 block text-[0.56rem] text-brass">Cabinet · Douala</span>
+        </span>
+      </a>
 
-    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M6.4 3h3.1l1.6 4.1-2.1 1.5a12.3 12.3 0 0 0 6.4 6.4l1.5-2.1L21 14.5v3.1a2 2 0 0 1-2.2 2A17.2 17.2 0 0 1 4.4 5.2 2 2 0 0 1 6.4 3z"/>
-    </symbol>
-
-    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <rect x="3" y="5" width="18" height="14"/><path d="M3.4 6.4L12 13l8.6-6.6"/>
-    </symbol>
-
-    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 21.2s7-6.5 7-11.2a7 7 0 1 0-14 0c0 4.7 7 11.2 7 11.2z"/><circle cx="12" cy="10" r="2.6"/>
-    </symbol>
-
-    <symbol id="i-city" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M3 21h18"/><path d="M5 21V6.4L12 3v18"/><path d="M12 21V9.6L19 12.6V21"/><path d="M8 8.4h.01M8 12.4h.01M8 16.4h.01M16 14.6h.01M16 18.2h.01"/>
-    </symbol>
-
-    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 3l7.5 3v6.1c0 4.6-3.2 7.9-7.5 9.3-4.3-1.4-7.5-4.7-7.5-9.3V6L12 3z"/><path d="M9 12.2l2.1 2.1L15.2 10"/>
-    </symbol>
-
-    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M14 3H7.5A1.5 1.5 0 0 0 6 4.5v15A1.5 1.5 0 0 0 7.5 21h9a1.5 1.5 0 0 0 1.5-1.5V7l-4-4z"/><path d="M14 3v4h4"/><path d="M9 12.5h6M9 16h6"/>
-    </symbol>
-
-    <symbol id="i-scale" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M12 3v18"/><path d="M7 21h10"/><path d="M4 7h16"/><path d="M4 7l-2.4 5.2a3 3 0 0 0 4.8 0L4 7z"/><path d="M20 7l-2.4 5.2a3 3 0 0 0 4.8 0L20 7z"/>
-    </symbol>
-
-    <symbol id="i-out" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M14 4h6v6"/><path d="M20 4l-8.5 8.5"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>
-    </symbol>
-  </defs>
-</svg>
-
-<a class="skip" href="#main">Aller au contenu principal</a>
-
-<header class="head" role="banner">
-  <div class="head__top">
-    <div class="wrap wrap--wide">
-      <div class="head__top-l">
-        <a href="tel:+237233432234"><svg aria-hidden="true"><use href="#i-phone"></use></svg>(+237) 233 43 22 34</a>
-        <a href="tel:+237699821988">(+237) 699 82 19 88</a>
-        <a href="mailto:contact@cabinetmassoma.com"><svg aria-hidden="true"><use href="#i-mail"></use></svg>contact@cabinetmassoma.com</a>
-      </div>
-      <div class="head__top-r">
-        <span class="head__cred"><i></i>Barreau du Cameroun — 2003</span>
-        <span class="head__cred"><i></i>Barreau de Versailles</span>
-        <span class="head__cred"><i></i>Cour d'Appel de Douala</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="head__main wrap wrap--wide">
-    <a class="brand" href="index.html" aria-label="Cabinet Massoma — accueil">
-      <svg class="brand__mark" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-seal"></use></svg>
-      <span class="brand__txt">
-        <span class="brand__name">Massoma</span>
-        <span class="brand__sub">Cabinet d'Avocats &amp; Audit Social</span>
-      </span>
-    </a>
-
-    <nav class="nav" aria-label="Navigation principale">
-      <div class="nav__item"><a class="nav__link" href="index.html">Accueil</a></div>
-      <div class="nav__item"><a class="nav__link" href="index.html#apropos">À propos</a></div>
-      <div class="nav__item">
-        <a class="nav__link" href="index.html#domaines" aria-haspopup="true" aria-expanded="false">Domaines d'intervention <svg aria-hidden="true"><use href="#i-chev"></use></svg></a>
-        <div class="dd" role="group" aria-label="Pratiques dédiées">
-          <div class="dd__head">
-            <span class="mono mono--accent">Expertises &amp; pratiques dédiées</span>
-            <span class="mono mono--sm">Six pôles</span>
-          </div>
-          <div class="dd__list">
-            <a class="dd__item" href="droit-des-affaires.html">
-              <span class="dd__thumb"><img src="assets/images/business-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit des Affaires <span class="dd__tag">OHADA &amp; M&amp;A</span></span>
-                <span class="dd__desc">Sociétés, fusions-acquisitions, pactes d'associés, contrats &amp; arbitrage CCJA</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
+      <nav aria-label="Navigation principale" class="hidden lg:block">
+        <ul class="flex items-center gap-10 text-[0.78rem] font-medium tracking-[0.18em] uppercase text-ivory/80">
+          <li><a href="index.html" class="u-link hover:text-ivory">Accueil</a></li>
+          <li><a href="index.html#a-propos" class="u-link hover:text-ivory">A PROPOS</a></li>
+          <li class="group/menu relative">
+            <a href="index.html#domaines" class="u-link inline-flex items-center gap-2 py-7 text-ivory" aria-haspopup="true">
+              DOMAINES D'INTERVENTION
+              <svg class="h-2.5 w-2.5 transition-transform duration-300 group-hover/menu:rotate-180 group-focus-within/menu:rotate-180" viewBox="0 0 10 10" aria-hidden="true"><path d="m1.5 3.5 3.5 3.5 3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>
             </a>
-            <a class="dd__item" href="droit-propriete-intellectuelle.html">
-              <span class="dd__thumb"><img src="assets/images/ip-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Propriété Intellectuelle <span class="dd__tag">Mandataire OAPI</span></span>
-                <span class="dd__desc">Brevets, marques OAPI, actifs immatériels, cybersécurité &amp; contentieux contrefaçon</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item" href="droit-maritime.html">
-              <span class="dd__thumb"><img src="assets/images/maritime-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit Maritime <span class="dd__tag">Douala &amp; Kribi</span></span>
-                <span class="dd__desc">Saisies de navires, affrètement, droit portuaire &amp; P&amp;I Clubs</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item" href="droit-social.html">
-              <span class="dd__thumb"><img src="assets/images/social-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit Social &amp; RH <span class="dd__tag">Expert BIT / IAS</span></span>
-                <span class="dd__desc">Relations de travail, restructurations, audit social &amp; contentieux prud'homal</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item" href="droit-civil.html">
-              <span class="dd__thumb"><img src="assets/images/civil-law-corporate.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit Civil <span class="dd__tag">Dédié corporate</span></span>
-                <span class="dd__desc">Contentieux stratégique, obligations, responsabilité &amp; voies d'exécution OHADA</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-            <a class="dd__item dd__item--full" href="index.html#domaines">
-              <span class="dd__thumb"><img src="assets/images/civil-litigation-court.jpg" alt="" loading="lazy"></span>
-              <span>
-                <span class="dd__title">Droit Administratif</span>
-                <span class="dd__desc">Rapports avec l'administration, régulation &amp; visas</span>
-              </span>
-              <svg class="dd__arrow" aria-hidden="true"><use href="#i-arrow"></use></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="nav__item"><a class="nav__link" href="index.html#contact">Contact</a></div>
-    </nav>
-
-    <div class="head__end">
-      <div class="lang" aria-label="Langue">
-        <a class="is-on" href="droit-civil.html" aria-current="true" hreflang="fr">FR</a><i>/</i><a href="en/civil-law.html" hreflang="en" lang="en">EN</a>
-      </div>
-      <a class="head__cta" href="index.html#contact">Nous contacter <svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
-      <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="drawer"><span></span></button>
-    </div>
-  </div>
-</header>
-
-<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu de navigation">
-  <div class="wrap">
-    <nav class="drawer__list" aria-label="Navigation mobile">
-      <div class="drawer__item">
-        <a class="drawer__link" href="index.html"><i>01</i>Accueil</a>
-      </div>
-      <div class="drawer__item">
-        <a class="drawer__link" href="index.html#apropos"><i>02</i>À propos</a>
-      </div>
-      <div class="drawer__item">
-        <a class="drawer__link" href="index.html#domaines"><i>03</i>Domaines d'intervention</a>
-        <div class="drawer__sub">
-          <a href="droit-des-affaires.html">Droit des Affaires — OHADA &amp; M&amp;A</a>
-          <a href="droit-propriete-intellectuelle.html">Propriété Intellectuelle — Mandataire OAPI</a>
-          <a href="droit-maritime.html">Droit Maritime — Douala &amp; Kribi</a>
-          <a href="droit-social.html">Droit Social &amp; RH — Expert BIT / IAS</a>
-          <a href="droit-civil.html">Droit Civil — Dédié corporate</a>
-          <a href="index.html#domaines">Droit Administratif</a>
-        </div>
-      </div>
-      <div class="drawer__item">
-        <a class="drawer__link" href="index.html#contact"><i>04</i>Contact</a>
-      </div>
-    </nav>
-    <div class="drawer__foot">
-      <div class="drawer__lang">
-        <a class="is-on" href="droit-civil.html" hreflang="fr">Français</a><a href="en/civil-law.html" hreflang="en" lang="en">English</a>
-      </div>
-      <a class="mono" href="tel:+237233432234">(+237) 233 43 22 34</a>
-      <a class="mono" href="mailto:contact@cabinetmassoma.com">contact@cabinetmassoma.com</a>
-      <span class="mono mono--sm">Cour d'Appel, Bonanjo — BP 2668 Douala, Cameroun</span>
-      <span class="mono mono--sm">Barreau du Cameroun &amp; Barreau de Versailles</span>
-    </div>
-  </div>
-</div>
-<main id="main">
-
-  <!-- ===================================================================
-       HÉROS DE PAGE — Droit Civil & Contentieux Stratégique des Affaires
-  ==================================================================== -->
-  <section class="phero" aria-label="Droit Civil &amp; Contentieux Stratégique des Affaires">
-    <div class="wrap wrap--wide">
-      <nav class="crumb" aria-label="Fil d'Ariane">
-        <a href="index.html">Accueil</a><i>/</i>
-        <a href="index.html#domaines">Domaines d'intervention</a><i>/</i>
-        <span aria-current="page">Droit Civil</span>
+            <div class="mega invisible absolute left-1/2 top-full w-[820px] -translate-x-1/2 translate-y-2 pt-1 opacity-0 transition-all duration-300 group-hover/menu:visible group-hover/menu:translate-y-0 group-hover/menu:opacity-100 group-focus-within/menu:visible group-focus-within/menu:translate-y-0 group-focus-within/menu:opacity-100">
+              <div class="grid grid-cols-[1.15fr_1fr_1fr] border border-brass/25 bg-ink normal-case tracking-normal shadow-2xl shadow-black/50">
+                <a href="audit-social.html" class="group/feat relative flex flex-col justify-between overflow-hidden bg-wouri p-7 text-ivory">
+                  <span aria-hidden="true" class="absolute -bottom-16 -right-16 h-44 w-44 rounded-full border border-ivory/15"></span>
+                  <span>
+                    <span class="eyebrow text-[0.58rem] text-brass">Expertise phare</span>
+                    <span class="mt-4 block font-display text-[1.9rem] leading-none">Audit Social</span>
+                    <span class="mt-3 block text-[0.85rem] leading-relaxed text-ivory/75">Conformité sociale, due diligence RH et prévention des risques pour les corporates et institutions.</span>
+                  </span>
+                  <span class="mt-8 inline-flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-brass">Découvrir <span aria-hidden="true" class="transition-transform group-hover/feat:translate-x-1">→</span></span>
+                </a>
+                <div class="p-7">
+                  <a href="droit-prive.html" class="group/dp block border-b border-brass/30 pb-4 text-ivory hover:text-brass">
+                    <span class="block font-display text-[1.3rem] leading-none">Droit Privé</span>
+                    <span class="mt-2 inline-flex items-center gap-1.5 text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-brass">Vue d'ensemble <span aria-hidden="true" class="transition-transform group-hover/dp:translate-x-1">→</span></span>
+                  </a>
+                  <ul class="mt-4 space-y-3 font-display text-[1.05rem] text-ivory/85">
+                    <li><a href="droit-civil.html" aria-current="page" class="text-brass">Droit Civil</a></li>
+                    <li><a href="droit-social.html" class="hover:text-brass">Droit Social</a></li>
+                    <li><a href="droit-maritime.html" class="hover:text-brass">Droit Maritime</a></li>
+                    <li><a href="droit-des-affaires.html" class="hover:text-brass">Droit des Affaires</a></li>
+                    <li><a href="droit-propriete-intellectuelle.html" class="hover:text-brass">Droit de la Propriété Intellectuelle</a></li>
+                  </ul>
+                </div>
+                <div class="flex flex-col justify-between border-l border-ivory/10 p-7">
+                  <div>
+                    <p class="eyebrow text-[0.58rem] text-brass">Droit public</p>
+                    <p class="mt-5 font-display text-[1.05rem] leading-snug text-ivory/85">Droit administratif et procédures administratives</p>
+                    <p class="mt-2 text-[0.8rem] leading-relaxed text-ivory/55">Rapports avec l'administration, autorisations diverses, Visas.</p>
+                  </div>
+                  <a href="index.html#domaines" class="mt-8 inline-flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-ivory/70 hover:text-brass">Tous les domaines <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="contact.html" class="u-link hover:text-ivory">Contact</a></li>
+        </ul>
       </nav>
 
-      <div class="phero__grid">
-        <div>
-          <span class="eyebrow">Pratique d'Excellence • Droit Privé &amp; des Affaires</span>
-          <h1 class="t-display t-hero phero__title">
-            <span class="mask"><span>Droit Civil &amp;</span></span>
-            <span class="mask l2"><span>Contentieux Stratégique des Affaires</span></span>
+      <div class="flex items-center gap-4">
+        <a href="contact.html" class="hidden sm:inline-flex items-center gap-3 border border-brass/60 px-5 py-3 text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-brass transition hover:bg-brass hover:text-ink">
+          Nous contacter
+          <svg class="h-3 w-3" viewBox="0 0 12 12" aria-hidden="true"><path d="M1 11 11 1M4 1h7v7" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+        </a>
+        <button id="menu-btn" class="lg:hidden flex h-11 w-11 flex-col items-center justify-center gap-1.5 text-ivory" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+          <span class="h-px w-6 bg-current transition"></span>
+          <span class="h-px w-6 bg-current transition"></span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="lg:hidden hidden max-h-[calc(100svh-5rem)] overflow-y-auto border-t border-brass/20 bg-ink">
+      <nav aria-label="Navigation mobile" class="px-4 py-8 sm:px-8">
+        <ul class="space-y-5 font-display text-3xl text-ivory">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html#a-propos">A Propos</a></li>
+          <li>
+            <a href="index.html#domaines">Domaines d'intervention</a>
+            <ul class="mt-4 space-y-3 border-l border-brass/30 pl-5 font-sans text-base text-ivory/70">
+              <li><a href="audit-social.html">Audit Social</a></li>
+              <li><a href="droit-prive.html">Droit Privé — vue d'ensemble</a></li>
+              <li><a href="droit-civil.html" aria-current="page" class="text-brass">Droit Civil</a></li>
+              <li><a href="droit-social.html">Droit Social</a></li>
+              <li><a href="droit-maritime.html">Droit Maritime</a></li>
+              <li><a href="droit-des-affaires.html">Droit des Affaires</a></li>
+              <li><a href="droit-propriete-intellectuelle.html">Droit de la Propriété Intellectuelle</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+
+    <!-- ================= HÉRO ================= -->
+    <section aria-labelledby="page-title" class="grain guides relative isolate overflow-hidden bg-ink text-ivory">
+      <div aria-hidden="true" class="pointer-events-none absolute -right-40 -top-40 -z-10 h-[46rem] w-[46rem] rounded-full bg-wouri/45 blur-[140px]"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute -bottom-60 -left-40 -z-10 h-[34rem] w-[34rem] rounded-full bg-brass/10 blur-[120px]"></div>
+
+      <div class="mx-auto grid max-w-[1400px] grid-cols-12 gap-x-6 px-4 pb-24 pt-32 sm:px-8 lg:pb-28 lg:pt-40">
+        <div class="col-span-12 lg:col-span-7">
+          <nav aria-label="Fil d'Ariane">
+            <ol class="flex flex-wrap items-center gap-2 font-mono text-[0.68rem] uppercase tracking-[0.18em] text-ivory/50">
+              <li><a href="index.html" class="hover:text-brass">Accueil</a></li>
+              <li aria-hidden="true">/</li>
+              <li><a href="index.html#domaines" class="hover:text-brass">Domaines d'intervention</a></li>
+              <li aria-hidden="true">/</li>
+              <li aria-current="page" class="text-brass">Droit Civil</li>
+            </ol>
+          </nav>
+
+          <p class="eyebrow mt-12 flex items-center gap-4 text-brass"><span class="h-px w-10 bg-brass"></span> Pratique d'Excellence • Droit Privé &amp; des Affaires</p>
+          <h1 id="page-title" class="mt-6 font-display font-light leading-[0.95] tracking-[-0.02em] text-[clamp(2.8rem,6.4vw,6rem)]">
+            <span class="line-mask"><span>Droit Civil &amp;</span></span>
+            <span class="line-mask"><span><em class="italic text-brass">Contentieux Stratégique des Affaires</em></span></span>
           </h1>
-          <p class="lead phero__lead">Validité des engagements, opposabilité des garanties, allocation des risques de responsabilité, recouvrement des créances : le droit civil commande la solidité de chaque flux économique. Le Cabinet Massoma sécurise les obligations contractuelles des groupes, assure leur défense dans les litiges civils plurimillionnaires et met en œuvre les voies d'exécution dans l'espace OHADA et à l'international.</p>
+          <p class="mt-8 max-w-2xl text-[1.05rem] leading-relaxed text-ivory/70 reveal" data-delay="1">
+            Validité des engagements, opposabilité des garanties, allocation des risques de responsabilité, recouvrement des créances : le droit civil commande la solidité de chaque flux économique. Le Cabinet Massoma sécurise les obligations contractuelles des groupes, assure leur défense dans les litiges civils plurimillionnaires et met en œuvre les voies d'exécution dans l'espace OHADA et à l'international.
+          </p>
 
-          <div class="phero__metrics">
-            <div class="phero__metric"><span class="phero__mv">20+ Ans</span><span class="phero__ml">Barreau<br>du Cameroun</span></div>
-            <div class="phero__metric"><span class="phero__mv">Double Admission</span><span class="phero__ml">Versailles<br>&amp; Douala</span></div>
-            <div class="phero__metric"><span class="phero__mv">Tier 1</span><span class="phero__ml">Rigueur<br>Grands Cabinets</span></div>
-          </div>
-
-          <div class="phero__acts">
-            <a class="btn btn--seal" href="#contact"><span>Solliciter une consultation</span><svg aria-hidden="true"><use href="#i-arrow"></use></svg></a>
-            <a class="btn btn--ghost" href="#expertises"><span>Explorer les 6 piliers</span></a>
-          </div>
-        </div>
-
-        <figure class="phero__visual">
-          <div class="plate plate--portrait rv-plate">
-            <img class="plate__img" src="assets/images/civil-law-corporate.jpg" alt="Consultation d'un dossier de contentieux civil d'affaires au Cabinet Massoma, Douala" loading="eager">
-          </div>
-          <div class="phero__stamp"><svg viewBox="0 0 200 200" aria-hidden="true"><use href="#i-seal"></use></svg></div>
-        </figure>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ VISION / DOCTRINE ============ -->
-  <section class="sec" id="vision" aria-label="Vision stratégique du droit civil corporate">
-    <div class="wrap wrap--wide">
-      <div class="sec-head">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. I — Garantie &amp; Rigueur Fiduciaire</span>
-            <h2 class="t-display t-2 sec-head__title">Le Droit Civil au Cœur de la Gouvernance et des Bilans d'Entreprises</h2>
-          </div>
-          <p class="mono sec-head__note">Vision stratégique corporate<br>Douala · Versailles</p>
-        </div>
-      </div>
-
-      <div class="split split--visual-l">
-        <div>
-          <p class="lead">Pour les multinationales, les groupes industriels, les établissements bancaires et les directions juridiques, le droit civil ne se résume pas à un droit commun passif. Il représente le socle matriciel absolu de l'ensemble des flux économiques : validité substantielle des engagements, opposabilité des garanties patrimoniales, allocation des risques de responsabilité et sécurisation des actifs corporels et incorporels.</p>
-          <p class="mt-md measure">Face à des environnements réglementaires complexes et à l'intensification des différends commerciaux en Afrique Centrale, le Cabinet Massoma déploie une ingénierie de défense et de conseil civil bâtie sur les standards d'intervention des cabinets d'affaires mondiaux les plus réputés (Clifford Chance, Bredin Prat, Herbert Smith Freehills, White &amp; Case). Notre démarche intègre l'anticipation probatoire, la neutralisation des aléas judiciaires locaux et la préservation inflexible de la réputation de nos clients.</p>
-        </div>
-        <figure>
-          <div class="plate plate--portrait rv-plate">
-            <img class="plate__img" src="assets/images/civil-litigation-court.jpg" alt="Salle d'audience d'une juridiction civile de première instance au Cameroun" loading="lazy">
-          </div>
-          <figcaption class="plate__cap">
-            <span class="plate__cap-n">PL. I</span>
-            <span class="plate__cap-t">Salle d'audience d'une juridiction civile — contentieux des affaires, Douala.</span>
-          </figcaption>
-        </figure>
-      </div>
-
-      <div class="highs mt-xl">
-        <article class="high rv">
-          <h3 class="high__t">Évaluation Pré-Contentieuse</h3>
-          <p class="high__d">Audit probabiliste du risque judiciaire, modélisation des quantum indemnitaires et analyse d'impact sur le bilan financier.</p>
-        </article>
-        <article class="high rv">
-          <h3 class="high__t">Double Compétence OHADA / France</h3>
-          <p class="high__d">Parfaite maîtrise des interactions entre le droit civil camerounais, les traités OHADA et les juridictions européennes (Versailles/Paris).</p>
-        </article>
-        <article class="high rv">
-          <h3 class="high__t">Secret Professionnel Absolu</h3>
-          <p class="high__d">Négociations protégées par le statut de l'avocat et clauses de confidentialité hermétiques garantissant la réputation corporate.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ LES SIX PILIERS ============ -->
-  <section class="sec deep" id="expertises" aria-label="Les six piliers stratégiques du droit civil corporate">
-    <div class="wrap wrap--wide">
-      <div class="sec-head">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. II — Domaines d'excellence</span>
-            <h2 class="t-display t-2 sec-head__title">Les 6 Piliers Stratégiques en Droit Civil Corporate</h2>
-          </div>
-          <p class="mono sec-head__note">Couverture intégrale<br>et spécialisée</p>
-        </div>
-      </div>
-
-      <div class="prog">
-        <article class="prog__item rv">
-          <span class="prog__n">01</span>
-          <div>
-            <h3 class="prog__t">Contentieux Civil Complexe &amp; Urgences Judiciaires</h3>
-            <p class="prog__d">Pilotage des litiges civils stratégiques à fort impact financier et réputationnel devant les Tribunaux de Grande Instance, les chambres civiles de la Cour d'Appel du Littoral et, le cas échéant, la Cour Suprême. Chaque dossier est conduit sous la responsabilité directe d'un associé, avec une maîtrise constante des délais, des mesures d'urgence et des risques de réformation.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Référés d'heure à heure et mesures conservatoires d'urgence</li>
-            <li>Actions en cessation de trouble illicite et astreintes liquidées</li>
-            <li>Contentieux entre actionnaires, partenaires et consortiums</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">02</span>
-          <div>
-            <h3 class="prog__t">Droit des Obligations &amp; Responsabilité Civile</h3>
-            <p class="prog__d">Défense et mise en cause de la responsabilité civile contractuelle et délictuelle dans les ruptures de relations d'affaires et les sinistres industriels. Nous analysons la chaîne des engagements, la validité du consentement et l'imputabilité des dommages afin d'arrêter une position probatoire solide dès l'ouverture du dossier.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Rupture brutale de relations commerciales et pourparlers</li>
-            <li>Responsabilité civile des dirigeants et mandataires sociaux</li>
-            <li>Chiffrage expertal des préjudices d'exploitation et d'image</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">03</span>
-          <div>
-            <h3 class="prog__t">Voies d'Exécution Forcée &amp; Recouvrement OHADA</h3>
-            <p class="prog__d">Déploiement offensif et sécurisé de l'AUPSRVE OHADA révisé pour le recouvrement forcé de créances corporatives et la protection des flux financiers. Nous articulons saisies conservatoires, saisies-attributions et sûretés pour convertir rapidement un titre exécutoire en encaissement effectif, sans rupture de l'exploitation.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Saisies conservatoires de créances bancaires et de stocks</li>
-            <li>Saisies-attributions de créances et saisies immobilières</li>
-            <li>Défense immédiate contre les saisies abusives &amp; mainlevées</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">04</span>
-          <div>
-            <h3 class="prog__t">Exéquatur &amp; Reconnaissance Internationale</h3>
-            <p class="prog__d">Donner plein effet exécutoire au Cameroun aux jugements civils et sentences arbitrales rendus à Paris, Genève, Londres ou dans la zone CEMAC. La procédure est conduite devant le Tribunal de Grande Instance compétent, avec un contrôle rigoureux de la régularité internationale de la saisine et du respect de l'ordre public.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Exéquatur de jugements étrangers devant le TGI du Wouri</li>
-            <li>Exécution de sentences arbitrales CCI, CCJA et GICAM</li>
-            <li>Contrôle de conformité à l'ordre public international</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">05</span>
-          <div>
-            <h3 class="prog__t">Sûretés Réelles &amp; Foncier d'Entreprise</h3>
-            <p class="prog__d">Verrouillage patrimonial des garanties d'emprunts et traitement des litiges complexes sur les actifs industriels, les entrepôts et les titres fonciers. Nous sécurisons la constitution, la publicité et la réalisation des sûretés, et défendons la propriété foncière des sites d'exploitation du client.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Hypothèques judiciaires, gages, nantissements et cautions</li>
-            <li>Sécurisation foncière d'usines, empiètements et servitudes</li>
-            <li>Contentieux des baux professionnels et baux comités exécutifs</li>
-          </ul>
-        </article>
-
-        <article class="prog__item rv">
-          <span class="prog__n">06</span>
-          <div>
-            <h3 class="prog__t">Transactions Confidentielles &amp; Médiation MARD</h3>
-            <p class="prog__d">Résolution discrète des conflits à haute sensibilité politique ou capitalistique sous la protection absolue du secret d'avocat. Nous privilégions l'accord transactionnel exécutoire lorsqu'il protège mieux les intérêts économiques et la réputation du client qu'une exposition judiciaire prolongée.</p>
-          </div>
-          <ul class="list-rule">
-            <li>Protocoles d'accord transactionnels pré-contentieux blindés</li>
-            <li>Homologation judiciaire conférant la force exécutoire</li>
-            <li>Évitement d'une exposition publique préjudiciable à la marque</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PLAIDOIRIE & JURIDICTIONS ============ -->
-  <section class="sec" id="juridictions" aria-label="Juridictions compétentes en droit civil des affaires">
-    <div class="wrap wrap--wide">
-      <div class="sec-head">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. III — Rayonnement judiciaire</span>
-            <h2 class="t-display t-2 sec-head__title">Une Représentation Rigoureuse Devant Chaque Degré de Juridiction</h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="split split--visual">
-        <figure>
-          <div class="plate plate--wide rv-plate">
-            <img class="plate__img" src="assets/images/court-bonanjo.jpg" alt="Cour d'Appel du Littoral au Palais de Justice de Bonanjo, Douala" loading="lazy">
-          </div>
-          <figcaption class="plate__cap">
-            <span class="plate__cap-n">PL. II</span>
-            <span class="plate__cap-t">Cour d'Appel du Littoral — Palais de Justice, Bonanjo, Douala (Cameroun).</span>
-          </figcaption>
-        </figure>
-        <div>
-          <div class="quote">
-            <span class="mono mono--accent">Plaidoirie &amp; Force Judiciaire</span>
-            <p class="quote__d">La défense des intérêts corporate exige une connaissance intime des usages des chambres civiles et commerciales, une pugnacité procédurale sans faille et une capacité à neutraliser les manœuvres dilatoires adverses. Le Cabinet Massoma intervient quotidiennement devant les prétoires d'Afrique Centrale et d'Europe.</p>
-          </div>
-          <div class="juris mt-lg">
-            <div class="juris__box">
-              <span class="mono">Première instance</span>
-              <h4>TPI &amp; TGI du Littoral (Douala)</h4>
-              <p>Tribunal de Première Instance et Tribunal de Grande Instance du Wouri (Bonanjo, Ndokoti) : référés, saisies conservatoires et attributions, contentieux de fond civil et commercial des acteurs économiques du pôle littoral.</p>
+          <dl class="mt-10 grid max-w-2xl grid-cols-1 gap-px border border-ivory/10 bg-ivory/10 sm:grid-cols-3 reveal" data-delay="2">
+            <div class="flex flex-col-reverse bg-ink p-5">
+              <dt class="mt-2 text-[0.8rem] leading-snug text-ivory/55">Barreau<br>du Cameroun</dt>
+              <dd class="font-display text-2xl text-brass">20+ Ans</dd>
             </div>
-            <div class="juris__box">
-              <span class="mono">Appel</span>
-              <h4>Cour d'Appel de Douala-Bonanjo</h4>
-              <p>Chambres civiles et commerciales : réformation, confirmation stratégique de jugements et arrêts de suspension d'exécution, plaidoiries portées par Maître Massoma et son collège d'avocats.</p>
+            <div class="flex flex-col-reverse bg-ink p-5">
+              <dt class="mt-2 text-[0.8rem] leading-snug text-ivory/55">Versailles<br>&amp; Douala</dt>
+              <dd class="font-display text-2xl text-brass">Double Admission</dd>
             </div>
-            <div class="juris__box">
-              <span class="mono">Cassation</span>
-              <h4>CCJA Abidjan &amp; Cour Suprême</h4>
-              <p>Pourvois en cassation en matière d'Actes Uniformes OHADA (voies d'exécution, sûretés) et de droit commun camerounais, devant la Cour Suprême à Yaoundé et la CCJA à Abidjan.</p>
+            <div class="flex flex-col-reverse bg-ink p-5">
+              <dt class="mt-2 text-[0.8rem] leading-snug text-ivory/55">Rigueur<br>Grands Cabinets</dt>
+              <dd class="font-display text-2xl text-brass">Tier 1</dd>
             </div>
-            <div class="juris__box">
-              <span class="mono">International</span>
-              <h4>Barreau de Versailles &amp; Paris</h4>
-              <p>Représentation et coordination des litiges civils transfrontaliers franco-africains devant les cours judiciaires françaises, en lien avec le second barreau du cabinet.</p>
-            </div>
+          </dl>
+
+          <div class="mt-10 flex flex-wrap items-center gap-4 reveal" data-delay="3">
+            <a href="#contact" class="group inline-flex items-center gap-4 bg-brass px-7 py-4 text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-ink transition hover:bg-ivory">
+              Solliciter une consultation
+              <span aria-hidden="true" class="transition-transform group-hover:translate-x-1">→</span>
+            </a>
+            <a href="#expertises" class="inline-flex items-center gap-3 px-2 py-4 text-[0.78rem] font-semibold uppercase tracking-[0.2em] text-ivory/80 hover:text-ivory">
+              <span class="u-link">Explorer les 6 piliers</span>
+            </a>
           </div>
+        </div>
+
+        <div class="relative col-span-12 mt-16 lg:col-span-5 lg:mt-6">
+          <figure class="relative mx-auto max-w-[30rem] reveal" data-delay="1">
+            <div class="overflow-hidden rounded-t-[999px] border border-brass/30 p-3">
+              <img src="images/hero-cour-appel-bonanjo-560.webp" srcset="images/hero-cour-appel-bonanjo-560.webp 560w, images/hero-cour-appel-bonanjo-1120.webp 1120w" sizes="(min-width: 1024px) 30rem, 90vw"
+                   alt="Avocat relisant un dossier de contentieux relié à son bureau, face aux toits de Douala au coucher du soleil"
+                   width="1120" height="1400" fetchpriority="high" class="aspect-[4/5] w-full rounded-t-[999px] object-cover">
+            </div>
+            <svg aria-hidden="true" class="absolute -bottom-8 -left-6 h-28 w-28 text-brass sm:-left-10" viewBox="0 0 200 200">
+              <circle cx="100" cy="100" r="95" fill="#0C1620" stroke="currentColor" stroke-width="1.4"/>
+              <circle cx="100" cy="100" r="86" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="1.3 3.7"/>
+              <circle cx="100" cy="100" r="63" fill="none" stroke="currentColor" stroke-width=".6" opacity=".5"/>
+              <path d="M74 126V74l26 31 26-31v52" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="miter"/>
+              <path d="M67 74h12M121 74h12M67 126h12M121 126h12" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M74 138h52" fill="none" stroke="currentColor" stroke-width="1.1" opacity=".6"/>
+            </svg>
+          </figure>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ MÉTHODE EN QUATRE PHASES ============ -->
-  <section class="sec deep sec--tight" id="methode" aria-label="Démarche opérationnelle en quatre phases">
-    <div class="wrap wrap--wide">
-      <div class="sec-head" style="margin-bottom:1.75rem">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. IV — Rigueur méthodologique</span>
-            <h2 class="t-display t-3 sec-head__title" style="margin-top:.75rem">Une Démarche Opérationnelle en 4 Phases</h2>
+    <!-- ================= VISION / DOCTRINE ================= -->
+    <section id="vision" aria-labelledby="vision-title" class="bg-paper py-24 lg:py-32">
+      <div class="mx-auto max-w-[1400px] px-4 sm:px-8">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div class="lg:col-span-8 reveal">
+            <p class="eyebrow flex items-center gap-4 text-brass-2"><span class="h-px w-10 bg-brass-2"></span> ART. I — Garantie &amp; Rigueur Fiduciaire</p>
+            <h2 id="vision-title" class="mt-6 font-display text-[clamp(2.2rem,4.4vw,3.8rem)] font-light leading-[1.03] tracking-tight">Le Droit Civil au Cœur de la Gouvernance et des <em class="italic text-wouri">Bilans d'Entreprises</em></h2>
           </div>
-          <span class="mono">Prévisibilité financière<br>Contrôle stratégique</span>
+          <p class="eyebrow text-[0.62rem] leading-loose text-ink/50 lg:col-span-3 lg:col-start-10 lg:text-right reveal" data-delay="1">Vision stratégique corporate<br>Douala · Versailles</p>
+        </div>
+
+        <div class="mt-16 grid gap-14 lg:grid-cols-12">
+          <figure class="relative lg:col-span-5 reveal">
+            <img src="images/apropos-bibliotheque-560.webp" srcset="images/apropos-bibliotheque-560.webp 560w, images/apropos-bibliotheque-1120.webp 1120w" sizes="(min-width: 1024px) 38vw, 92vw" alt="Bibliothèque juridique d'un cabinet d'avocats, codes reliés et lampe de banquier sur le bureau" width="1120" height="1400" loading="lazy" class="aspect-[4/5] w-full object-cover">
+            <div aria-hidden="true" class="absolute -bottom-5 -right-5 hidden h-full w-full border border-brass/50 sm:block" style="z-index:-1"></div>
+          </figure>
+          <div class="lg:col-span-6 lg:col-start-7 reveal" data-delay="1">
+            <p class="font-display text-2xl font-light leading-snug sm:text-[1.7rem]">
+              Pour les multinationales, les groupes industriels, les établissements bancaires et les directions juridiques, le droit civil ne se résume pas à un droit commun passif. Il représente le socle matriciel absolu de l'ensemble des flux économiques : validité substantielle des engagements, opposabilité des garanties patrimoniales, allocation des risques de responsabilité et sécurisation des actifs corporels et incorporels.
+            </p>
+            <p class="mt-8 text-lg leading-relaxed text-ink/70">
+              Face à des environnements réglementaires complexes et à l'intensification des différends commerciaux en Afrique Centrale, le Cabinet Massoma déploie une ingénierie de défense et de conseil civil bâtie sur les standards d'intervention des cabinets d'affaires mondiaux les plus réputés (Clifford Chance, Bredin Prat, Herbert Smith Freehills, White &amp; Case). Notre démarche intègre l'anticipation probatoire, la neutralisation des aléas judiciaires locaux et la préservation inflexible de la réputation de nos clients.
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-20 grid gap-6 md:grid-cols-3">
+          <article class="border border-line bg-ivory p-8 reveal">
+            <span class="block h-px w-10 bg-brass"></span>
+            <h3 class="mt-6 font-display text-2xl">Évaluation Pré-Contentieuse</h3>
+            <p class="mt-3 leading-relaxed text-ink/70">Audit probabiliste du risque judiciaire, modélisation des quantum indemnitaires et analyse d'impact sur le bilan financier.</p>
+          </article>
+          <article class="border border-line bg-ivory p-8 reveal" data-delay="1">
+            <span class="block h-px w-10 bg-brass"></span>
+            <h3 class="mt-6 font-display text-2xl">Double Compétence OHADA / France</h3>
+            <p class="mt-3 leading-relaxed text-ink/70">Parfaite maîtrise des interactions entre le droit civil camerounais, les traités OHADA et les juridictions européennes (Versailles/Paris).</p>
+          </article>
+          <article class="border border-line bg-ivory p-8 reveal" data-delay="2">
+            <span class="block h-px w-10 bg-brass"></span>
+            <h3 class="mt-6 font-display text-2xl">Secret Professionnel Absolu</h3>
+            <p class="mt-3 leading-relaxed text-ink/70">Négociations protégées par le statut de l'avocat et clauses de confidentialité hermétiques garantissant la réputation corporate.</p>
+          </article>
         </div>
       </div>
+    </section>
 
-      <div class="steps">
-        <article class="step rv">
-          <span class="step__n">01</span>
-          <div class="step__bar"></div>
-          <h3 class="step__t">Audit Probatoire &amp; Vulnérabilités</h3>
-          <p class="step__d">Collecte exhaustive des pièces contractuelles, examen de la chaîne d'engagements, identification des failles de forme et sécurisation préventive des preuves. Chaque vulnérabilité est qualifiée et cotée selon son impact probable sur l'issue du litige.</p>
-        </article>
-        <article class="step rv">
-          <span class="step__n">02</span>
-          <div class="step__bar"></div>
-          <h3 class="step__t">Stratégie &amp; Modélisation</h3>
-          <p class="step__d">Chiffrage rigoureux du préjudice, analyse comparative aléa judiciaire contre transaction, et choix de la juridiction ou de la voie d'exécution la plus incisive. Le scénario retenu est documenté, budgété et validé avec la direction juridique.</p>
-        </article>
-        <article class="step rv">
-          <span class="step__n">03</span>
-          <div class="step__bar"></div>
-          <h3 class="step__t">Offensive Judiciaire ou Négociation</h3>
-          <p class="step__d">Rédaction d'actes d'assignation ou de conclusions percutantes, plaidoiries devant les magistrats ou pourparlers sous mandat confidentiel exclusif. La pression procédurale est dosée pour maximiser l'avantage transactionnel.</p>
-        </article>
-        <article class="step rv">
-          <span class="step__n">04</span>
-          <div class="step__bar"></div>
-          <h3 class="step__t">Exécution Forcée &amp; Pérennisation</h3>
-          <p class="step__d">Conversion matérielle du titre en encaissement effectif via les huissiers de justice mandatés, purge des sûretés et consolidation de l'accord. Le recouvrement est suivi jusqu'à la libération complète des actifs.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ QUESTIONS FRÉQUENTES ============ -->
-  <section class="sec" id="faq" aria-label="Questions fréquentes sur le droit civil des affaires">
-    <div class="wrap wrap--wide">
-      <div class="sec-head">
-        <div class="sec-head__row">
-          <div class="sec-head__txt">
-            <span class="sect-index">ART. V — Éclairages</span>
-            <h2 class="t-display t-2 sec-head__title">Questions Fréquentes sur le Droit Civil des Affaires</h2>
+    <!-- ================= LES SIX PILIERS ================= -->
+    <section id="expertises" aria-labelledby="expertises-title" class="bg-ivory py-24 lg:py-32">
+      <div class="mx-auto max-w-[1400px] px-4 sm:px-8">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div class="lg:col-span-8 reveal">
+            <p class="eyebrow flex items-center gap-4 text-brass-2"><span class="h-px w-10 bg-brass-2"></span> ART. II — Domaines d'excellence</p>
+            <h2 id="expertises-title" class="mt-6 font-display text-[clamp(2.4rem,5vw,4.4rem)] font-light leading-[1.02] tracking-tight">Les 6 Piliers Stratégiques en <em class="italic text-wouri">Droit Civil Corporate</em></h2>
           </div>
-          <p class="mono sec-head__note">Cible : directions juridiques<br>et comités de direction</p>
-        </div>
-      </div>
-
-      <div class="faq">
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-1">
-            <span class="faq__n">01</span>
-            <span class="faq__qt">Comment s'articule le droit civil camerounais avec les Actes Uniformes OHADA en matière de litiges contractuels d'affaires ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-1">
-            <div class="faq__a-inner">
-              <p>Le droit OHADA régit de façon supra-légale de nombreux domaines de la vie économique (sociétés, sûretés, voies d'exécution, droit commercial général), mais s'appuie structurellement sur le droit civil commun pour toutes les questions fondamentales non expressément dérogées : la théorie générale du contrat, la formation des obligations, le consentement, la cause et l'objet, ainsi que le régime de la responsabilité civile quasi-délictuelle (articles 1382 et suivants du Code civil applicable au Cameroun).</p>
-              <p>Le Cabinet Massoma maîtrise parfaitement cette articulation : nos écritures judiciaires mobilisent simultanément les règles civiles nationales et les standards prétoriens de la CCJA pour immuniser nos clients contre toute exception d'incompétence ou d'irrecevabilité.</p>
-            </div>
-          </div>
+          <p class="eyebrow text-[0.62rem] leading-loose text-ink/50 lg:col-span-3 lg:col-start-10 lg:text-right reveal" data-delay="1">Couverture intégrale<br>et spécialisée</p>
         </div>
 
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-2">
-            <span class="faq__n">02</span>
-            <span class="faq__qt">Quels sont les leviers de protection civile pour un dirigeant d'entreprise poursuivi pour faute de gestion ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-2">
-            <div class="faq__a-inner">
-              <p>La mise en jeu de la responsabilité civile d'un mandataire social (qu'il s'agisse de l'action sociale ut singuli engagée par les associés ou d'une action individuelle intentée par des créanciers) impose la charge probatoire d'une faute distincte de la vie normale des affaires, préjudiciable et directement imputable.</p>
-              <p>Nous intervenons dès les premières alertes pour auditer les procès-verbaux de conseils d'administration, justifier la régularité des décisions de gestion au regard de l'intérêt social supérieur, invoquer les décharges statutaires valables et opposer les garanties d'assurance responsabilité civile des mandataires sociaux (RCMS).</p>
-            </div>
-          </div>
-        </div>
+        <div class="mt-16 grid gap-6 lg:grid-cols-2">
+          <article class="flex flex-col border border-line bg-paper p-8 sm:p-10 reveal">
+            <span class="font-mono text-xs text-brass-2">01</span>
+            <h3 class="mt-6 font-display text-3xl">Contentieux Civil Complexe &amp; Urgences Judiciaires</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Pilotage des litiges civils stratégiques à fort impact financier et réputationnel devant les Tribunaux de Grande Instance, les chambres civiles de la Cour d'Appel du Littoral et, le cas échéant, la Cour Suprême. Chaque dossier est conduit sous la responsabilité directe d'un associé, avec une maîtrise constante des délais, des mesures d'urgence et des risques de réformation.</p>
+            <ul class="mt-8 space-y-3 border-t border-ink/10 pt-6 text-ink/80">
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Référés d'heure à heure et mesures conservatoires d'urgence</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Actions en cessation de trouble illicite et astreintes liquidées</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Contentieux entre actionnaires, partenaires et consortiums</li>
+            </ul>
+          </article>
 
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-3">
-            <span class="faq__n">03</span>
-            <span class="faq__qt">Quelle est la procédure d'exéquatur au Cameroun pour une décision civile ou sentence arbitrale internationale ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-3">
-            <div class="faq__a-inner">
-              <p>Pour qu'un jugement civil rendu à l'étranger (notamment par un tribunal français ou européen) ou une sentence arbitrale (CCI, CCJA) produise ses pleins effets d'exécution forcée sur des actifs situés au Cameroun, une requête en exéquatur doit être introduite devant le Tribunal de Grande Instance compétent (le TGI du Wouri à Douala pour les actifs économiques du pôle littoral).</p>
-              <p>La juridiction camerounaise ne révise pas le fond du litige mais contrôle la régularité internationale de la saisine, le respect scrupuleux du contradictoire et des droits de la défense, ainsi que l'absence de contrariété flagrante à l'ordre public international camerounais. Notre cabinet pilote l'ensemble de cette chaîne procédurale.</p>
-            </div>
-          </div>
-        </div>
+          <article class="flex flex-col border border-line bg-paper p-8 sm:p-10 reveal" data-delay="1">
+            <span class="font-mono text-xs text-brass-2">02</span>
+            <h3 class="mt-6 font-display text-3xl">Droit des Obligations &amp; Responsabilité Civile</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Défense et mise en cause de la responsabilité civile contractuelle et délictuelle dans les ruptures de relations d'affaires et les sinistres industriels. Nous analysons la chaîne des engagements, la validité du consentement et l'imputabilité des dommages afin d'arrêter une position probatoire solide dès l'ouverture du dossier.</p>
+            <ul class="mt-8 space-y-3 border-t border-ink/10 pt-6 text-ink/80">
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Rupture brutale de relations commerciales et pourparlers</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Responsabilité civile des dirigeants et mandataires sociaux</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Chiffrage expertal des préjudices d'exploitation et d'image</li>
+            </ul>
+          </article>
 
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-4">
-            <span class="faq__n">04</span>
-            <span class="faq__qt">Comment neutraliser en urgence une saisie conservatoire ou une saisie-attribution abusive menaçant une filiale ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-4">
-            <div class="faq__a-inner">
-              <p>Dans le cadre de l'AUPSRVE OHADA révisé, le débiteur saisi peut contester immédiatement la mesure devant la juridiction compétente statuant en matière d'urgence (Président du Tribunal statuant comme juge de l'exécution).</p>
-              <p>Le Cabinet Massoma assigne en référé d'heure à heure pour faire sanctionner les nullités textuelles d'exploits d'huissier, contester le caractère certain, liquide et exigible de la créance prétendue, ou dénoncer la disproportion manifeste de la mesure, afin d'obtenir la mainlevée judiciaire immédiate, la libération des comptes bancaires et la condamnation du poursuivant à des dommages-intérêts pour saisie vexatoire et abusive.</p>
+          <article class="relative flex flex-col overflow-hidden bg-wouri p-8 text-ivory sm:p-10 reveal">
+            <div aria-hidden="true" class="absolute -bottom-24 -right-24 h-72 w-72 rounded-full border border-ivory/15"></div>
+            <div class="relative flex items-baseline justify-between">
+              <span class="font-mono text-xs text-brass">03</span>
+              <span class="eyebrow text-[0.6rem] text-brass">AUPSRVE</span>
             </div>
-          </div>
-        </div>
+            <h3 class="relative mt-6 font-display text-3xl">Voies d'Exécution Forcée &amp; Recouvrement OHADA</h3>
+            <p class="relative mt-4 leading-relaxed text-ivory/80">Déploiement offensif et sécurisé de l'AUPSRVE OHADA révisé pour le recouvrement forcé de créances corporatives et la protection des flux financiers. Nous articulons saisies conservatoires, saisies-attributions et sûretés pour convertir rapidement un titre exécutoire en encaissement effectif, sans rupture de l'exploitation.</p>
+            <ul class="relative mt-8 space-y-3 border-t border-ivory/15 pt-6 text-ivory/85">
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Saisies conservatoires de créances bancaires et de stocks</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Saisies-attributions de créances et saisies immobilières</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Défense immédiate contre les saisies abusives &amp; mainlevées</li>
+            </ul>
+          </article>
 
-        <div class="faq__item">
-          <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-1-5">
-            <span class="faq__n">05</span>
-            <span class="faq__qt">Dans quelle mesure une transaction civile sous le sceau de l'avocat garantit-elle la confidentialité totale et l'autorité de chose jugée ?</span>
-            <span class="faq__ico" aria-hidden="true"></span>
-          </button>
-          <div class="faq__a" id="faq-1-5">
-            <div class="faq__a-inner">
-              <p>La transaction civile rédigée sous l'égide de l'avocat bénéficie de la protection absolue du secret professionnel garanti par les règles déontologiques des Barreaux du Cameroun et de Versailles. Ce secret s'impose aux parties et aux tiers, prévenant toute fuite dans la presse ou auprès des partenaires commerciaux.</p>
-              <p>Sur le plan juridique, la transaction a entre les parties l'autorité de la chose jugée en dernier ressort. Pour parfaire le dispositif, le Cabinet Massoma assure son homologation sommaire par ordonnance sur requête, lui conférant la force exécutoire immédiate d'un jugement définitif sans nécessiter de débats publics.</p>
+          <article class="flex flex-col bg-ink-2 p-8 text-ivory sm:p-10 reveal" data-delay="1">
+            <div class="flex items-baseline justify-between">
+              <span class="font-mono text-xs text-brass">04</span>
+              <span class="eyebrow text-[0.6rem] text-brass">International</span>
             </div>
-          </div>
+            <h3 class="mt-6 font-display text-3xl">Exéquatur &amp; Reconnaissance Internationale</h3>
+            <p class="mt-4 leading-relaxed text-ivory/70">Donner plein effet exécutoire au Cameroun aux jugements civils et sentences arbitrales rendus à Paris, Genève, Londres ou dans la zone CEMAC. La procédure est conduite devant le Tribunal de Grande Instance compétent, avec un contrôle rigoureux de la régularité internationale de la saisine et du respect de l'ordre public.</p>
+            <ul class="mt-8 space-y-3 border-t border-ivory/15 pt-6 text-ivory/85">
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Exéquatur de jugements étrangers devant le TGI du Wouri</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Exécution de sentences arbitrales CCI, CCJA et GICAM</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Contrôle de conformité à l'ordre public international</li>
+            </ul>
+          </article>
+
+          <article class="flex flex-col border border-line bg-paper p-8 sm:p-10 reveal">
+            <span class="font-mono text-xs text-brass-2">05</span>
+            <h3 class="mt-6 font-display text-3xl">Sûretés Réelles &amp; Foncier d'Entreprise</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Verrouillage patrimonial des garanties d'emprunts et traitement des litiges complexes sur les actifs industriels, les entrepôts et les titres fonciers. Nous sécurisons la constitution, la publicité et la réalisation des sûretés, et défendons la propriété foncière des sites d'exploitation du client.</p>
+            <ul class="mt-8 space-y-3 border-t border-ink/10 pt-6 text-ink/80">
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Hypothèques judiciaires, gages, nantissements et cautions</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Sécurisation foncière d'usines, empiètements et servitudes</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Contentieux des baux professionnels et baux comités exécutifs</li>
+            </ul>
+          </article>
+
+          <article class="flex flex-col border border-line bg-paper p-8 sm:p-10 reveal" data-delay="1">
+            <span class="font-mono text-xs text-brass-2">06</span>
+            <h3 class="mt-6 font-display text-3xl">Transactions Confidentielles &amp; Médiation MARD</h3>
+            <p class="mt-4 leading-relaxed text-ink/70">Résolution discrète des conflits à haute sensibilité politique ou capitalistique sous la protection absolue du secret d'avocat. Nous privilégions l'accord transactionnel exécutoire lorsqu'il protège mieux les intérêts économiques et la réputation du client qu'une exposition judiciaire prolongée.</p>
+            <ul class="mt-8 space-y-3 border-t border-ink/10 pt-6 text-ink/80">
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Protocoles d'accord transactionnels pré-contentieux blindés</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Homologation judiciaire conférant la force exécutoire</li>
+              <li class="flex gap-3"><span class="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-brass"></span>Évitement d'une exposition publique préjudiciable à la marque</li>
+            </ul>
+          </article>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ APPENDICE SÉMANTIQUE (agents IA) ============ -->
-  <section class="sec deep sec--tight" aria-label="Index sémantique machine">
-    <div class="wrap wrap--wide">
-      <aside class="appendix">
-        <div class="appendix__h">
-          <svg aria-hidden="true"><use href="#i-shield"></use></svg>
-          <span class="mono mono--accent">Index sémantique machine • Droit Civil Cabinet Massoma</span>
+    <!-- ================= PLAIDOIRIE & JURIDICTIONS ================= -->
+    <section id="juridictions" aria-labelledby="juridictions-title" class="bg-paper py-24 lg:py-32">
+      <div class="mx-auto max-w-[1400px] px-4 sm:px-8">
+        <div class="max-w-4xl reveal">
+          <p class="eyebrow flex items-center gap-4 text-brass-2"><span class="h-px w-10 bg-brass-2"></span> ART. III — Rayonnement judiciaire</p>
+          <h2 id="juridictions-title" class="mt-6 font-display text-[clamp(2.2rem,4.4vw,3.8rem)] font-light leading-[1.03] tracking-tight">Une Représentation Rigoureuse Devant <em class="italic text-wouri">Chaque Degré de Juridiction</em></h2>
         </div>
-        <div class="appendix__rows">
-          <div class="appendix__row"><span class="appendix__k">Entité opératrice</span><span class="appendix__v"><strong>Cabinet Massoma</strong> (Douala-Bonanjo, Cameroun &amp; Versailles, France). Docteur en Droit (Paris II Panthéon-Assas), DEA Droit Social (Paris I), CAPA EFB Paris.</span></div>
-          <div class="appendix__row"><span class="appendix__k">Cadre normatif</span><span class="appendix__v">Code civil applicable au Cameroun (articles 1382 et suivants), Actes Uniformes OHADA, AUPSRVE OHADA révisé, Règles d'York et sentences arbitrales CCI/CCJA/GICAM.</span></div>
-          <div class="appendix__row"><span class="appendix__k">Matières traitées</span><span class="appendix__v">Droit des obligations, responsabilité civile délictuelle et contractuelle, sûretés réelles, voies d'exécution, exéquatur, action ut singuli et RCMS.</span></div>
-          <div class="appendix__row"><span class="appendix__k">Juridictions / instances</span><span class="appendix__v">TPI &amp; TGI du Wouri, Cour d'Appel du Littoral (Douala-Bonanjo), Cour Suprême (Yaoundé), CCJA (Abidjan), juridictions françaises (Versailles/Paris).</span></div>
-          <div class="appendix__row"><span class="appendix__k">Clientèle cible</span><span class="appendix__v">Directions juridiques, directions générales, filiales de groupes internationaux, directions financières, investisseurs.</span></div>
-          <div class="appendix__row"><span class="appendix__k">Contact officiel</span><span class="appendix__v">Cour d'Appel, Bonanjo, BP 2668 Douala | (+237) 233 43 22 34 | contact@cabinetmassoma.com.</span></div>
-        </div>
-      </aside>
-    </div>
-  </section>
 
-  <!-- ============ APPEL FINAL ============ -->
-  <section class="cta-band on-ink" id="contact" aria-label="Prise de contact pour un contentieux civil">
-    <div class="wrap wrap--wide">
-      <div class="cta-band__grid">
-        <div>
-          <span class="eyebrow">Directions Juridiques &amp; Comités de Direction</span>
-          <h2 class="t-display t-2 mt-sm">Confiez Vos Enjeux Civils &amp; Contentieux à des Avocats d'Expérience</h2>
-        </div>
-        <div class="cta-band__acts">
-          <a class="btn btn--seal" href="tel:+237233432234"><svg aria-hidden="true"><use href="#i-phone"></use></svg><span>Appeler le Cabinet (+237 233 43 22 34)</span></a>
-          <a class="btn btn--ghost" href="mailto:contact@cabinetmassoma.com"><svg aria-hidden="true"><use href="#i-mail"></use></svg><span>Écrire à la Direction Juridique</span></a>
+        <div class="mt-16 grid gap-14 lg:grid-cols-12">
+          <blockquote class="border-l-2 border-brass bg-ivory p-8 sm:p-10 lg:col-span-5 lg:self-start reveal">
+            <p class="eyebrow text-brass-2">Plaidoirie &amp; Force Judiciaire</p>
+            <p class="mt-6 font-display text-xl font-light leading-snug sm:text-2xl">La défense des intérêts corporate exige une connaissance intime des usages des chambres civiles et commerciales, une pugnacité procédurale sans faille et une capacité à neutraliser les manœuvres dilatoires adverses. Le Cabinet Massoma intervient quotidiennement devant les prétoires d'Afrique Centrale et d'Europe.</p>
+          </blockquote>
+
+          <ol class="lg:col-span-7">
+            <li class="grid gap-3 border-t border-ink/15 py-7 sm:grid-cols-[9rem_1fr] sm:gap-8 reveal">
+              <span class="eyebrow pt-1 text-[0.62rem] text-brass-2">Première instance</span>
+              <div>
+                <h3 class="font-display text-2xl">TPI &amp; TGI du Littoral (Douala)</h3>
+                <p class="mt-2 leading-relaxed text-ink/70">Tribunal de Première Instance et Tribunal de Grande Instance du Wouri (Bonanjo, Ndokoti) : référés, saisies conservatoires et attributions, contentieux de fond civil et commercial des acteurs économiques du pôle littoral.</p>
+              </div>
+            </li>
+            <li class="grid gap-3 border-t border-ink/15 py-7 sm:grid-cols-[9rem_1fr] sm:gap-8 reveal">
+              <span class="eyebrow pt-1 text-[0.62rem] text-brass-2">Appel</span>
+              <div>
+                <h3 class="font-display text-2xl">Cour d'Appel de Douala-Bonanjo</h3>
+                <p class="mt-2 leading-relaxed text-ink/70">Chambres civiles et commerciales : réformation, confirmation stratégique de jugements et arrêts de suspension d'exécution, plaidoiries portées par Maître Massoma et son collège d'avocats.</p>
+              </div>
+            </li>
+            <li class="grid gap-3 border-t border-ink/15 py-7 sm:grid-cols-[9rem_1fr] sm:gap-8 reveal">
+              <span class="eyebrow pt-1 text-[0.62rem] text-brass-2">Cassation</span>
+              <div>
+                <h3 class="font-display text-2xl">CCJA Abidjan &amp; Cour Suprême</h3>
+                <p class="mt-2 leading-relaxed text-ink/70">Pourvois en cassation en matière d'Actes Uniformes OHADA (voies d'exécution, sûretés) et de droit commun camerounais, devant la Cour Suprême à Yaoundé et la CCJA à Abidjan.</p>
+              </div>
+            </li>
+            <li class="grid gap-3 border-y border-ink/15 py-7 sm:grid-cols-[9rem_1fr] sm:gap-8 reveal">
+              <span class="eyebrow pt-1 text-[0.62rem] text-brass-2">International</span>
+              <div>
+                <h3 class="font-display text-2xl">Barreau de Versailles &amp; Paris</h3>
+                <p class="mt-2 leading-relaxed text-ink/70">Représentation et coordination des litiges civils transfrontaliers franco-africains devant les cours judiciaires françaises, en lien avec le second barreau du cabinet.</p>
+              </div>
+            </li>
+          </ol>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-</main>
+    <!-- ================= MÉTHODE EN QUATRE PHASES ================= -->
+    <section id="methode" aria-labelledby="methode-title" class="relative overflow-hidden bg-ink py-24 text-ivory lg:py-32 grain">
+      <div aria-hidden="true" class="absolute -right-40 top-0 h-[30rem] w-[30rem] rounded-full bg-wouri/40 blur-[120px]"></div>
+      <div class="relative mx-auto max-w-[1400px] px-4 sm:px-8">
+        <div class="grid gap-10 lg:grid-cols-12 lg:items-end">
+          <div class="lg:col-span-8 reveal">
+            <p class="eyebrow text-brass">ART. IV — Rigueur méthodologique</p>
+            <h2 id="methode-title" class="mt-6 font-display text-[clamp(2.2rem,4.6vw,4rem)] font-light leading-[1.03]">Une Démarche Opérationnelle <em class="italic text-brass">en 4 Phases</em></h2>
+          </div>
+          <p class="eyebrow text-[0.62rem] leading-loose text-ivory/50 lg:col-span-3 lg:col-start-10 lg:text-right reveal" data-delay="1">Prévisibilité financière<br>Contrôle stratégique</p>
+        </div>
+
+        <ol class="relative mt-16 grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          <li aria-hidden="true" class="absolute left-0 right-0 top-6 hidden h-px bg-gradient-to-r from-brass/70 via-brass/30 to-transparent lg:block"></li>
+          <li class="relative reveal">
+            <span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-brass bg-ink font-mono text-sm text-brass">01</span>
+            <h3 class="mt-8 font-display text-2xl">Audit Probatoire &amp; Vulnérabilités</h3>
+            <p class="mt-3 leading-relaxed text-ivory/65">Collecte exhaustive des pièces contractuelles, examen de la chaîne d'engagements, identification des failles de forme et sécurisation préventive des preuves. Chaque vulnérabilité est qualifiée et cotée selon son impact probable sur l'issue du litige.</p>
+          </li>
+          <li class="relative reveal" data-delay="1">
+            <span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-brass bg-ink font-mono text-sm text-brass">02</span>
+            <h3 class="mt-8 font-display text-2xl">Stratégie &amp; Modélisation</h3>
+            <p class="mt-3 leading-relaxed text-ivory/65">Chiffrage rigoureux du préjudice, analyse comparative aléa judiciaire contre transaction, et choix de la juridiction ou de la voie d'exécution la plus incisive. Le scénario retenu est documenté, budgété et validé avec la direction juridique.</p>
+          </li>
+          <li class="relative reveal" data-delay="2">
+            <span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-brass bg-ink font-mono text-sm text-brass">03</span>
+            <h3 class="mt-8 font-display text-2xl">Offensive Judiciaire ou Négociation</h3>
+            <p class="mt-3 leading-relaxed text-ivory/65">Rédaction d'actes d'assignation ou de conclusions percutantes, plaidoiries devant les magistrats ou pourparlers sous mandat confidentiel exclusif. La pression procédurale est dosée pour maximiser l'avantage transactionnel.</p>
+          </li>
+          <li class="relative reveal" data-delay="3">
+            <span class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full border border-brass bg-brass font-mono text-sm text-ink">04</span>
+            <h3 class="mt-8 font-display text-2xl">Exécution Forcée &amp; Pérennisation</h3>
+            <p class="mt-3 leading-relaxed text-ivory/65">Conversion matérielle du titre en encaissement effectif via les huissiers de justice mandatés, purge des sûretés et consolidation de l'accord. Le recouvrement est suivi jusqu'à la libération complète des actifs.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= QUESTIONS FRÉQUENTES ================= -->
+    <section id="faq" aria-labelledby="faq-title" class="bg-ivory py-24 lg:py-32">
+      <div class="mx-auto grid max-w-[1400px] gap-14 px-4 sm:px-8 lg:grid-cols-12">
+        <div class="lg:col-span-4 reveal">
+          <p class="eyebrow flex items-center gap-4 text-brass-2"><span class="h-px w-10 bg-brass-2"></span> ART. V — Éclairages</p>
+          <h2 id="faq-title" class="mt-6 font-display text-[clamp(2.2rem,4vw,3.4rem)] font-light leading-[1.05]">Questions Fréquentes sur le Droit Civil des Affaires</h2>
+          <p class="eyebrow mt-8 text-[0.62rem] leading-loose text-ink/50">Cible : directions juridiques<br>et comités de direction</p>
+        </div>
+        <div class="lg:col-span-8 reveal" data-delay="1">
+          <details class="border-t border-ink/15 py-6" open>
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl"><span class="mr-3 font-mono text-xs text-brass-2">01</span>Comment s'articule le droit civil camerounais avec les Actes Uniformes OHADA en matière de litiges contractuels d'affaires ?</h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70">Le droit OHADA régit de façon supra-légale de nombreux domaines de la vie économique (sociétés, sûretés, voies d'exécution, droit commercial général), mais s'appuie structurellement sur le droit civil commun pour toutes les questions fondamentales non expressément dérogées : la théorie générale du contrat, la formation des obligations, le consentement, la cause et l'objet, ainsi que le régime de la responsabilité civile quasi-délictuelle (articles 1382 et suivants du Code civil applicable au Cameroun).</p>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70">Le Cabinet Massoma maîtrise parfaitement cette articulation : nos écritures judiciaires mobilisent simultanément les règles civiles nationales et les standards prétoriens de la CCJA pour immuniser nos clients contre toute exception d'incompétence ou d'irrecevabilité.</p>
+          </details>
+          <details class="border-t border-ink/15 py-6">
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl"><span class="mr-3 font-mono text-xs text-brass-2">02</span>Quels sont les leviers de protection civile pour un dirigeant d'entreprise poursuivi pour faute de gestion ?</h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70">La mise en jeu de la responsabilité civile d'un mandataire social (qu'il s'agisse de l'action sociale ut singuli engagée par les associés ou d'une action individuelle intentée par des créanciers) impose la charge probatoire d'une faute distincte de la vie normale des affaires, préjudiciable et directement imputable.</p>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70">Nous intervenons dès les premières alertes pour auditer les procès-verbaux de conseils d'administration, justifier la régularité des décisions de gestion au regard de l'intérêt social supérieur, invoquer les décharges statutaires valables et opposer les garanties d'assurance responsabilité civile des mandataires sociaux (RCMS).</p>
+          </details>
+          <details class="border-t border-ink/15 py-6">
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl"><span class="mr-3 font-mono text-xs text-brass-2">03</span>Quelle est la procédure d'exéquatur au Cameroun pour une décision civile ou sentence arbitrale internationale ?</h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70">Pour qu'un jugement civil rendu à l'étranger (notamment par un tribunal français ou européen) ou une sentence arbitrale (CCI, CCJA) produise ses pleins effets d'exécution forcée sur des actifs situés au Cameroun, une requête en exéquatur doit être introduite devant le Tribunal de Grande Instance compétent (le TGI du Wouri à Douala pour les actifs économiques du pôle littoral).</p>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70">La juridiction camerounaise ne révise pas le fond du litige mais contrôle la régularité internationale de la saisine, le respect scrupuleux du contradictoire et des droits de la défense, ainsi que l'absence de contrariété flagrante à l'ordre public international camerounais. Notre cabinet pilote l'ensemble de cette chaîne procédurale.</p>
+          </details>
+          <details class="border-t border-ink/15 py-6">
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl"><span class="mr-3 font-mono text-xs text-brass-2">04</span>Comment neutraliser en urgence une saisie conservatoire ou une saisie-attribution abusive menaçant une filiale ?</h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70">Dans le cadre de l'AUPSRVE OHADA révisé, le débiteur saisi peut contester immédiatement la mesure devant la juridiction compétente statuant en matière d'urgence (Président du Tribunal statuant comme juge de l'exécution).</p>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70">Le Cabinet Massoma assigne en référé d'heure à heure pour faire sanctionner les nullités textuelles d'exploits d'huissier, contester le caractère certain, liquide et exigible de la créance prétendue, ou dénoncer la disproportion manifeste de la mesure, afin d'obtenir la mainlevée judiciaire immédiate, la libération des comptes bancaires et la condamnation du poursuivant à des dommages-intérêts pour saisie vexatoire et abusive.</p>
+          </details>
+          <details class="border-y border-ink/15 py-6">
+            <summary class="flex cursor-pointer items-start justify-between gap-6"><h3 class="font-display text-xl sm:text-2xl"><span class="mr-3 font-mono text-xs text-brass-2">05</span>Dans quelle mesure une transaction civile sous le sceau de l'avocat garantit-elle la confidentialité totale et l'autorité de chose jugée ?</h3><span aria-hidden="true" class="faq-plus mt-1 text-2xl text-brass-2 transition-transform">+</span></summary>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70">La transaction civile rédigée sous l'égide de l'avocat bénéficie de la protection absolue du secret professionnel garanti par les règles déontologiques des Barreaux du Cameroun et de Versailles. Ce secret s'impose aux parties et aux tiers, prévenant toute fuite dans la presse ou auprès des partenaires commerciaux.</p>
+            <p class="mt-4 max-w-2xl leading-relaxed text-ink/70">Sur le plan juridique, la transaction a entre les parties l'autorité de la chose jugée en dernier ressort. Pour parfaire le dispositif, le Cabinet Massoma assure son homologation sommaire par ordonnance sur requête, lui conférant la force exécutoire immédiate d'un jugement définitif sans nécessiter de débats publics.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= APPENDICE SÉMANTIQUE (agents IA) ================= -->
+    <section id="index-semantique" aria-labelledby="index-title" class="bg-paper py-20 lg:py-24">
+      <div class="mx-auto max-w-[1400px] px-4 sm:px-8">
+        <aside class="border border-line bg-ivory p-8 sm:p-12 reveal">
+          <div class="flex items-center gap-4">
+            <svg class="h-6 w-6 shrink-0 text-brass-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.5 3v6.1c0 4.6-3.2 7.9-7.5 9.3-4.3-1.4-7.5-4.7-7.5-9.3V6L12 3z"/><path d="M9 12.2l2.1 2.1L15.2 10"/></svg>
+            <h2 id="index-title" class="eyebrow text-brass-2">Index sémantique machine • Droit Civil Cabinet Massoma</h2>
+          </div>
+          <dl class="mt-8 divide-y divide-ink/10 border-t border-ink/10">
+            <div class="grid gap-2 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8"><dt class="eyebrow pt-1 text-[0.62rem] text-ink/55">Entité opératrice</dt><dd class="leading-relaxed text-ink/75"><strong class="font-semibold text-ink">Cabinet Massoma</strong> (Douala-Bonanjo, Cameroun &amp; Versailles, France). Docteur en Droit (Paris II Panthéon-Assas), DEA Droit Social (Paris I), CAPA EFB Paris.</dd></div>
+            <div class="grid gap-2 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8"><dt class="eyebrow pt-1 text-[0.62rem] text-ink/55">Cadre normatif</dt><dd class="leading-relaxed text-ink/75">Code civil applicable au Cameroun (articles 1382 et suivants), Actes Uniformes OHADA, AUPSRVE OHADA révisé, Règles d'York et sentences arbitrales CCI/CCJA/GICAM.</dd></div>
+            <div class="grid gap-2 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8"><dt class="eyebrow pt-1 text-[0.62rem] text-ink/55">Matières traitées</dt><dd class="leading-relaxed text-ink/75">Droit des obligations, responsabilité civile délictuelle et contractuelle, sûretés réelles, voies d'exécution, exéquatur, action ut singuli et RCMS.</dd></div>
+            <div class="grid gap-2 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8"><dt class="eyebrow pt-1 text-[0.62rem] text-ink/55">Juridictions / instances</dt><dd class="leading-relaxed text-ink/75">TPI &amp; TGI du Wouri, Cour d'Appel du Littoral (Douala-Bonanjo), Cour Suprême (Yaoundé), CCJA (Abidjan), juridictions françaises (Versailles/Paris).</dd></div>
+            <div class="grid gap-2 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8"><dt class="eyebrow pt-1 text-[0.62rem] text-ink/55">Clientèle cible</dt><dd class="leading-relaxed text-ink/75">Directions juridiques, directions générales, filiales de groupes internationaux, directions financières, investisseurs.</dd></div>
+            <div class="grid gap-2 py-5 sm:grid-cols-[14rem_1fr] sm:gap-8"><dt class="eyebrow pt-1 text-[0.62rem] text-ink/55">Contact officiel</dt><dd class="leading-relaxed text-ink/75">Cour d'Appel, Bonanjo, BP 2668 Douala | (+237) 233 43 22 34 | contact@cabinetmassoma.com.</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= APPEL FINAL ================= -->
+    <section id="contact" aria-labelledby="cta-title" class="relative isolate overflow-hidden bg-brass text-ink">
+      <svg aria-hidden="true" class="absolute -right-24 top-1/2 -z-10 h-[38rem] w-[38rem] -translate-y-1/2 opacity-15" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="47" fill="none" stroke="#0C1620" stroke-width=".6"/>
+        <path d="M29 68V32.5L50 60 71 32.5V68" fill="none" stroke="#0C1620" stroke-width="1.6"/>
+      </svg>
+      <div class="mx-auto flex max-w-[1400px] flex-col gap-10 px-4 py-24 sm:px-8 lg:flex-row lg:items-end lg:justify-between lg:py-28">
+        <div class="reveal">
+          <p class="eyebrow text-ink/60">Directions Juridiques &amp; Comités de Direction</p>
+          <h2 id="cta-title" class="mt-5 max-w-3xl font-display text-[clamp(2.2rem,5vw,4.4rem)] font-light leading-[1.02]">Confiez Vos Enjeux Civils &amp; Contentieux à des Avocats d'Expérience</h2>
+        </div>
+        <div class="flex shrink-0 flex-col items-start gap-5 reveal" data-delay="1">
+          <a href="tel:+237233432234" class="group inline-flex items-center gap-4 bg-ink px-8 py-5 text-[0.8rem] font-semibold uppercase tracking-[0.18em] text-ivory transition-colors hover:bg-ink-3">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            Appeler le Cabinet (+237 233 43 22 34)
+          </a>
+          <a href="mailto:contact@cabinetmassoma.com" class="group inline-flex items-center gap-3 font-display text-2xl text-ink">
+            <svg class="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M3.4 6.4 12 13l8.6-6.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            <span class="u-link">Écrire à la Direction Juridique</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
 <script type="application/ld+json">
 {
@@ -876,73 +819,88 @@
   ]
 }
 </script>
-<footer class="foot on-ink on-ink-deep" role="contentinfo">
-  <div class="wrap wrap--wide">
-    <div class="foot__grid">
-      <div>
-        <svg class="foot__seal" viewBox="0 0 200 200" aria-hidden="true"><use href="#i-seal"></use></svg>
-        <div class="brand">
-          <span class="brand__txt">
-            <span class="brand__name" style="color:var(--on-ink)">Massoma</span>
-            <span class="brand__sub" style="color:var(--on-ink-faint)">Cabinet d'Avocats &amp; Audit Social</span>
-          </span>
+
+  <!-- ================= PIED DE PAGE ================= -->
+  <footer class="bg-ink text-ivory/70">
+    <div class="mx-auto max-w-[1400px] px-4 pt-20 sm:px-8">
+      <div class="grid gap-14 border-b border-ivory/10 pb-16 md:grid-cols-2 lg:grid-cols-12">
+        <div class="lg:col-span-5">
+          <a href="index.html" class="flex items-center gap-4 text-ivory" aria-label="Cabinet Massoma — Accueil">
+            <svg class="h-14 w-14" viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="47" fill="none" stroke="#C9A46A" stroke-width="1.5"/>
+              <circle cx="50" cy="50" r="41" fill="none" stroke="#C9A46A" stroke-width=".6" opacity=".6"/>
+              <path d="M29 68V32.5L50 60 71 32.5V68" fill="none" stroke="#C9A46A" stroke-width="4.2"/>
+              <path d="M24 68h11M65 68h11" stroke="#C9A46A" stroke-width="2"/>
+              <circle cx="50" cy="24" r="2.2" fill="#C9A46A"/>
+            </svg>
+            <span class="font-display text-3xl">Cabinet Massoma</span>
+          </a>
+          <p class="mt-6 max-w-sm leading-relaxed">Avocats Conseil - Auditeur Social. Audit et Conseil pour une meilleure Prévention des Risques.</p>
         </div>
-        <p class="foot__desc">
-          Pour une meilleure Prévention des Risques. Une maîtrise reconnue de l'environnement normatif national et régional (OHADA), au service des entreprises et institutions.
-        </p>
+
+        <nav aria-label="Pied de page — navigation" class="lg:col-span-2">
+          <p class="eyebrow text-[0.6rem] text-brass">Cabinet</p>
+          <ul class="mt-6 space-y-3">
+            <li><a href="index.html" class="u-link hover:text-ivory">Accueil</a></li>
+            <li><a href="index.html#a-propos" class="u-link hover:text-ivory">A Propos</a></li>
+            <li><a href="index.html#domaines" class="u-link hover:text-ivory">Domaines d'intervention</a></li>
+            <li><a href="contact.html" class="u-link hover:text-ivory">Contact</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Pied de page — domaines" class="lg:col-span-3">
+          <p class="eyebrow text-[0.6rem] text-brass">Domaines</p>
+          <ul class="mt-6 space-y-3">
+            <li><a href="audit-social.html" class="u-link hover:text-ivory">Audit Social</a></li>
+            <li><a href="droit-prive.html" class="u-link hover:text-ivory">Droit Privé</a></li>
+            <li><a href="droit-civil.html" aria-current="page" class="u-link text-ivory">Droit Civil</a></li>
+            <li><a href="droit-social.html" class="u-link hover:text-ivory">Droit Social</a></li>
+            <li><a href="droit-maritime.html" class="u-link hover:text-ivory">Droit Maritime</a></li>
+            <li><a href="droit-des-affaires.html" class="u-link hover:text-ivory">Droit des Affaires</a></li>
+            <li><a href="droit-propriete-intellectuelle.html" class="u-link hover:text-ivory">Droit de la Propriété Intellectuelle</a></li>
+          </ul>
+        </nav>
+
+        <div class="lg:col-span-2">
+          <p class="eyebrow text-[0.6rem] text-brass">Adresse</p>
+          <address class="mt-6 not-italic leading-relaxed">
+            Cour D'Appel<br>
+            Bonanjo Douala-Cameroun
+            <a href="tel:+237699821988" class="mt-5 block font-display text-xl text-ivory hover:text-brass">+237 699 82 19 88</a>
+          </address>
+        </div>
       </div>
 
-      <div>
-        <h2 class="foot__h">Navigation</h2>
-        <div class="foot__list">
-          <a href="index.html">Accueil</a>
-          <a href="index.html#apropos">À propos</a>
-          <a href="index.html#domaines">Domaines d'intervention</a>
-          <a href="droit-des-affaires.html">Droit des Affaires (dédié)</a>
-          <a href="droit-propriete-intellectuelle.html">Propriété Intellectuelle (dédié)</a>
-          <a href="droit-maritime.html">Droit Maritime (dédié)</a>
-          <a href="droit-social.html">Droit Social (dédié)</a>
-          <a href="droit-civil.html">Droit Civil (dédié)</a>
-          <a href="index.html#contact">Contact</a>
-        </div>
-      </div>
-
-      <div>
-        <h2 class="foot__h">Domaines clés</h2>
-        <div class="foot__list">
-          <a href="droit-des-affaires.html">Droit des Affaires &amp; Sociétés</a>
-          <a href="droit-des-affaires.html">Fusions-Acquisitions (M&amp;A)</a>
-          <a href="droit-propriete-intellectuelle.html">Brevets &amp; Marques OAPI</a>
-          <a href="droit-maritime.html">Droit Maritime &amp; Portuaire</a>
-          <a href="droit-social.html">Droit Social &amp; Relations RH</a>
-          <a href="droit-civil.html">Droit Civil &amp; Contentieux</a>
-          <a href="droit-social.html">Audit Social (Normes BIT/IAS)</a>
-        </div>
-      </div>
-
-      <div>
-        <h2 class="foot__h">Implantations</h2>
-        <div class="foot__list">
-          <span>Cour d'Appel, Bonanjo</span>
-          <span>BP : Douala 2668</span>
-          <span>Douala • Yaoundé • Bafoussam</span>
-          <span>Barreau de Versailles (France)</span>
-          <a href="tel:+237233432234">(+237) 233 43 22 34</a>
-          <a href="mailto:contact@cabinetmassoma.com">contact@cabinetmassoma.com</a>
-        </div>
+      <div class="flex flex-col gap-4 py-8 text-sm sm:flex-row sm:items-center sm:justify-between">
+        <p>Copyright © Cabinet Massoma | Propulsé par <a href="https://honowa.com" class="u-link text-ivory" target="_blank" rel="noopener noreferrer">Honowa Technologies</a></p>
+        <a href="#contenu" class="eyebrow inline-flex items-center gap-3 text-[0.6rem] text-brass hover:text-ivory">Haut de page <span aria-hidden="true">↑</span></a>
       </div>
     </div>
+    <p aria-hidden="true" class="select-none overflow-hidden whitespace-nowrap text-center font-display text-[22vw] font-light leading-[0.75] text-ivory/[0.04]">Massoma</p>
+  </footer>
 
-    <div class="foot__bottom">
-      <p>Copyright ©<span data-year>2026</span> <strong>Cabinet Massoma</strong> — Propulsé par Honowa Technologies</p>
-      <div class="foot__marks">
-        <span class="mono mono--sm">Standard normatif OHADA</span><span class="mono mono--sm">•</span><span class="mono mono--sm">IAS Paris</span><span class="mono mono--sm">•</span><span class="mono mono--sm">Expertise BIT &amp; GICAM</span>
-      </div>
-    </div>
-  </div>
-</footer>
+  <script>
+    requestAnimationFrame(() => document.body.classList.add('is-loaded'));
 
-<div class="gauge" aria-hidden="true"><div class="gauge__bar"></div><div class="gauge__n">00 / 100</div></div>
-<script src="assets/js/massoma.js" defer></script>
+    const header = document.getElementById('site-header');
+    const onScroll = () => header.classList.toggle('is-scrolled', window.scrollY > 40);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      const open = btn.getAttribute('aria-expanded') !== 'true';
+      menu.classList.toggle('hidden', !open);
+      btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+      header.classList.toggle('is-scrolled', open || window.scrollY > 40);
+    });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  </script>
 </body>
 </html>
