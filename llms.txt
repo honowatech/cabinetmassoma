@@ -30,6 +30,7 @@
 - [Audit social](https://cabinetmassoma.com/audit-social.html) : conformité sociale, due diligence sociale, conformité aux standards internationaux du travail (OIT, SFI NP2, ISO 26000)
 - Conseil juridique et prévention des risques
 - Droit administratif et procédures administratives : rapports avec l'administration, autorisations diverses, visas
+- [Droit privé — vue d'ensemble](https://cabinetmassoma.com/droit-prive.html) : cinq pôles (affaires OHADA, social, maritime, civil, propriété intellectuelle OAPI), cadres normatifs, modes d'intervention (conseil, négociation, modes alternatifs, contentieux jusqu'à la CCJA)
 - [Droit civil](https://cabinetmassoma.com/droit-civil.html)
 - [Droit social](https://cabinetmassoma.com/droit-social.html)
 - [Droit maritime](https://cabinetmassoma.com/droit-maritime.html)
@@ -40,4 +41,5 @@
 
 - [Accueil](https://cabinetmassoma.com/)
 - [Audit Social](https://cabinetmassoma.com/audit-social.html) : définition, enjeux, exemples de missions, périmètre, méthodologie en 5 phases, livrables, clients, FAQ
+- [Droit Privé](https://cabinetmassoma.com/droit-prive.html) : définition, cinq pôles, cadres normatifs, approche intégrée, modes d'intervention, clients, FAQ
 - [Contact](https://cabinetmassoma.com/contact.html)
